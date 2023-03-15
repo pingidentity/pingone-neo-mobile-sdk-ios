@@ -1,0 +1,3768 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DIDSDK",
+        "printedName": "DIDSDK",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DIDSDK",
+        "printedName": "DIDSDK",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PresentationMatcherResult",
+        "printedName": "PresentationMatcherResult",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getResult",
+            "printedName": "getResult()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[PingOneWallet.CredentialMatcherResult]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CredentialMatcherResult",
+                    "printedName": "PingOneWallet.CredentialMatcherResult",
+                    "usr": "s:13PingOneWallet23CredentialMatcherResultC"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet25PresentationMatcherResultC03getF0SayAA010CredentialeF0CGyF",
+            "mangledName": "$s13PingOneWallet25PresentationMatcherResultC03getF0SayAA010CredentialeF0CGyF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13PingOneWallet25PresentationMatcherResultC",
+        "mangledName": "$s13PingOneWallet25PresentationMatcherResultC",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DIDSDK",
+        "printedName": "DIDSDK",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WalletCallbackHandler",
+        "printedName": "WalletCallbackHandler",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "handleCredentialIssuance",
+            "printedName": "handleCredentialIssuance(issuer:message:challenge:claim:errors:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DIDSDK.Challenge?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Challenge",
+                    "printedName": "DIDSDK.Challenge",
+                    "usr": "s:6DIDSDK9ChallengeC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Claim",
+                "printedName": "DIDSDK.Claim",
+                "usr": "s:6DIDSDK5ClaimC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[PingOneWallet.WalletException]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WalletException",
+                    "printedName": "PingOneWallet.WalletException",
+                    "usr": "s:13PingOneWallet0C9ExceptionO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0C15CallbackHandlerP24handleCredentialIssuance6issuer7message9challenge5claim6errorsSbSS_SSSg6DIDSDK9ChallengeCSgAK5ClaimCSayAA0C9ExceptionOGtF",
+            "mangledName": "$s13PingOneWallet0C15CallbackHandlerP24handleCredentialIssuance6issuer7message9challenge5claim6errorsSbSS_SSSg6DIDSDK9ChallengeCSgAK5ClaimCSayAA0C9ExceptionOGtF",
+            "moduleName": "PingOneWallet",
+            "genericSig": "<τ_0_0 where τ_0_0 : PingOneWallet.WalletCallbackHandler>",
+            "sugared_genericSig": "<Self where Self : PingOneWallet.WalletCallbackHandler>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleCredentialRevocation",
+            "printedName": "handleCredentialRevocation(issuer:message:challenge:claimReference:errors:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DIDSDK.Challenge?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Challenge",
+                    "printedName": "DIDSDK.Challenge",
+                    "usr": "s:6DIDSDK9ChallengeC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ClaimReference",
+                "printedName": "DIDSDK.ClaimReference",
+                "usr": "s:6DIDSDK14ClaimReferenceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[PingOneWallet.WalletException]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WalletException",
+                    "printedName": "PingOneWallet.WalletException",
+                    "usr": "s:13PingOneWallet0C9ExceptionO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0C15CallbackHandlerP26handleCredentialRevocation6issuer7message9challenge14claimReference6errorsSbSS_SSSg6DIDSDK9ChallengeCSgAK05ClaimM0CSayAA0C9ExceptionOGtF",
+            "mangledName": "$s13PingOneWallet0C15CallbackHandlerP26handleCredentialRevocation6issuer7message9challenge14claimReference6errorsSbSS_SSSg6DIDSDK9ChallengeCSgAK05ClaimM0CSayAA0C9ExceptionOGtF",
+            "moduleName": "PingOneWallet",
+            "genericSig": "<τ_0_0 where τ_0_0 : PingOneWallet.WalletCallbackHandler>",
+            "sugared_genericSig": "<Self where Self : PingOneWallet.WalletCallbackHandler>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleCredentialPresentation",
+            "printedName": "handleCredentialPresentation(sender:message:challenge:claim:errors:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DIDSDK.Challenge?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Challenge",
+                    "printedName": "DIDSDK.Challenge",
+                    "usr": "s:6DIDSDK9ChallengeC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DIDSDK.Share]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Share",
+                    "printedName": "DIDSDK.Share",
+                    "usr": "s:6DIDSDK5ShareC"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[PingOneWallet.WalletException]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WalletException",
+                    "printedName": "PingOneWallet.WalletException",
+                    "usr": "s:13PingOneWallet0C9ExceptionO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0C15CallbackHandlerP28handleCredentialPresentation6sender7message9challenge5claim6errorsySS_SSSg6DIDSDK9ChallengeCSgSayAK5ShareCGSayAA0C9ExceptionOGtF",
+            "mangledName": "$s13PingOneWallet0C15CallbackHandlerP28handleCredentialPresentation6sender7message9challenge5claim6errorsySS_SSSg6DIDSDK9ChallengeCSgSayAK5ShareCGSayAA0C9ExceptionOGtF",
+            "moduleName": "PingOneWallet",
+            "genericSig": "<τ_0_0 where τ_0_0 : PingOneWallet.WalletCallbackHandler>",
+            "sugared_genericSig": "<Self where Self : PingOneWallet.WalletCallbackHandler>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleCredentialRequest",
+            "printedName": "handleCredentialRequest(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PresentationRequest",
+                "printedName": "PingOneWallet.PresentationRequest",
+                "usr": "s:13PingOneWallet19PresentationRequestC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0C15CallbackHandlerP23handleCredentialRequestyyAA012PresentationH0CF",
+            "mangledName": "$s13PingOneWallet0C15CallbackHandlerP23handleCredentialRequestyyAA012PresentationH0CF",
+            "moduleName": "PingOneWallet",
+            "genericSig": "<τ_0_0 where τ_0_0 : PingOneWallet.WalletCallbackHandler>",
+            "sugared_genericSig": "<Self where Self : PingOneWallet.WalletCallbackHandler>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleError",
+            "printedName": "handleError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WalletException",
+                "printedName": "PingOneWallet.WalletException",
+                "usr": "s:13PingOneWallet0C9ExceptionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0C15CallbackHandlerP11handleErroryyAA0C9ExceptionOF",
+            "mangledName": "$s13PingOneWallet0C15CallbackHandlerP11handleErroryyAA0C9ExceptionOF",
+            "moduleName": "PingOneWallet",
+            "genericSig": "<τ_0_0 where τ_0_0 : PingOneWallet.WalletCallbackHandler>",
+            "sugared_genericSig": "<Self where Self : PingOneWallet.WalletCallbackHandler>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:13PingOneWallet0C15CallbackHandlerP",
+        "mangledName": "$s13PingOneWallet0C15CallbackHandlerP",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DIDSDK",
+        "printedName": "DIDSDK",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StorageManagerContract",
+        "printedName": "StorageManagerContract",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "saveApplicationInstance",
+            "printedName": "saveApplicationInstance(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ApplicationInstance",
+                "printedName": "DIDSDK.ApplicationInstance",
+                "usr": "s:6DIDSDK19ApplicationInstanceC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet22StorageManagerContractP23saveApplicationInstanceyy6DIDSDK0hI0CF",
+            "mangledName": "$s13PingOneWallet22StorageManagerContractP23saveApplicationInstanceyy6DIDSDK0hI0CF",
+            "moduleName": "PingOneWallet",
+            "genericSig": "<τ_0_0 where τ_0_0 : PingOneWallet.StorageManagerContract>",
+            "sugared_genericSig": "<Self where Self : PingOneWallet.StorageManagerContract>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getApplicationInstance",
+            "printedName": "getApplicationInstance()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DIDSDK.ApplicationInstance?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApplicationInstance",
+                    "printedName": "DIDSDK.ApplicationInstance",
+                    "usr": "s:6DIDSDK19ApplicationInstanceC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet22StorageManagerContractP22getApplicationInstance6DIDSDK0hI0CSgyF",
+            "mangledName": "$s13PingOneWallet22StorageManagerContractP22getApplicationInstance6DIDSDK0hI0CSgyF",
+            "moduleName": "PingOneWallet",
+            "genericSig": "<τ_0_0 where τ_0_0 : PingOneWallet.StorageManagerContract>",
+            "sugared_genericSig": "<Self where Self : PingOneWallet.StorageManagerContract>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "saveClaim",
+            "printedName": "saveClaim(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Claim",
+                "printedName": "DIDSDK.Claim",
+                "usr": "s:6DIDSDK5ClaimC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet22StorageManagerContractP9saveClaimyy6DIDSDK0H0CF",
+            "mangledName": "$s13PingOneWallet22StorageManagerContractP9saveClaimyy6DIDSDK0H0CF",
+            "moduleName": "PingOneWallet",
+            "genericSig": "<τ_0_0 where τ_0_0 : PingOneWallet.StorageManagerContract>",
+            "sugared_genericSig": "<Self where Self : PingOneWallet.StorageManagerContract>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getClaim",
+            "printedName": "getClaim(claimId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DIDSDK.Claim?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Claim",
+                    "printedName": "DIDSDK.Claim",
+                    "usr": "s:6DIDSDK5ClaimC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet22StorageManagerContractP8getClaim7claimId6DIDSDK0H0CSgSS_tF",
+            "mangledName": "$s13PingOneWallet22StorageManagerContractP8getClaim7claimId6DIDSDK0H0CSgSS_tF",
+            "moduleName": "PingOneWallet",
+            "genericSig": "<τ_0_0 where τ_0_0 : PingOneWallet.StorageManagerContract>",
+            "sugared_genericSig": "<Self where Self : PingOneWallet.StorageManagerContract>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteClaim",
+            "printedName": "deleteClaim(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet22StorageManagerContractP11deleteClaimyySSF",
+            "mangledName": "$s13PingOneWallet22StorageManagerContractP11deleteClaimyySSF",
+            "moduleName": "PingOneWallet",
+            "genericSig": "<τ_0_0 where τ_0_0 : PingOneWallet.StorageManagerContract>",
+            "sugared_genericSig": "<Self where Self : PingOneWallet.StorageManagerContract>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getClaims",
+            "printedName": "getClaims()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DIDSDK.Claim]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Claim",
+                    "printedName": "DIDSDK.Claim",
+                    "usr": "s:6DIDSDK5ClaimC"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet22StorageManagerContractP9getClaimsSay6DIDSDK5ClaimCGyF",
+            "mangledName": "$s13PingOneWallet22StorageManagerContractP9getClaimsSay6DIDSDK5ClaimCGyF",
+            "moduleName": "PingOneWallet",
+            "genericSig": "<τ_0_0 where τ_0_0 : PingOneWallet.StorageManagerContract>",
+            "sugared_genericSig": "<Self where Self : PingOneWallet.StorageManagerContract>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "saveString",
+            "printedName": "saveString(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet22StorageManagerContractP10saveString_3forySS_SStF",
+            "mangledName": "$s13PingOneWallet22StorageManagerContractP10saveString_3forySS_SStF",
+            "moduleName": "PingOneWallet",
+            "genericSig": "<τ_0_0 where τ_0_0 : PingOneWallet.StorageManagerContract>",
+            "sugared_genericSig": "<Self where Self : PingOneWallet.StorageManagerContract>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getString",
+            "printedName": "getString(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet22StorageManagerContractP9getString3forSSSgSS_tF",
+            "mangledName": "$s13PingOneWallet22StorageManagerContractP9getString3forSSSgSS_tF",
+            "moduleName": "PingOneWallet",
+            "genericSig": "<τ_0_0 where τ_0_0 : PingOneWallet.StorageManagerContract>",
+            "sugared_genericSig": "<Self where Self : PingOneWallet.StorageManagerContract>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:13PingOneWallet22StorageManagerContractP",
+        "mangledName": "$s13PingOneWallet22StorageManagerContractP",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DIDSDK",
+        "printedName": "DIDSDK",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "CommunicationManager",
+        "printedName": "CommunicationManager",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DIDSDK",
+        "printedName": "DIDSDK",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PresentationResult",
+        "printedName": "PresentationResult",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getPresentationStatus",
+            "printedName": "getPresentationStatus()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PresentationStatus",
+                "printedName": "DIDSDK.PresentationStatus",
+                "usr": "s:6DIDSDK18PresentationStatusO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet18PresentationResultC03getD6Status6DIDSDK0dG0OyF",
+            "mangledName": "$s13PingOneWallet18PresentationResultC03getD6Status6DIDSDK0dG0OyF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDetails",
+            "printedName": "getDetails()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet18PresentationResultC10getDetailsSDySSypGSgyF",
+            "mangledName": "$s13PingOneWallet18PresentationResultC10getDetailsSDySSypGSgyF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13PingOneWallet18PresentationResultC",
+        "mangledName": "$s13PingOneWallet18PresentationResultC",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DIDSDK",
+        "printedName": "DIDSDK",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PingOneWalletClient",
+        "printedName": "PingOneWalletClient",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "registerStorageManager",
+            "printedName": "registerStorageManager(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorageManagerContract",
+                "printedName": "PingOneWallet.StorageManagerContract",
+                "usr": "s:13PingOneWallet22StorageManagerContractP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC22registerStorageManageryyAA0fG8Contract_pF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC22registerStorageManageryyAA0fG8Contract_pF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerCallbackHandler",
+            "printedName": "registerCallbackHandler(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WalletCallbackHandler",
+                "printedName": "PingOneWallet.WalletCallbackHandler",
+                "usr": "s:13PingOneWallet0C15CallbackHandlerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC23registerCallbackHandleryyAA0cfG0_pF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC23registerCallbackHandleryyAA0cfG0_pF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getApplicationInstance",
+            "printedName": "getApplicationInstance()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApplicationInstance",
+                "printedName": "DIDSDK.ApplicationInstance",
+                "usr": "s:6DIDSDK19ApplicationInstanceC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC22getApplicationInstance6DIDSDK0fG0CyF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC22getApplicationInstance6DIDSDK0fG0CyF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pairWallet",
+            "printedName": "pairWallet(for:pushToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CompletionHandler",
+                "printedName": "DIDSDK.CompletionHandler<DIDSDK.ApplicationInstance>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApplicationInstance",
+                    "printedName": "DIDSDK.ApplicationInstance",
+                    "usr": "s:6DIDSDK19ApplicationInstanceC"
+                  }
+                ],
+                "usr": "s:6DIDSDK17CompletionHandlerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PresentationRequest",
+                "printedName": "PingOneWallet.PresentationRequest",
+                "usr": "s:13PingOneWallet19PresentationRequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC04pairC03for9pushToken6DIDSDK17CompletionHandlerCyAG19ApplicationInstanceCGAA19PresentationRequestC_SSSgtF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC04pairC03for9pushToken6DIDSDK17CompletionHandlerCyAG19ApplicationInstanceCGAA19PresentationRequestC_SSSgtF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updatePushToken",
+            "printedName": "updatePushToken(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApplicationInstance",
+                "printedName": "DIDSDK.ApplicationInstance",
+                "usr": "s:6DIDSDK19ApplicationInstanceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC15updatePushTokeny6DIDSDK19ApplicationInstanceCSSF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC15updatePushTokeny6DIDSDK19ApplicationInstanceCSSF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processQrContent",
+            "printedName": "processQrContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC16processQrContentyySSF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC16processQrContentyySSF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "findMatchingCredentialsForRequest",
+            "printedName": "findMatchingCredentialsForRequest(_:credentials:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PresentationMatcherResult",
+                "printedName": "PingOneWallet.PresentationMatcherResult",
+                "usr": "s:13PingOneWallet25PresentationMatcherResultC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PresentationRequest",
+                "printedName": "PingOneWallet.PresentationRequest",
+                "usr": "s:13PingOneWallet19PresentationRequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DIDSDK.Claim]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Claim",
+                    "printedName": "DIDSDK.Claim",
+                    "usr": "s:6DIDSDK5ClaimC"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC33findMatchingCredentialsForRequest_11credentialsAA25PresentationMatcherResultCAA0kI0C_Say6DIDSDK5ClaimCGtF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC33findMatchingCredentialsForRequest_11credentialsAA25PresentationMatcherResultCAA0kI0C_Say6DIDSDK5ClaimCGtF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "presentCredentials",
+            "printedName": "presentCredentials(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CompletionHandler",
+                "printedName": "DIDSDK.CompletionHandler<PingOneWallet.PresentationResult>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PresentationResult",
+                    "printedName": "PingOneWallet.PresentationResult",
+                    "usr": "s:13PingOneWallet18PresentationResultC"
+                  }
+                ],
+                "usr": "s:6DIDSDK17CompletionHandlerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CredentialsPresentation",
+                "printedName": "PingOneWallet.CredentialsPresentation",
+                "usr": "s:13PingOneWallet23CredentialsPresentationC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC18presentCredentialsy6DIDSDK17CompletionHandlerCyAA18PresentationResultCGAA0fJ0CF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC18presentCredentialsy6DIDSDK17CompletionHandlerCyAA18PresentationResultCGAA0fJ0CF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createSelfClaim",
+            "printedName": "createSelfClaim(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CompletionHandler",
+                "printedName": "DIDSDK.CompletionHandler<DIDSDK.Claim>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Claim",
+                    "printedName": "DIDSDK.Claim",
+                    "usr": "s:6DIDSDK5ClaimC"
+                  }
+                ],
+                "usr": "s:6DIDSDK17CompletionHandlerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC15createSelfClaimy6DIDSDK17CompletionHandlerCyAE0G0CGSDyS2SGF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC15createSelfClaimy6DIDSDK17CompletionHandlerCyAE0G0CGSDyS2SGF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reportCredentialDeletion",
+            "printedName": "reportCredentialDeletion(claim:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Claim",
+                "printedName": "DIDSDK.Claim",
+                "usr": "s:6DIDSDK5ClaimC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC24reportCredentialDeletion5claimy6DIDSDK5ClaimC_tF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC24reportCredentialDeletion5claimy6DIDSDK5ClaimC_tF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Builder",
+            "printedName": "Builder",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "PingOneWallet.PingOneWalletClient.Builder",
+                    "usr": "s:13PingOneWallet0abC6ClientC7BuilderC"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:13PingOneWallet0abC6ClientC7BuilderCAEycfc",
+                "mangledName": "$s13PingOneWallet0abC6ClientC7BuilderCAEycfc",
+                "moduleName": "PingOneWallet",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "setStorageManager",
+                "printedName": "setStorageManager(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "PingOneWallet.PingOneWalletClient.Builder",
+                    "usr": "s:13PingOneWallet0abC6ClientC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorageManagerContract",
+                    "printedName": "PingOneWallet.StorageManagerContract",
+                    "usr": "s:13PingOneWallet22StorageManagerContractP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13PingOneWallet0abC6ClientC7BuilderC17setStorageManageryAeA0gH8Contract_pF",
+                "mangledName": "$s13PingOneWallet0abC6ClientC7BuilderC17setStorageManageryAeA0gH8Contract_pF",
+                "moduleName": "PingOneWallet",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setApplicationInstance",
+                "printedName": "setApplicationInstance(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "PingOneWallet.PingOneWalletClient.Builder",
+                    "usr": "s:13PingOneWallet0abC6ClientC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApplicationInstance",
+                    "printedName": "DIDSDK.ApplicationInstance",
+                    "usr": "s:6DIDSDK19ApplicationInstanceC"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13PingOneWallet0abC6ClientC7BuilderC22setApplicationInstanceyAE6DIDSDK0gH0CF",
+                "mangledName": "$s13PingOneWallet0abC6ClientC7BuilderC22setApplicationInstanceyAE6DIDSDK0gH0CF",
+                "moduleName": "PingOneWallet",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setWalletCallbackHandler",
+                "printedName": "setWalletCallbackHandler(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "PingOneWallet.PingOneWalletClient.Builder",
+                    "usr": "s:13PingOneWallet0abC6ClientC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WalletCallbackHandler",
+                    "printedName": "PingOneWallet.WalletCallbackHandler",
+                    "usr": "s:13PingOneWallet0C15CallbackHandlerP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13PingOneWallet0abC6ClientC7BuilderC03setC15CallbackHandleryAeA0cgH0_pF",
+                "mangledName": "$s13PingOneWallet0abC6ClientC7BuilderC03setC15CallbackHandleryAeA0cgH0_pF",
+                "moduleName": "PingOneWallet",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "build",
+                "printedName": "build()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CompletionHandler",
+                    "printedName": "DIDSDK.CompletionHandler<PingOneWallet.PingOneWalletClient>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PingOneWalletClient",
+                        "printedName": "PingOneWallet.PingOneWalletClient",
+                        "usr": "s:13PingOneWallet0abC6ClientC"
+                      }
+                    ],
+                    "usr": "s:6DIDSDK17CompletionHandlerC"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13PingOneWallet0abC6ClientC7BuilderC5build6DIDSDK17CompletionHandlerCyACGyF",
+                "mangledName": "$s13PingOneWallet0abC6ClientC7BuilderC5build6DIDSDK17CompletionHandlerCyACGyF",
+                "moduleName": "PingOneWallet",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:13PingOneWallet0abC6ClientC7BuilderC",
+            "mangledName": "$s13PingOneWallet0abC6ClientC7BuilderC",
+            "moduleName": "PingOneWallet",
+            "isFromExtension": true
+          },
+          {
+            "kind": "Function",
+            "name": "handleOpenID4VerifiablePresentationRequest",
+            "printedName": "handleOpenID4VerifiablePresentationRequest(request:openIDVerifiableCredentialsClient:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VerifiablePresentationRequest",
+                "printedName": "DIDSDK.VerifiablePresentationRequest",
+                "usr": "s:6DIDSDK29VerifiablePresentationRequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenIDVerifiableCredentialsClient",
+                "printedName": "DIDSDK.OpenIDVerifiableCredentialsClient",
+                "usr": "s:6DIDSDK33OpenIDVerifiableCredentialsClientC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC42handleOpenID4VerifiablePresentationRequest7request027openIDVerifiableCredentialsD0y6DIDSDK0hiJ0C_AG0fmnD0CtF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC42handleOpenID4VerifiablePresentationRequest7request027openIDVerifiableCredentialsD0y6DIDSDK0hiJ0C_AG0fmnD0CtF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleRequest",
+            "printedName": "handleRequest(request:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Request",
+                "printedName": "DIDSDK.Request",
+                "usr": "s:6DIDSDK7RequestC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC13handleRequest7requesty6DIDSDK0F0C_tF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC13handleRequest7requesty6DIDSDK0F0C_tF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleError",
+            "printedName": "handleError(error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC11handleError5errorys0F0_p_tF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC11handleError5errorys0F0_p_tF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleShare",
+            "printedName": "handleShare(senderId:message:challenge:shares:errors:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DIDSDK.Challenge?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Challenge",
+                    "printedName": "DIDSDK.Challenge",
+                    "usr": "s:6DIDSDK9ChallengeC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DIDSDK.Share]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Share",
+                    "printedName": "DIDSDK.Share",
+                    "usr": "s:6DIDSDK5ShareC"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DIDSDK.ClaimError]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClaimError",
+                    "printedName": "DIDSDK.ClaimError",
+                    "usr": "s:6DIDSDK10ClaimErrorO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC11handleShare8senderId7message9challenge6shares6errorsySS_SSSg6DIDSDK9ChallengeCSgSayAK0F0CGSayAK10ClaimErrorOGtF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC11handleShare8senderId7message9challenge6shares6errorsySS_SSSg6DIDSDK9ChallengeCSgSayAK0F0CGSayAK10ClaimErrorOGtF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleShareRequest",
+            "printedName": "handleShareRequest(senderId:message:challenge:requestedKeys:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DIDSDK.Challenge?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Challenge",
+                    "printedName": "DIDSDK.Challenge",
+                    "usr": "s:6DIDSDK9ChallengeC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC18handleShareRequest8senderId7message9challenge13requestedKeysySS_SSSg6DIDSDK9ChallengeCSgSaySSGtF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC18handleShareRequest8senderId7message9challenge13requestedKeysySS_SSSg6DIDSDK9ChallengeCSgSaySSGtF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleClaim",
+            "printedName": "handleClaim(senderId:message:challenge:claim:errors:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DIDSDK.Challenge?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Challenge",
+                    "printedName": "DIDSDK.Challenge",
+                    "usr": "s:6DIDSDK9ChallengeC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Claim",
+                "printedName": "DIDSDK.Claim",
+                "usr": "s:6DIDSDK5ClaimC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DIDSDK.ClaimError]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClaimError",
+                    "printedName": "DIDSDK.ClaimError",
+                    "usr": "s:6DIDSDK10ClaimErrorO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC11handleClaim8senderId7message9challenge5claim6errorsySS_SSSg6DIDSDK9ChallengeCSgAK0F0CSayAK0F5ErrorOGtF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC11handleClaim8senderId7message9challenge5claim6errorsySS_SSSg6DIDSDK9ChallengeCSgAK0F0CSayAK0F5ErrorOGtF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleExpiredClaim",
+            "printedName": "handleExpiredClaim(senderId:message:challenge:expiredClaim:errors:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DIDSDK.Challenge?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Challenge",
+                    "printedName": "DIDSDK.Challenge",
+                    "usr": "s:6DIDSDK9ChallengeC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ClaimReference",
+                "printedName": "DIDSDK.ClaimReference",
+                "usr": "s:6DIDSDK14ClaimReferenceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DIDSDK.ClaimError]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClaimError",
+                    "printedName": "DIDSDK.ClaimError",
+                    "usr": "s:6DIDSDK10ClaimErrorO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC18handleExpiredClaim8senderId7message9challenge07expiredG06errorsySS_SSSg6DIDSDK9ChallengeCSgAK0G9ReferenceCSayAK0G5ErrorOGtF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC18handleExpiredClaim8senderId7message9challenge07expiredG06errorsySS_SSSg6DIDSDK9ChallengeCSgAK0G9ReferenceCSayAK0G5ErrorOGtF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleSecureMessage",
+            "printedName": "handleSecureMessage(senderId:message:challenge:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DIDSDK.Challenge?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Challenge",
+                    "printedName": "DIDSDK.Challenge",
+                    "usr": "s:6DIDSDK9ChallengeC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC19handleSecureMessage8senderId7message9challengeySS_SSSg6DIDSDK9ChallengeCSgtF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC19handleSecureMessage8senderId7message9challengeySS_SSSg6DIDSDK9ChallengeCSgtF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleError",
+            "printedName": "handleError(error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MessageProcessingError",
+                "printedName": "DIDSDK.MessageProcessingError",
+                "usr": "s:6DIDSDK22MessageProcessingErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet0abC6ClientC11handleError5errory6DIDSDK017MessageProcessingF0O_tF",
+            "mangledName": "$s13PingOneWallet0abC6ClientC11handleError5errory6DIDSDK017MessageProcessingF0O_tF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13PingOneWallet0abC6ClientC",
+        "mangledName": "$s13PingOneWallet0abC6ClientC",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "LinkHandler",
+            "printedName": "LinkHandler",
+            "usr": "s:6DIDSDK11LinkHandlerP",
+            "mangledName": "$s6DIDSDK11LinkHandlerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MessageHandler",
+            "printedName": "MessageHandler",
+            "usr": "s:6DIDSDK14MessageHandlerP",
+            "mangledName": "$s6DIDSDK14MessageHandlerP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DIDSDK",
+        "printedName": "DIDSDK",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WalletException",
+        "printedName": "WalletException",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "cannotProcessUrl",
+            "printedName": "cannotProcessUrl",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PingOneWallet.WalletException.Type) -> (Swift.String, Swift.String?) -> PingOneWallet.WalletException",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String?) -> PingOneWallet.WalletException",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WalletException",
+                        "printedName": "PingOneWallet.WalletException",
+                        "usr": "s:13PingOneWallet0C9ExceptionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(url: Swift.String, debugDescription: Swift.String?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PingOneWallet.WalletException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WalletException",
+                        "printedName": "PingOneWallet.WalletException",
+                        "usr": "s:13PingOneWallet0C9ExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13PingOneWallet0C9ExceptionO16cannotProcessUrlyACSS_SSSgtcACmF",
+            "mangledName": "$s13PingOneWallet0C9ExceptionO16cannotProcessUrlyACSS_SSSgtcACmF",
+            "moduleName": "PingOneWallet"
+          },
+          {
+            "kind": "Var",
+            "name": "cannotParseRequest",
+            "printedName": "cannotParseRequest",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PingOneWallet.WalletException.Type) -> (Swift.Error) -> PingOneWallet.WalletException",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error) -> PingOneWallet.WalletException",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WalletException",
+                        "printedName": "PingOneWallet.WalletException",
+                        "usr": "s:13PingOneWallet0C9ExceptionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(underlyingError: Swift.Error)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PingOneWallet.WalletException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WalletException",
+                        "printedName": "PingOneWallet.WalletException",
+                        "usr": "s:13PingOneWallet0C9ExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13PingOneWallet0C9ExceptionO18cannotParseRequestyACs5Error_p_tcACmF",
+            "mangledName": "$s13PingOneWallet0C9ExceptionO18cannotParseRequestyACs5Error_p_tcACmF",
+            "moduleName": "PingOneWallet"
+          },
+          {
+            "kind": "Var",
+            "name": "messageProcessingError",
+            "printedName": "messageProcessingError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PingOneWallet.WalletException.Type) -> (Swift.Error) -> PingOneWallet.WalletException",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error) -> PingOneWallet.WalletException",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WalletException",
+                        "printedName": "PingOneWallet.WalletException",
+                        "usr": "s:13PingOneWallet0C9ExceptionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(underlyingError: Swift.Error)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PingOneWallet.WalletException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WalletException",
+                        "printedName": "PingOneWallet.WalletException",
+                        "usr": "s:13PingOneWallet0C9ExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13PingOneWallet0C9ExceptionO22messageProcessingErroryACs0G0_p_tcACmF",
+            "mangledName": "$s13PingOneWallet0C9ExceptionO22messageProcessingErroryACs0G0_p_tcACmF",
+            "moduleName": "PingOneWallet"
+          },
+          {
+            "kind": "Var",
+            "name": "claimError",
+            "printedName": "claimError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PingOneWallet.WalletException.Type) -> (DIDSDK.ClaimError) -> PingOneWallet.WalletException",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DIDSDK.ClaimError) -> PingOneWallet.WalletException",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WalletException",
+                        "printedName": "PingOneWallet.WalletException",
+                        "usr": "s:13PingOneWallet0C9ExceptionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(claimError: DIDSDK.ClaimError)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ClaimError",
+                            "printedName": "DIDSDK.ClaimError",
+                            "usr": "s:6DIDSDK10ClaimErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PingOneWallet.WalletException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WalletException",
+                        "printedName": "PingOneWallet.WalletException",
+                        "usr": "s:13PingOneWallet0C9ExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13PingOneWallet0C9ExceptionO10claimErroryAC6DIDSDK05ClaimF0O_tcACmF",
+            "mangledName": "$s13PingOneWallet0C9ExceptionO10claimErroryAC6DIDSDK05ClaimF0O_tcACmF",
+            "moduleName": "PingOneWallet"
+          },
+          {
+            "kind": "Var",
+            "name": "cannotPresent",
+            "printedName": "cannotPresent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PingOneWallet.WalletException.Type) -> (Swift.String) -> PingOneWallet.WalletException",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> PingOneWallet.WalletException",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WalletException",
+                        "printedName": "PingOneWallet.WalletException",
+                        "usr": "s:13PingOneWallet0C9ExceptionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(debugDescription: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PingOneWallet.WalletException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WalletException",
+                        "printedName": "PingOneWallet.WalletException",
+                        "usr": "s:13PingOneWallet0C9ExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13PingOneWallet0C9ExceptionO13cannotPresentyACSS_tcACmF",
+            "mangledName": "$s13PingOneWallet0C9ExceptionO13cannotPresentyACSS_tcACmF",
+            "moduleName": "PingOneWallet"
+          },
+          {
+            "kind": "Var",
+            "name": "cannotPairWallet",
+            "printedName": "cannotPairWallet",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PingOneWallet.WalletException.Type) -> (Swift.String?, Swift.Error?) -> PingOneWallet.WalletException",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String?, Swift.Error?) -> PingOneWallet.WalletException",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WalletException",
+                        "printedName": "PingOneWallet.WalletException",
+                        "usr": "s:13PingOneWallet0C9ExceptionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(debugDescription: Swift.String?, underlyingError: Swift.Error?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.Error?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PingOneWallet.WalletException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WalletException",
+                        "printedName": "PingOneWallet.WalletException",
+                        "usr": "s:13PingOneWallet0C9ExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13PingOneWallet0C9ExceptionO010cannotPairC0yACSSSg_s5Error_pSgtcACmF",
+            "mangledName": "$s13PingOneWallet0C9ExceptionO010cannotPairC0yACSSSg_s5Error_pSgtcACmF",
+            "moduleName": "PingOneWallet"
+          },
+          {
+            "kind": "Var",
+            "name": "claimError",
+            "printedName": "claimError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DIDSDK.ClaimError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClaimError",
+                    "printedName": "DIDSDK.ClaimError",
+                    "usr": "s:6DIDSDK10ClaimErrorO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PingOneWallet0C9ExceptionO10claimError6DIDSDK05ClaimF0OSgvp",
+            "mangledName": "$s13PingOneWallet0C9ExceptionO10claimError6DIDSDK05ClaimF0OSgvp",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "DIDSDK.ClaimError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClaimError",
+                        "printedName": "DIDSDK.ClaimError",
+                        "usr": "s:6DIDSDK10ClaimErrorO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PingOneWallet0C9ExceptionO10claimError6DIDSDK05ClaimF0OSgvg",
+                "mangledName": "$s13PingOneWallet0C9ExceptionO10claimError6DIDSDK05ClaimF0OSgvg",
+                "moduleName": "PingOneWallet",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "underlyingError",
+            "printedName": "underlyingError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PingOneWallet0C9ExceptionO15underlyingErrors0F0_pSgvp",
+            "mangledName": "$s13PingOneWallet0C9ExceptionO15underlyingErrors0F0_pSgvp",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Error?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PingOneWallet0C9ExceptionO15underlyingErrors0F0_pSgvg",
+                "mangledName": "$s13PingOneWallet0C9ExceptionO15underlyingErrors0F0_pSgvg",
+                "moduleName": "PingOneWallet",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PingOneWallet0C9ExceptionO16errorDescriptionSSSgvp",
+            "mangledName": "$s13PingOneWallet0C9ExceptionO16errorDescriptionSSSgvp",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PingOneWallet0C9ExceptionO16errorDescriptionSSSgvg",
+                "mangledName": "$s13PingOneWallet0C9ExceptionO16errorDescriptionSSSgvg",
+                "moduleName": "PingOneWallet",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13PingOneWallet0C9ExceptionO",
+        "mangledName": "$s13PingOneWallet0C9ExceptionO",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DIDSDK",
+        "printedName": "DIDSDK",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CredentialsPresentation",
+        "printedName": "CredentialsPresentation",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(presentationRequest:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CredentialsPresentation",
+                "printedName": "PingOneWallet.CredentialsPresentation",
+                "usr": "s:13PingOneWallet23CredentialsPresentationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PresentationRequest",
+                "printedName": "PingOneWallet.PresentationRequest",
+                "usr": "s:13PingOneWallet19PresentationRequestC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13PingOneWallet23CredentialsPresentationC19presentationRequestAcA0eG0C_tcfc",
+            "mangledName": "$s13PingOneWallet23CredentialsPresentationC19presentationRequestAcA0eG0C_tcfc",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "isEmpty",
+            "printedName": "isEmpty()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet23CredentialsPresentationC7isEmptySbyF",
+            "mangledName": "$s13PingOneWallet23CredentialsPresentationC7isEmptySbyF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPresentationRequest",
+            "printedName": "getPresentationRequest()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PresentationRequest",
+                "printedName": "PingOneWallet.PresentationRequest",
+                "usr": "s:13PingOneWallet19PresentationRequestC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet23CredentialsPresentationC03getE7RequestAA0eG0CyF",
+            "mangledName": "$s13PingOneWallet23CredentialsPresentationC03getE7RequestAA0eG0CyF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addClaimForKeys",
+            "printedName": "addClaimForKeys(_:keys:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CredentialsPresentation",
+                "printedName": "PingOneWallet.CredentialsPresentation",
+                "usr": "s:13PingOneWallet23CredentialsPresentationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Claim",
+                "printedName": "DIDSDK.Claim",
+                "usr": "s:6DIDSDK5ClaimC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet23CredentialsPresentationC15addClaimForKeys_4keysAC6DIDSDK0G0C_SaySSGtF",
+            "mangledName": "$s13PingOneWallet23CredentialsPresentationC15addClaimForKeys_4keysAC6DIDSDK0G0C_SaySSGtF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13PingOneWallet23CredentialsPresentationC",
+        "mangledName": "$s13PingOneWallet23CredentialsPresentationC",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ClaimKeys",
+        "printedName": "ClaimKeys",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "cardImage",
+            "printedName": "cardImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PingOneWallet9ClaimKeysV9cardImageSSvpZ",
+            "mangledName": "$s13PingOneWallet9ClaimKeysV9cardImageSSvpZ",
+            "moduleName": "PingOneWallet",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PingOneWallet9ClaimKeysV9cardImageSSvgZ",
+                "mangledName": "$s13PingOneWallet9ClaimKeysV9cardImageSSvgZ",
+                "moduleName": "PingOneWallet",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cardType",
+            "printedName": "cardType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PingOneWallet9ClaimKeysV8cardTypeSSvpZ",
+            "mangledName": "$s13PingOneWallet9ClaimKeysV8cardTypeSSvpZ",
+            "moduleName": "PingOneWallet",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PingOneWallet9ClaimKeysV8cardTypeSSvgZ",
+                "mangledName": "$s13PingOneWallet9ClaimKeysV8cardTypeSSvgZ",
+                "moduleName": "PingOneWallet",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13PingOneWallet9ClaimKeysV",
+        "mangledName": "$s13PingOneWallet9ClaimKeysV",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DIDSDK",
+        "printedName": "DIDSDK",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DIDSDK",
+        "printedName": "DIDSDK",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RequestedKey",
+        "printedName": "RequestedKey",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "parseFromStringWith",
+            "printedName": "parseFromStringWith(regex:string:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet12RequestedKeyV19parseFromStringWith5regex6stringSaySSGSgSS_SStFZ",
+            "mangledName": "$s13PingOneWallet12RequestedKeyV19parseFromStringWith5regex6stringSaySSGSgSS_SStFZ",
+            "moduleName": "PingOneWallet",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCardType",
+            "printedName": "getCardType()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet12RequestedKeyV11getCardTypeSSSgyF",
+            "mangledName": "$s13PingOneWallet12RequestedKeyV11getCardTypeSSSgyF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCardKey",
+            "printedName": "getCardKey()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet12RequestedKeyV07getCardE0SSSgyF",
+            "mangledName": "$s13PingOneWallet12RequestedKeyV07getCardE0SSSgyF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getIssuerIds",
+            "printedName": "getIssuerIds()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet12RequestedKeyV12getIssuerIdsSaySSGSgyF",
+            "mangledName": "$s13PingOneWallet12RequestedKeyV12getIssuerIdsSaySSGSgyF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getRawKey",
+            "printedName": "getRawKey()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet12RequestedKeyV06getRawE0SSyF",
+            "mangledName": "$s13PingOneWallet12RequestedKeyV06getRawE0SSyF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13PingOneWallet12RequestedKeyV",
+        "mangledName": "$s13PingOneWallet12RequestedKeyV",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "logLine",
+        "printedName": "logLine(_:fileName:functionName:lineNumber:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "ProtocolComposition",
+            "printedName": "Any"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "hasDefaultArg": true,
+            "usr": "s:Si"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:13PingOneWallet7logLine_8fileName08functionG010lineNumberyyp_S2SSitF",
+        "mangledName": "$s13PingOneWallet7logLine_8fileName08functionG010lineNumberyyp_S2SSitF",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "log",
+        "printedName": "log(_:fileName:functionName:lineNumber:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "ProtocolComposition",
+            "printedName": "Any"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "hasDefaultArg": true,
+            "usr": "s:Si"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:13PingOneWallet3log_8fileName08functionF010lineNumberyyp_S2SSitF",
+        "mangledName": "$s13PingOneWallet3log_8fileName08functionF010lineNumberyyp_S2SSitF",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "logerror",
+        "printedName": "logerror(_:fileName:functionName:lineNumber:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "ProtocolComposition",
+            "printedName": "Any"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "hasDefaultArg": true,
+            "usr": "s:Si"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:13PingOneWallet8logerror_8fileName08functionF010lineNumberyyp_S2SSitF",
+        "mangledName": "$s13PingOneWallet8logerror_8fileName08functionF010lineNumberyyp_S2SSitF",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "logattention",
+        "printedName": "logattention(_:fileName:functionName:lineNumber:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "ProtocolComposition",
+            "printedName": "Any"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "hasDefaultArg": true,
+            "usr": "s:Si"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:13PingOneWallet12logattention_8fileName08functionF010lineNumberyyp_S2SSitF",
+        "mangledName": "$s13PingOneWallet12logattention_8fileName08functionF010lineNumberyyp_S2SSitF",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DIDSDK",
+        "printedName": "DIDSDK",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DIDSDK",
+        "printedName": "DIDSDK",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PresentationRequest",
+        "printedName": "PresentationRequest",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getRequestor",
+            "printedName": "getRequestor()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet19PresentationRequestC12getRequestorSSSgyF",
+            "mangledName": "$s13PingOneWallet19PresentationRequestC12getRequestorSSSgyF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSessionId",
+            "printedName": "getSessionId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet19PresentationRequestC12getSessionIdSSSgyF",
+            "mangledName": "$s13PingOneWallet19PresentationRequestC12getSessionIdSSSgyF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isSessionExpired",
+            "printedName": "isSessionExpired()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet19PresentationRequestC16isSessionExpiredSbyF",
+            "mangledName": "$s13PingOneWallet19PresentationRequestC16isSessionExpiredSbyF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAction",
+            "printedName": "getAction()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet19PresentationRequestC9getActionSSSgyF",
+            "mangledName": "$s13PingOneWallet19PresentationRequestC9getActionSSSgyF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPurpose",
+            "printedName": "getPurpose(forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet19PresentationRequestC10getPurpose6forKeySSSgAF_tF",
+            "mangledName": "$s13PingOneWallet19PresentationRequestC10getPurpose6forKeySSSgAF_tF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getKeys",
+            "printedName": "getKeys()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[PingOneWallet.RequestedKey]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RequestedKey",
+                    "printedName": "PingOneWallet.RequestedKey",
+                    "usr": "s:13PingOneWallet12RequestedKeyV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet19PresentationRequestC7getKeysSayAA12RequestedKeyVGyF",
+            "mangledName": "$s13PingOneWallet19PresentationRequestC7getKeysSayAA12RequestedKeyVGyF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getStringKeys",
+            "printedName": "getStringKeys()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet19PresentationRequestC13getStringKeysSaySSGyF",
+            "mangledName": "$s13PingOneWallet19PresentationRequestC13getStringKeysSaySSGyF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isPairingRequest",
+            "printedName": "isPairingRequest()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PingOneWallet19PresentationRequestC09isPairingE0SbyF",
+            "mangledName": "$s13PingOneWallet19PresentationRequestC09isPairingE0SbyF",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13PingOneWallet19PresentationRequestC",
+        "mangledName": "$s13PingOneWallet19PresentationRequestC",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DIDSDK",
+        "printedName": "DIDSDK",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CredentialMatcherResult",
+        "printedName": "CredentialMatcherResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "requestedKeys",
+            "printedName": "requestedKeys",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PingOneWallet23CredentialMatcherResultC13requestedKeysSaySSGvp",
+            "mangledName": "$s13PingOneWallet23CredentialMatcherResultC13requestedKeysSaySSGvp",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PingOneWallet23CredentialMatcherResultC13requestedKeysSaySSGvg",
+                "mangledName": "$s13PingOneWallet23CredentialMatcherResultC13requestedKeysSaySSGvg",
+                "moduleName": "PingOneWallet",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "claims",
+            "printedName": "claims",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DIDSDK.Claim]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Claim",
+                    "printedName": "DIDSDK.Claim",
+                    "usr": "s:6DIDSDK5ClaimC"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PingOneWallet23CredentialMatcherResultC6claimsSay6DIDSDK5ClaimCGvp",
+            "mangledName": "$s13PingOneWallet23CredentialMatcherResultC6claimsSay6DIDSDK5ClaimCGvp",
+            "moduleName": "PingOneWallet",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[DIDSDK.Claim]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Claim",
+                        "printedName": "DIDSDK.Claim",
+                        "usr": "s:6DIDSDK5ClaimC"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PingOneWallet23CredentialMatcherResultC6claimsSay6DIDSDK5ClaimCGvg",
+                "mangledName": "$s13PingOneWallet23CredentialMatcherResultC6claimsSay6DIDSDK5ClaimCGvg",
+                "moduleName": "PingOneWallet",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13PingOneWallet23CredentialMatcherResultC",
+        "mangledName": "$s13PingOneWallet23CredentialMatcherResultC",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PingOneWallet"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/types\/WalletMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 170,
+      "length": 5,
+      "value": "\"IOS\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/types\/WalletMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 207,
+      "length": 7,
+      "value": "\"Apple\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/types\/WalletMetadata.swift",
+      "kind": "BooleanLiteral",
+      "offset": 275,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/types\/WalletMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 376,
+      "length": 20,
+      "value": "\"CFBundleIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/types\/WalletMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 467,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/types\/CredentialRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 110,
+      "length": 17,
+      "value": "\"PingOneWallet.CredentialRequest\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/AppEvents\/CredentialEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 135,
+      "length": 12,
+      "value": "\"credential\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/AppEvents\/AppEventType.swift",
+      "kind": "StringLiteral",
+      "offset": 142,
+      "length": 19,
+      "value": "\"issuance_accepted\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/AppEvents\/AppEventType.swift",
+      "kind": "StringLiteral",
+      "offset": 204,
+      "length": 21,
+      "value": "\"revocation_accepted\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/AppEvents\/AppEventType.swift",
+      "kind": "StringLiteral",
+      "offset": 256,
+      "length": 20,
+      "value": "\"credential_deleted\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/AppEvents\/AppEventType.swift",
+      "kind": "StringLiteral",
+      "offset": 142,
+      "length": 19,
+      "value": "\"issuance_accepted\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/AppEvents\/AppEventType.swift",
+      "kind": "StringLiteral",
+      "offset": 204,
+      "length": 21,
+      "value": "\"revocation_accepted\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/AppEvents\/AppEventType.swift",
+      "kind": "StringLiteral",
+      "offset": 256,
+      "length": 20,
+      "value": "\"credential_deleted\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/types\/ClaimKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 119,
+      "length": 11,
+      "value": "\"CardImage\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/types\/ClaimKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 164,
+      "length": 10,
+      "value": "\"CardType\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/types\/RequestedKey.swift",
+      "kind": "StringLiteral",
+      "offset": 140,
+      "length": 44,
+      "value": "\"([\\w. ]*)[\\(]*([\\w,\\s]*)[\\)]*->([\\w\\W]*)\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/types\/RequestedKey.swift",
+      "kind": "StringLiteral",
+      "offset": 298,
+      "length": 67,
+      "value": "\"([\\w\\W]*)(?:\\((?=[\\w\\W]*(?=\\)->)))([^>()]+)(?:\\)->|->)([\\w\\W]*)\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/types\/RequestedKey.swift",
+      "kind": "StringLiteral",
+      "offset": 424,
+      "length": 33,
+      "value": "\"([\\w\\W]*)(?:\\)->|->)([\\w\\W]*)\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/utils\/ClaimPresentationHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3069,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/types\/PresentationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 161,
+      "length": 24,
+      "value": "\"digital_wallet_pairing\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/PingOneWallet\/utils\/PollingHelper.swift",
+      "kind": "FloatLiteral",
+      "offset": 165,
+      "length": 3,
+      "value": "3.0"
+    }
+  ]
+}
