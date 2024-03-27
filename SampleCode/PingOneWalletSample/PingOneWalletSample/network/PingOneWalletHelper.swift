@@ -255,3 +255,30 @@ class PickerEventHandler: ClaimPickerListener {
     }
     
 }
+
+extension PresentationRequest {
+
+    static let ACTION_DIGITAL_WALLET_PAIRING = "digital_wallet_pairing"
+    static let EVENT_PAIRING_REQUEST = "PAIRING_REQUEST"
+
+
+    public func isPairingRequest() -> Bool {
+        if let action = self.getAction() {
+            return action == PresentationRequest.ACTION_DIGITAL_WALLET_PAIRING
+        }
+        if let message = self.getPurpose() {
+            do {
+                let messageData = try JSONDecoder().decode([String: [String: String]].self, from: message.toData())
+                if let pairingEvent = messageData["pairingEvent"],
+                   let event = pairingEvent["event"] {
+                    return event == PresentationRequest.EVENT_PAIRING_REQUEST
+                }
+                
+            } catch {
+                return false
+            }
+            
+        }
+        return false
+    }
+}
