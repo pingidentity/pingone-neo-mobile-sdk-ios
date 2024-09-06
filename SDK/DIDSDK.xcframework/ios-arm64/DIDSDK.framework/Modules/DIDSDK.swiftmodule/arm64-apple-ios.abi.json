@@ -55,7 +55,8 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           },
@@ -82,7 +83,8 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -99,7 +101,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Error",
-                "printedName": "Swift.Error",
+                "printedName": "any Swift.Error",
                 "usr": "s:s5ErrorP"
               }
             ],
@@ -110,7 +112,8 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -158,7 +161,8 @@
             "sugared_genericSig": "<T>",
             "declAttributes": [
               "AccessControl",
-              "DiscardableResult"
+              "DiscardableResult",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -183,7 +187,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Error) -> ()",
+                "printedName": "(any Swift.Error) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -193,7 +197,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ]
@@ -207,7 +211,8 @@
             "sugared_genericSig": "<T>",
             "declAttributes": [
               "AccessControl",
-              "DiscardableResult"
+              "DiscardableResult",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -219,7 +224,8 @@
         "genericSig": "<τ_0_0>",
         "sugared_genericSig": "<T>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -863,7 +869,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Error",
-                "printedName": "Swift.Error",
+                "printedName": "any Swift.Error",
                 "usr": "s:s5ErrorP"
               }
             ],
@@ -1192,7 +1198,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -1220,7 +1226,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -1642,7 +1648,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : DIDSDK.DidParser]",
+                "printedName": "[Swift.String : any DIDSDK.DidParser]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1653,7 +1659,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "DidParser",
-                    "printedName": "DIDSDK.DidParser",
+                    "printedName": "any DIDSDK.DidParser",
                     "usr": "s:6DIDSDK9DidParserP"
                   }
                 ],
@@ -1662,7 +1668,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "DidCreator",
-                "printedName": "DIDSDK.DidCreator",
+                "printedName": "any DIDSDK.DidCreator",
                 "usr": "s:6DIDSDK10DidCreatorP"
               }
             ],
@@ -1683,7 +1689,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "DID",
-                "printedName": "DIDSDK.DID",
+                "printedName": "any DIDSDK.DID",
                 "usr": "s:6DIDSDK3DIDP"
               },
               {
@@ -1711,7 +1717,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "DID",
-                "printedName": "DIDSDK.DID",
+                "printedName": "any DIDSDK.DID",
                 "usr": "s:6DIDSDK3DIDP"
               },
               {
@@ -1771,6 +1777,27 @@
             "printedName": "Builder",
             "children": [
               {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "DIDSDK.DidSupport.Builder",
+                    "usr": "s:6DIDSDK10DidSupportC7BuilderC"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:6DIDSDK10DidSupportC7BuilderCAEycfc",
+                "mangledName": "$s6DIDSDK10DidSupportC7BuilderCAEycfc",
+                "moduleName": "DIDSDK",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
                 "kind": "Function",
                 "name": "withDefaultDidCreator",
                 "printedName": "withDefaultDidCreator(defaultDidCreator:)",
@@ -1784,7 +1811,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "DidCreator",
-                    "printedName": "DIDSDK.DidCreator",
+                    "printedName": "any DIDSDK.DidCreator",
                     "usr": "s:6DIDSDK10DidCreatorP"
                   }
                 ],
@@ -1810,7 +1837,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "DidParser",
-                    "printedName": "DIDSDK.DidParser",
+                    "printedName": "any DIDSDK.DidParser",
                     "usr": "s:6DIDSDK9DidParserP"
                   }
                 ],
@@ -1849,8 +1876,7 @@
             "usr": "s:6DIDSDK10DidSupportC7BuilderC",
             "mangledName": "$s6DIDSDK10DidSupportC7BuilderC",
             "moduleName": "DIDSDK",
-            "isFromExtension": true,
-            "hasMissingDesignatedInitializers": true
+            "isFromExtension": true
           }
         ],
         "declKind": "Class",
@@ -2340,7 +2366,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "DID",
-                "printedName": "DIDSDK.DID",
+                "printedName": "any DIDSDK.DID",
                 "usr": "s:6DIDSDK3DIDP"
               },
               {
@@ -2500,7 +2526,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "DID",
-                "printedName": "DIDSDK.DID",
+                "printedName": "any DIDSDK.DID",
                 "usr": "s:6DIDSDK3DIDP"
               },
               {
@@ -2729,6 +2755,35 @@
           },
           {
             "kind": "Function",
+            "name": "getExpiryTimeInterval",
+            "printedName": "getExpiryTimeInterval()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK19ExpirationSignatureC21getExpiryTimeIntervalSdSgyF",
+            "mangledName": "$s6DIDSDK19ExpirationSignatureC21getExpiryTimeIntervalSdSgyF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getExpirySignature",
             "printedName": "getExpirySignature()",
             "children": [
@@ -2818,6 +2873,13 @@
         "moduleName": "DIDSDK"
       },
       {
+        "kind": "Import",
+        "name": "AnyCoder",
+        "printedName": "AnyCoder",
+        "declKind": "Import",
+        "moduleName": "DIDSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "DistributedIdClient",
         "printedName": "DistributedIdClient",
@@ -2835,7 +2897,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MessageHandler",
-                "printedName": "DIDSDK.MessageHandler",
+                "printedName": "any DIDSDK.MessageHandler",
                 "usr": "s:6DIDSDK14MessageHandlerP"
               }
             ],
@@ -2850,18 +2912,39 @@
           },
           {
             "kind": "Function",
+            "name": "getApplicationInstance",
+            "printedName": "getApplicationInstance()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApplicationInstance",
+                "printedName": "DIDSDK.ApplicationInstance",
+                "usr": "s:6DIDSDK19ApplicationInstanceC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK19DistributedIdClientC22getApplicationInstanceAA0fG0CyF",
+            "mangledName": "$s6DIDSDK19DistributedIdClientC22getApplicationInstanceAA0fG0CyF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getMessageHandler",
             "printedName": "getMessageHandler()",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "DIDSDK.MessageHandler?",
+                "printedName": "(any DIDSDK.MessageHandler)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MessageHandler",
-                    "printedName": "DIDSDK.MessageHandler",
+                    "printedName": "any DIDSDK.MessageHandler",
                     "usr": "s:6DIDSDK14MessageHandlerP"
                   }
                 ],
@@ -2890,7 +2973,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "LinkHandler",
-                "printedName": "DIDSDK.LinkHandler",
+                "printedName": "any DIDSDK.LinkHandler",
                 "usr": "s:6DIDSDK11LinkHandlerP"
               }
             ],
@@ -2911,12 +2994,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "DIDSDK.LinkHandler?",
+                "printedName": "(any DIDSDK.LinkHandler)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "LinkHandler",
-                    "printedName": "DIDSDK.LinkHandler",
+                    "printedName": "any DIDSDK.LinkHandler",
                     "usr": "s:6DIDSDK11LinkHandlerP"
                   }
                 ],
@@ -3303,7 +3386,7 @@
           {
             "kind": "Function",
             "name": "expireClaim",
-            "printedName": "expireClaim(_:message:challenge:)",
+            "printedName": "expireClaim(_:message:challenge:expiresAt:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3344,11 +3427,25 @@
                 "name": "Challenge",
                 "printedName": "DIDSDK.Challenge",
                 "usr": "s:6DIDSDK9ChallengeC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6DIDSDK19DistributedIdClientC11expireClaim_7message9challengeAA17CompletionHandlerCyAA0F9ReferenceCGAJ_SSSgAA9ChallengeCtF",
-            "mangledName": "$s6DIDSDK19DistributedIdClientC11expireClaim_7message9challengeAA17CompletionHandlerCyAA0F9ReferenceCGAJ_SSSgAA9ChallengeCtF",
+            "usr": "s:6DIDSDK19DistributedIdClientC11expireClaim_7message9challenge9expiresAtAA17CompletionHandlerCyAA0F9ReferenceCGAK_SSSgAA9ChallengeCSdSgtF",
+            "mangledName": "$s6DIDSDK19DistributedIdClientC11expireClaim_7message9challenge9expiresAtAA17CompletionHandlerCyAA0F9ReferenceCGAK_SSSgAA9ChallengeCSdSgtF",
             "moduleName": "DIDSDK",
             "declAttributes": [
               "AccessControl"
@@ -3416,6 +3513,42 @@
             "declAttributes": [
               "AccessControl"
             ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createClaimBuilder",
+            "printedName": "createClaimBuilder(forFormats:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ClaimBuilder",
+                "printedName": "DIDSDK.ClaimBuilder",
+                "usr": "s:6DIDSDK12ClaimBuilderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DIDSDK.ClaimFormat]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClaimFormat",
+                    "printedName": "DIDSDK.ClaimFormat",
+                    "usr": "s:6DIDSDK11ClaimFormatO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK19DistributedIdClientC18createClaimBuilder10forFormatsAA0fG0CAA0F6FormatOd_tKF",
+            "mangledName": "$s6DIDSDK19DistributedIdClientC18createClaimBuilder10forFormatsAA0fG0CAA0F6FormatOd_tKF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -3740,7 +3873,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
+                "printedName": "[Swift.String : AnyCoder.AnyCodable]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -3750,17 +3883,17 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "AnyCodable",
+                    "printedName": "AnyCoder.AnyCodable",
+                    "usr": "s:8AnyCoder0A7CodableV"
                   }
                 ],
                 "usr": "s:SD"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6DIDSDK19DistributedIdClientC31createVerifiableCredentialClaim07subjectC07message9challenge14credentialType0L4DataAA17CompletionHandlerCyAA0H0CGSS_SSSgAA9ChallengeCSgSSSDyS2SGtF",
-            "mangledName": "$s6DIDSDK19DistributedIdClientC31createVerifiableCredentialClaim07subjectC07message9challenge14credentialType0L4DataAA17CompletionHandlerCyAA0H0CGSS_SSSgAA9ChallengeCSgSSSDyS2SGtF",
+            "usr": "s:6DIDSDK19DistributedIdClientC31createVerifiableCredentialClaim07subjectC07message9challenge14credentialType0L4DataAA17CompletionHandlerCyAA0H0CGSS_SSSgAA9ChallengeCSgSSSDySS8AnyCoder0R7CodableVGtF",
+            "mangledName": "$s6DIDSDK19DistributedIdClientC31createVerifiableCredentialClaim07subjectC07message9challenge14credentialType0L4DataAA17CompletionHandlerCyAA0H0CGSS_SSSgAA9ChallengeCSgSSSDySS8AnyCoder0R7CodableVGtF",
             "moduleName": "DIDSDK",
             "declAttributes": [
               "AccessControl"
@@ -3799,7 +3932,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MessageHandler",
-                "printedName": "DIDSDK.MessageHandler",
+                "printedName": "any DIDSDK.MessageHandler",
                 "usr": "s:6DIDSDK14MessageHandlerP"
               }
             ],
@@ -3818,13 +3951,19 @@
               {
                 "kind": "Constructor",
                 "name": "init",
-                "printedName": "init(with:messageHandler:)",
+                "printedName": "init(with:for:messageHandler:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Builder",
                     "printedName": "DIDSDK.DistributedIdClient.Builder",
                     "usr": "s:6DIDSDK19DistributedIdClientC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   },
                   {
                     "kind": "TypeNominal",
@@ -3835,12 +3974,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "DIDSDK.MessageHandler?",
+                    "printedName": "(any DIDSDK.MessageHandler)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MessageHandler",
-                        "printedName": "DIDSDK.MessageHandler",
+                        "printedName": "any DIDSDK.MessageHandler",
                         "usr": "s:6DIDSDK14MessageHandlerP"
                       }
                     ],
@@ -3848,8 +3987,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:6DIDSDK19DistributedIdClientC7BuilderC4with14messageHandlerAeA19ApplicationInstanceC_AA07MessageH0_pSgtcfc",
-                "mangledName": "$s6DIDSDK19DistributedIdClientC7BuilderC4with14messageHandlerAeA19ApplicationInstanceC_AA07MessageH0_pSgtcfc",
+                "usr": "s:6DIDSDK19DistributedIdClientC7BuilderC4with3for14messageHandlerAESS_AA19ApplicationInstanceCAA07MessageI0_pSgtcfc",
+                "mangledName": "$s6DIDSDK19DistributedIdClientC7BuilderC4with3for14messageHandlerAESS_AA19ApplicationInstanceCAA07MessageI0_pSgtcfc",
                 "moduleName": "DIDSDK",
                 "declAttributes": [
                   "AccessControl"
@@ -3870,7 +4009,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "LinkHandler",
-                    "printedName": "DIDSDK.LinkHandler",
+                    "printedName": "any DIDSDK.LinkHandler",
                     "usr": "s:6DIDSDK11LinkHandlerP"
                   }
                 ],
@@ -3932,6 +4071,162 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "Logo",
+        "printedName": "Logo",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Logo",
+                "printedName": "DIDSDK.Logo",
+                "usr": "s:6DIDSDK4LogoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6DIDSDK4LogoV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s6DIDSDK4LogoV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK4LogoV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s6DIDSDK4LogoV6encode2toys7Encoder_p_tKF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUri",
+            "printedName": "getUri()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK4LogoV6getUriSSSgyF",
+            "mangledName": "$s6DIDSDK4LogoV6getUriSSSgyF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAltText",
+            "printedName": "getAltText()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK4LogoV10getAltTextSSSgyF",
+            "mangledName": "$s6DIDSDK4LogoV10getAltTextSSSgyF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:6DIDSDK4LogoV",
+        "mangledName": "$s6DIDSDK4LogoV",
+        "moduleName": "DIDSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DIDSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -3980,58 +4275,38 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(applicationInstance:)",
+            "printedName": "init(didSupport:linkHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "OpenIDVerifiableCredentialsClient",
                 "printedName": "DIDSDK.OpenIDVerifiableCredentialsClient",
                 "usr": "s:6DIDSDK33OpenIDVerifiableCredentialsClientC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ApplicationInstance",
-                "printedName": "DIDSDK.ApplicationInstance",
-                "usr": "s:6DIDSDK19ApplicationInstanceC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:6DIDSDK33OpenIDVerifiableCredentialsClientC19applicationInstanceAcA011ApplicationG0C_tcfc",
-            "mangledName": "$s6DIDSDK33OpenIDVerifiableCredentialsClientC19applicationInstanceAcA011ApplicationG0C_tcfc",
-            "moduleName": "DIDSDK",
-            "declAttributes": [
-              "Convenience",
-              "AccessControl"
-            ],
-            "init_kind": "Convenience"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(applicationInstance:didSupport:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpenIDVerifiableCredentialsClient",
-                "printedName": "DIDSDK.OpenIDVerifiableCredentialsClient",
-                "usr": "s:6DIDSDK33OpenIDVerifiableCredentialsClientC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ApplicationInstance",
-                "printedName": "DIDSDK.ApplicationInstance",
-                "usr": "s:6DIDSDK19ApplicationInstanceC"
               },
               {
                 "kind": "TypeNominal",
                 "name": "DidSupport",
                 "printedName": "DIDSDK.DidSupport",
                 "usr": "s:6DIDSDK10DidSupportC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any DIDSDK.LinkHandler)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkHandler",
+                    "printedName": "any DIDSDK.LinkHandler",
+                    "usr": "s:6DIDSDK11LinkHandlerP"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6DIDSDK33OpenIDVerifiableCredentialsClientC19applicationInstance10didSupportAcA011ApplicationG0C_AA03DidI0Ctcfc",
-            "mangledName": "$s6DIDSDK33OpenIDVerifiableCredentialsClientC19applicationInstance10didSupportAcA011ApplicationG0C_AA03DidI0Ctcfc",
+            "usr": "s:6DIDSDK33OpenIDVerifiableCredentialsClientC10didSupport11linkHandlerAcA03DidG0C_AA04LinkI0_pSgtcfc",
+            "mangledName": "$s6DIDSDK33OpenIDVerifiableCredentialsClientC10didSupport11linkHandlerAcA03DidG0C_AA04LinkI0_pSgtcfc",
             "moduleName": "DIDSDK",
             "declAttributes": [
               "AccessControl"
@@ -4040,14 +4315,50 @@
           },
           {
             "kind": "Function",
-            "name": "isValidOpenIDVcUrl",
-            "printedName": "isValidOpenIDVcUrl(url:)",
+            "name": "getDid",
+            "printedName": "getDid(for:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "DID",
+                "printedName": "any DIDSDK.DID",
+                "usr": "s:6DIDSDK3DIDP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ApplicationInstance",
+                "printedName": "DIDSDK.ApplicationInstance",
+                "usr": "s:6DIDSDK19ApplicationInstanceC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK33OpenIDVerifiableCredentialsClientC6getDid3forAA3DID_pAA19ApplicationInstanceC_tKF",
+            "mangledName": "$s6DIDSDK33OpenIDVerifiableCredentialsClientC6getDid3forAA3DID_pAA19ApplicationInstanceC_tKF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processUrl",
+            "printedName": "processUrl(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CompletionHandler",
+                "printedName": "DIDSDK.CompletionHandler<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:6DIDSDK17CompletionHandlerC"
               },
               {
                 "kind": "TypeNominal",
@@ -4057,11 +4368,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6DIDSDK33OpenIDVerifiableCredentialsClientC07isValidB7IDVcUrl3urlSbSS_tF",
-            "mangledName": "$s6DIDSDK33OpenIDVerifiableCredentialsClientC07isValidB7IDVcUrl3urlSbSS_tF",
+            "usr": "s:6DIDSDK33OpenIDVerifiableCredentialsClientC10processUrl3urlAA17CompletionHandlerCySbGSS_tF",
+            "mangledName": "$s6DIDSDK33OpenIDVerifiableCredentialsClientC10processUrl3urlAA17CompletionHandlerCySbGSS_tF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "DiscardableResult"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4144,7 +4456,7 @@
           {
             "kind": "Function",
             "name": "sendVerifiablePresentation",
-            "printedName": "sendVerifiablePresentation(request:verifiableCredentialMap:)",
+            "printedName": "sendVerifiablePresentation(did:request:verifiableCredentialMap:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4159,6 +4471,12 @@
                   }
                 ],
                 "usr": "s:6DIDSDK17CompletionHandlerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DID",
+                "printedName": "any DIDSDK.DID",
+                "usr": "s:6DIDSDK3DIDP"
               },
               {
                 "kind": "TypeNominal",
@@ -4188,12 +4506,42 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6DIDSDK33OpenIDVerifiableCredentialsClientC26sendVerifiablePresentation7request23verifiableCredentialMapAA17CompletionHandlerCyAA0gH6ResultCGAA0gH7RequestC_SDyAA15InputDescriptorCAA0gK0CGtF",
-            "mangledName": "$s6DIDSDK33OpenIDVerifiableCredentialsClientC26sendVerifiablePresentation7request23verifiableCredentialMapAA17CompletionHandlerCyAA0gH6ResultCGAA0gH7RequestC_SDyAA15InputDescriptorCAA0gK0CGtF",
+            "usr": "s:6DIDSDK33OpenIDVerifiableCredentialsClientC26sendVerifiablePresentation3did7request23verifiableCredentialMapAA17CompletionHandlerCyAA0gH6ResultCGAA3DID_p_AA0gH7RequestCSDyAA15InputDescriptorCAA0gL0CGtF",
+            "mangledName": "$s6DIDSDK33OpenIDVerifiableCredentialsClientC26sendVerifiablePresentation3did7request23verifiableCredentialMapAA17CompletionHandlerCyAA0gH6ResultCGAA3DID_p_AA0gH7RequestCSDyAA15InputDescriptorCAA0gL0CGtF",
             "moduleName": "DIDSDK",
             "declAttributes": [
               "AccessControl"
             ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isValidOpenIDVcUrl",
+            "printedName": "isValidOpenIDVcUrl(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK33OpenIDVerifiableCredentialsClientC07isValidB7IDVcUrl3urlSbSS_tFZ",
+            "mangledName": "$s6DIDSDK33OpenIDVerifiableCredentialsClientC07isValidB7IDVcUrl3urlSbSS_tFZ",
+            "moduleName": "DIDSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -4279,6 +4627,100 @@
         "printedName": "CommunicationManager",
         "declKind": "Import",
         "moduleName": "DIDSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DIDSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CommunicationManager",
+        "printedName": "CommunicationManager",
+        "declKind": "Import",
+        "moduleName": "DIDSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AnyCoder",
+        "printedName": "AnyCoder",
+        "declKind": "Import",
+        "moduleName": "DIDSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CredentialIssuerMetadataClient",
+        "printedName": "CredentialIssuerMetadataClient",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CredentialIssuerMetadataClient",
+                "printedName": "DIDSDK.CredentialIssuerMetadataClient",
+                "usr": "s:6DIDSDK30CredentialIssuerMetadataClientC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6DIDSDK30CredentialIssuerMetadataClientCACycfc",
+            "mangledName": "$s6DIDSDK30CredentialIssuerMetadataClientCACycfc",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getCredentialIssuerMetadata",
+            "printedName": "getCredentialIssuerMetadata(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CompletionHandler",
+                "printedName": "DIDSDK.CompletionHandler<DIDSDK.CredentialIssuerMetadata>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CredentialIssuerMetadata",
+                    "printedName": "DIDSDK.CredentialIssuerMetadata",
+                    "usr": "s:6DIDSDK24CredentialIssuerMetadataV"
+                  }
+                ],
+                "usr": "s:6DIDSDK17CompletionHandlerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Claim",
+                "printedName": "DIDSDK.Claim",
+                "usr": "s:6DIDSDK5ClaimC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK30CredentialIssuerMetadataClientC03getbcD04fromAA17CompletionHandlerCyAA0bcD0VGAA5ClaimC_tF",
+            "mangledName": "$s6DIDSDK30CredentialIssuerMetadataClientC03getbcD04fromAA17CompletionHandlerCyAA0bcD0VGAA5ClaimC_tF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:6DIDSDK30CredentialIssuerMetadataClientC",
+        "mangledName": "$s6DIDSDK30CredentialIssuerMetadataClientC",
+        "moduleName": "DIDSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -4737,6 +5179,273 @@
       },
       {
         "kind": "Import",
+        "name": "JoseTools",
+        "printedName": "JoseTools",
+        "declKind": "Import",
+        "moduleName": "DIDSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AnyCoder",
+        "printedName": "AnyCoder",
+        "declKind": "Import",
+        "moduleName": "DIDSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ClaimBuilder",
+        "printedName": "ClaimBuilder",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "createVerifiableCredential",
+            "printedName": "createVerifiableCredential(subjectJwks:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VerifiableCredential",
+                "printedName": "DIDSDK.VerifiableCredential",
+                "usr": "s:6DIDSDK20VerifiableCredentialC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JsonWebKeySet",
+                "printedName": "JoseTools.JsonWebKeySet",
+                "usr": "s:9JoseTools13JsonWebKeySetV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK12ClaimBuilderC26createVerifiableCredential11subjectJwksAA0eF0C9JoseTools13JsonWebKeySetV_tKF",
+            "mangledName": "$s6DIDSDK12ClaimBuilderC26createVerifiableCredential11subjectJwksAA0eF0C9JoseTools13JsonWebKeySetV_tKF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:6DIDSDK12ClaimBuilderC",
+        "mangledName": "$s6DIDSDK12ClaimBuilderC",
+        "moduleName": "DIDSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ClaimFormat",
+        "printedName": "ClaimFormat",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "NATIVE",
+            "printedName": "NATIVE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DIDSDK.ClaimFormat.Type) -> DIDSDK.ClaimFormat",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClaimFormat",
+                    "printedName": "DIDSDK.ClaimFormat",
+                    "usr": "s:6DIDSDK11ClaimFormatO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DIDSDK.ClaimFormat.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClaimFormat",
+                        "printedName": "DIDSDK.ClaimFormat",
+                        "usr": "s:6DIDSDK11ClaimFormatO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6DIDSDK11ClaimFormatO6NATIVEyA2CmF",
+            "mangledName": "$s6DIDSDK11ClaimFormatO6NATIVEyA2CmF",
+            "moduleName": "DIDSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "W3C_VC",
+            "printedName": "W3C_VC",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DIDSDK.ClaimFormat.Type) -> DIDSDK.ClaimFormat",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClaimFormat",
+                    "printedName": "DIDSDK.ClaimFormat",
+                    "usr": "s:6DIDSDK11ClaimFormatO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DIDSDK.ClaimFormat.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClaimFormat",
+                        "printedName": "DIDSDK.ClaimFormat",
+                        "usr": "s:6DIDSDK11ClaimFormatO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6DIDSDK11ClaimFormatO6W3C_VCyA2CmF",
+            "mangledName": "$s6DIDSDK11ClaimFormatO6W3C_VCyA2CmF",
+            "moduleName": "DIDSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ClaimFormat",
+                "printedName": "DIDSDK.ClaimFormat",
+                "usr": "s:6DIDSDK11ClaimFormatO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ClaimFormat",
+                "printedName": "DIDSDK.ClaimFormat",
+                "usr": "s:6DIDSDK11ClaimFormatO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK11ClaimFormatO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s6DIDSDK11ClaimFormatO2eeoiySbAC_ACtFZ",
+            "moduleName": "DIDSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6DIDSDK11ClaimFormatO9hashValueSivp",
+            "mangledName": "$s6DIDSDK11ClaimFormatO9hashValueSivp",
+            "moduleName": "DIDSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6DIDSDK11ClaimFormatO9hashValueSivg",
+                "mangledName": "$s6DIDSDK11ClaimFormatO9hashValueSivg",
+                "moduleName": "DIDSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK11ClaimFormatO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s6DIDSDK11ClaimFormatO4hash4intoys6HasherVz_tF",
+            "moduleName": "DIDSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:6DIDSDK11ClaimFormatO",
+        "mangledName": "$s6DIDSDK11ClaimFormatO",
+        "moduleName": "DIDSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DIDSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -4882,7 +5591,8 @@
             "mangledName": "$s6DIDSDK5ClaimC03getB4DataSDyAA06SaltedD0CAFGyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4917,7 +5627,8 @@
             "mangledName": "$s6DIDSDK5ClaimC7getDataSDyS2SGyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4985,6 +5696,33 @@
           },
           {
             "kind": "Function",
+            "name": "copyWithReferenceId",
+            "printedName": "copyWithReferenceId(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Claim",
+                "printedName": "DIDSDK.Claim",
+                "usr": "s:6DIDSDK5ClaimC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SaltedData",
+                "printedName": "DIDSDK.SaltedData",
+                "usr": "s:6DIDSDK10SaltedDataC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK5ClaimC19copyWithReferenceIdyAcA10SaltedDataCF",
+            "mangledName": "$s6DIDSDK5ClaimC19copyWithReferenceIdyAcA10SaltedDataCF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "copy",
             "printedName": "copy(with:)",
             "children": [
@@ -5035,7 +5773,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
+                "printedName": "[Swift.String : Any]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -5045,17 +5783,16 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
                   }
                 ],
                 "usr": "s:SD"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6DIDSDK5ClaimC15setOtherFormats05otherE0ySDyS2SG_tF",
-            "mangledName": "$s6DIDSDK5ClaimC15setOtherFormats05otherE0ySDyS2SG_tF",
+            "usr": "s:6DIDSDK5ClaimC15setOtherFormats05otherE0ySDySSypG_tF",
+            "mangledName": "$s6DIDSDK5ClaimC15setOtherFormats05otherE0ySDySSypG_tF",
             "moduleName": "DIDSDK",
             "declAttributes": [
               "AccessControl"
@@ -5067,6 +5804,265 @@
             "name": "getOtherFormats",
             "printedName": "getOtherFormats()",
             "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK5ClaimC15getOtherFormatsSDySSypGyF",
+            "mangledName": "$s6DIDSDK5ClaimC15getOtherFormatsSDySSypGyF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:6DIDSDK5ClaimC",
+        "mangledName": "$s6DIDSDK5ClaimC",
+        "moduleName": "DIDSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "superclassUsr": "s:6DIDSDK14ClaimReferenceC",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "DIDSDK.ClaimReference",
+          "CommunicationManager.JsonSerializableObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "JsonSerializableProtocol",
+            "printedName": "JsonSerializableProtocol",
+            "usr": "s:20CommunicationManager24JsonSerializableProtocolP",
+            "mangledName": "$s20CommunicationManager24JsonSerializableProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DIDSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PingData",
+        "printedName": "PingData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6DIDSDK8PingDataV4typeSSvp",
+            "mangledName": "$s6DIDSDK8PingDataV4typeSSvp",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6DIDSDK8PingDataV4typeSSvg",
+                "mangledName": "$s6DIDSDK8PingDataV4typeSSvg",
+                "moduleName": "DIDSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6DIDSDK8PingDataV4typeSSvs",
+                "mangledName": "$s6DIDSDK8PingDataV4typeSSvs",
+                "moduleName": "DIDSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6DIDSDK8PingDataV4typeSSvM",
+                "mangledName": "$s6DIDSDK8PingDataV4typeSSvM",
+                "moduleName": "DIDSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6DIDSDK8PingDataV7versionSSvp",
+            "mangledName": "$s6DIDSDK8PingDataV7versionSSvp",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6DIDSDK8PingDataV7versionSSvg",
+                "mangledName": "$s6DIDSDK8PingDataV7versionSSvg",
+                "moduleName": "DIDSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6DIDSDK8PingDataV7versionSSvs",
+                "mangledName": "$s6DIDSDK8PingDataV7versionSSvs",
+                "moduleName": "DIDSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6DIDSDK8PingDataV7versionSSvM",
+                "mangledName": "$s6DIDSDK8PingDataV7versionSSvM",
+                "moduleName": "DIDSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initFrom",
+            "printedName": "initFrom(dict:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DIDSDK.PingData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PingData",
+                    "printedName": "DIDSDK.PingData",
+                    "usr": "s:6DIDSDK8PingDataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
@@ -5089,35 +6085,88 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6DIDSDK5ClaimC15getOtherFormatsSDyS2SGyF",
-            "mangledName": "$s6DIDSDK5ClaimC15getOtherFormatsSDyS2SGyF",
+            "usr": "s:6DIDSDK8PingDataV8initFrom4dictACSgSDyS2SG_tFZ",
+            "mangledName": "$s6DIDSDK8PingDataV8initFrom4dictACSgSDyS2SG_tFZ",
             "moduleName": "DIDSDK",
+            "static": true,
             "declAttributes": [
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PingData",
+                "printedName": "DIDSDK.PingData",
+                "usr": "s:6DIDSDK8PingDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6DIDSDK8PingDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s6DIDSDK8PingDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "DIDSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK8PingDataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s6DIDSDK8PingDataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "DIDSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Class",
-        "usr": "s:6DIDSDK5ClaimC",
-        "mangledName": "$s6DIDSDK5ClaimC",
+        "declKind": "Struct",
+        "usr": "s:6DIDSDK8PingDataV",
+        "mangledName": "$s6DIDSDK8PingDataV",
         "moduleName": "DIDSDK",
         "declAttributes": [
           "AccessControl"
         ],
-        "superclassUsr": "s:6DIDSDK14ClaimReferenceC",
-        "hasMissingDesignatedInitializers": true,
-        "superclassNames": [
-          "DIDSDK.ClaimReference",
-          "CommunicationManager.JsonSerializableObject"
-        ],
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "JsonSerializableProtocol",
-            "printedName": "JsonSerializableProtocol",
-            "usr": "s:20CommunicationManager24JsonSerializableProtocolP",
-            "mangledName": "$s20CommunicationManager24JsonSerializableProtocolP"
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           }
         ]
       },
@@ -5667,7 +6716,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(τ_0_0, CommunicationManager.CoderProtocol) -> DIDSDK.CompletionHandler<τ_0_1>",
+                "printedName": "(τ_0_0, any CommunicationManager.CoderProtocol) -> DIDSDK.CompletionHandler<τ_0_1>",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -5685,7 +6734,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(τ_0_0, CommunicationManager.CoderProtocol)",
+                    "printedName": "(τ_0_0, any CommunicationManager.CoderProtocol)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -5695,7 +6744,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "CoderProtocol",
-                        "printedName": "CommunicationManager.CoderProtocol",
+                        "printedName": "any CommunicationManager.CoderProtocol",
                         "usr": "s:20CommunicationManager13CoderProtocolP"
                       }
                     ]
@@ -5766,7 +6815,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(CommunicationManager.CoderProtocol) -> DIDSDK.CompletionHandler<τ_0_0>",
+                "printedName": "(any CommunicationManager.CoderProtocol) -> DIDSDK.CompletionHandler<τ_0_0>",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -5784,7 +6833,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "CoderProtocol",
-                    "printedName": "CommunicationManager.CoderProtocol",
+                    "printedName": "any CommunicationManager.CoderProtocol",
                     "usr": "s:20CommunicationManager13CoderProtocolP"
                   }
                 ]
@@ -5827,24 +6876,17 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.String...)",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.String]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sa"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
-                    ]
+                    ],
+                    "usr": "s:Sa"
                   }
                 ]
               }
@@ -5869,7 +6911,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(CommunicationManager.CoderProtocol, Swift.String...) -> DIDSDK.CompletionHandler<τ_0_0>",
+                "printedName": "(any CommunicationManager.CoderProtocol, Swift.String...) -> DIDSDK.CompletionHandler<τ_0_0>",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -5887,12 +6929,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(CommunicationManager.CoderProtocol, Swift.String...)",
+                    "printedName": "(any CommunicationManager.CoderProtocol, [Swift.String])",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "CoderProtocol",
-                        "printedName": "CommunicationManager.CoderProtocol",
+                        "printedName": "any CommunicationManager.CoderProtocol",
                         "usr": "s:20CommunicationManager13CoderProtocolP"
                       },
                       {
@@ -5952,7 +6994,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(τ_0_0, Swift.String...)",
+                    "printedName": "(τ_0_0, [Swift.String])",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -5998,7 +7040,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(τ_0_0, CommunicationManager.CoderProtocol, Swift.String...) -> DIDSDK.CompletionHandler<τ_0_1>",
+                "printedName": "(τ_0_0, any CommunicationManager.CoderProtocol, Swift.String...) -> DIDSDK.CompletionHandler<τ_0_1>",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -6016,7 +7058,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(τ_0_0, CommunicationManager.CoderProtocol, Swift.String...)",
+                    "printedName": "(τ_0_0, any CommunicationManager.CoderProtocol, [Swift.String])",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -6026,7 +7068,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "CoderProtocol",
-                        "printedName": "CommunicationManager.CoderProtocol",
+                        "printedName": "any CommunicationManager.CoderProtocol",
                         "usr": "s:20CommunicationManager13CoderProtocolP"
                       },
                       {
@@ -6086,7 +7128,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CoderProtocol",
-                "printedName": "CommunicationManager.CoderProtocol",
+                "printedName": "any CommunicationManager.CoderProtocol",
                 "hasDefaultArg": true,
                 "usr": "s:20CommunicationManager13CoderProtocolP"
               },
@@ -6209,7 +7251,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "DID",
-                "printedName": "DIDSDK.DID",
+                "printedName": "any DIDSDK.DID",
                 "usr": "s:6DIDSDK3DIDP"
               },
               {
@@ -6969,7 +8011,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -6997,7 +8039,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -7015,7 +8057,8 @@
         "mangledName": "$s6DIDSDK28VerifiablePresentationResultC",
         "moduleName": "DIDSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -7219,7 +8262,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -7244,7 +8287,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -7262,7 +8305,8 @@
         "mangledName": "$s6DIDSDK18PresentationStatusO",
         "moduleName": "DIDSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -7391,7 +8435,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -7416,7 +8460,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -7434,7 +8478,8 @@
         "mangledName": "$s6DIDSDK18PresentationActionO",
         "moduleName": "DIDSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -7587,7 +8632,8 @@
             "mangledName": "$s6DIDSDK14ClaimReferenceC5getIdSSyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7608,7 +8654,8 @@
             "mangledName": "$s6DIDSDK14ClaimReferenceC13getCreateDateSSyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7629,7 +8676,8 @@
             "mangledName": "$s6DIDSDK14ClaimReferenceC9getIssuerAA10SaltedDataCyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7650,7 +8698,8 @@
             "mangledName": "$s6DIDSDK14ClaimReferenceC9getHolderAA10SaltedDataCyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7671,7 +8720,8 @@
             "mangledName": "$s6DIDSDK14ClaimReferenceC10getSubjectAA10SaltedDataCyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7700,7 +8750,8 @@
             "mangledName": "$s6DIDSDK14ClaimReferenceC03getcB2IdAA10SaltedDataCSgyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7721,7 +8772,8 @@
             "mangledName": "$s6DIDSDK14ClaimReferenceC11getDataJsonSSyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7742,7 +8794,8 @@
             "mangledName": "$s6DIDSDK14ClaimReferenceC16getDataSignatureSSyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7763,7 +8816,8 @@
             "mangledName": "$s6DIDSDK14ClaimReferenceC11getDataHashSSyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7790,6 +8844,106 @@
             "declKind": "Func",
             "usr": "s:6DIDSDK14ClaimReferenceC14getPartitionIdSSSgyF",
             "mangledName": "$s6DIDSDK14ClaimReferenceC14getPartitionIdSSSgyF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setIdExpiries",
+            "printedName": "setIdExpiries(idExpiries:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DIDSDK.ExpirationSignature]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExpirationSignature",
+                    "printedName": "DIDSDK.ExpirationSignature",
+                    "usr": "s:6DIDSDK19ExpirationSignatureC"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK14ClaimReferenceC13setIdExpiries02idF0ySayAA19ExpirationSignatureCG_tF",
+            "mangledName": "$s6DIDSDK14ClaimReferenceC13setIdExpiries02idF0ySayAA19ExpirationSignatureCG_tF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getIdExpiries",
+            "printedName": "getIdExpiries()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[DIDSDK.ExpirationSignature]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[DIDSDK.ExpirationSignature]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExpirationSignature",
+                        "printedName": "DIDSDK.ExpirationSignature",
+                        "usr": "s:6DIDSDK19ExpirationSignatureC"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK14ClaimReferenceC13getIdExpiriesSayAA19ExpirationSignatureCGSgyF",
+            "mangledName": "$s6DIDSDK14ClaimReferenceC13getIdExpiriesSayAA19ExpirationSignatureCGSgyF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getEarliestExpiration",
+            "printedName": "getEarliestExpiration()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DIDSDK.ExpirationSignature?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExpirationSignature",
+                    "printedName": "DIDSDK.ExpirationSignature",
+                    "usr": "s:6DIDSDK19ExpirationSignatureC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK14ClaimReferenceC21getEarliestExpirationAA0F9SignatureCSgyF",
+            "mangledName": "$s6DIDSDK14ClaimReferenceC21getEarliestExpirationAA0F9SignatureCSgyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
               "AccessControl"
@@ -7899,7 +9053,8 @@
         "mangledName": "$s6DIDSDK14ClaimReferenceC",
         "moduleName": "DIDSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "superclassUsr": "s:20CommunicationManager22JsonSerializableObjectC",
         "hasMissingDesignatedInitializers": true,
@@ -8136,7 +9291,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -8164,7 +9319,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -8305,7 +9460,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -8333,7 +9488,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -8583,7 +9738,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -8611,7 +9766,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -9143,7 +10298,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -9171,7 +10326,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -9400,7 +10555,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -9428,7 +10583,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -10298,7 +11453,8 @@
             "mangledName": "$s6DIDSDK5ShareC7getKeysSaySSGyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -10354,7 +11510,8 @@
             "mangledName": "$s6DIDSDK5ShareC8getClaimAA0D0CyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -10387,7 +11544,8 @@
         "mangledName": "$s6DIDSDK5ShareC",
         "moduleName": "DIDSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "superclassUsr": "s:20CommunicationManager22JsonSerializableObjectC",
         "superclassNames": [
@@ -10425,6 +11583,50 @@
         "name": "Request",
         "printedName": "Request",
         "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dict:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Request",
+                "printedName": "DIDSDK.Request",
+                "usr": "s:6DIDSDK7RequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6DIDSDK7RequestC4dictACSDySSypG_tKcfc",
+            "mangledName": "$s6DIDSDK7RequestC4dictACSDySSypG_tKcfc",
+            "moduleName": "DIDSDK",
+            "overriding": true,
+            "declAttributes": [
+              "Required",
+              "Convenience",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Convenience"
+          },
           {
             "kind": "Function",
             "name": "toDictionary",
@@ -10511,6 +11713,69 @@
             "declKind": "Func",
             "usr": "s:6DIDSDK7RequestC5setIdyySSF",
             "mangledName": "$s6DIDSDK7RequestC5setIdyySSF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getRedirectUrl",
+            "printedName": "getRedirectUrl()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK7RequestC14getRedirectUrlSSSgyF",
+            "mangledName": "$s6DIDSDK7RequestC14getRedirectUrlSSSgyF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setRedirectUrl",
+            "printedName": "setRedirectUrl(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK7RequestC14setRedirectUrlyySSSgF",
+            "mangledName": "$s6DIDSDK7RequestC14setRedirectUrlyySSSgF",
             "moduleName": "DIDSDK",
             "declAttributes": [
               "AccessControl"
@@ -10864,7 +12129,7 @@
           {
             "kind": "Function",
             "name": "getRequestUrl",
-            "printedName": "getRequestUrl()",
+            "printedName": "getRequestUrl(baseUrl:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10879,11 +12144,17 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6DIDSDK7RequestC03getB3UrlSSSgyF",
-            "mangledName": "$s6DIDSDK7RequestC03getB3UrlSSSgyF",
+            "usr": "s:6DIDSDK7RequestC03getB3Url04baseD0SSSgSS_tF",
+            "mangledName": "$s6DIDSDK7RequestC03getB3Url04baseD0SSSgSS_tF",
             "moduleName": "DIDSDK",
             "declAttributes": [
               "AccessControl"
@@ -11416,7 +12687,8 @@
             "mangledName": "$s6DIDSDK9ChallengeC5getIdSSyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -11445,7 +12717,8 @@
             "mangledName": "$s6DIDSDK9ChallengeC12getExpiresAtSdSgyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -11499,7 +12772,8 @@
         "mangledName": "$s6DIDSDK9ChallengeC",
         "moduleName": "DIDSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "superclassUsr": "s:20CommunicationManager22JsonSerializableObjectC",
         "superclassNames": [
@@ -11573,7 +12847,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "DID",
-                "printedName": "DIDSDK.DID",
+                "printedName": "any DIDSDK.DID",
                 "usr": "s:6DIDSDK3DIDP"
               },
               {
@@ -11637,18 +12911,24 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init()",
+            "printedName": "init(withBaseUrl:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "ApplicationInstanceCreator",
                 "printedName": "DIDSDK.ApplicationInstanceCreator",
                 "usr": "s:6DIDSDK26ApplicationInstanceCreatorC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6DIDSDK26ApplicationInstanceCreatorCACycfc",
-            "mangledName": "$s6DIDSDK26ApplicationInstanceCreatorCACycfc",
+            "usr": "s:6DIDSDK26ApplicationInstanceCreatorC11withBaseUrlACSS_tcfc",
+            "mangledName": "$s6DIDSDK26ApplicationInstanceCreatorC11withBaseUrlACSS_tcfc",
             "moduleName": "DIDSDK",
             "declAttributes": [
               "AccessControl"
@@ -11704,6 +12984,34 @@
             "declKind": "Func",
             "usr": "s:6DIDSDK26ApplicationInstanceCreatorC7setJwks4jwksAC9JoseTools13JsonWebKeySetV_tF",
             "mangledName": "$s6DIDSDK26ApplicationInstanceCreatorC7setJwks4jwksAC9JoseTools13JsonWebKeySetV_tF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPushToken",
+            "printedName": "setPushToken(pushToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApplicationInstanceCreator",
+                "printedName": "DIDSDK.ApplicationInstanceCreator",
+                "usr": "s:6DIDSDK26ApplicationInstanceCreatorC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK26ApplicationInstanceCreatorC12setPushToken04pushG0ACSS_tF",
+            "mangledName": "$s6DIDSDK26ApplicationInstanceCreatorC12setPushToken04pushG0ACSS_tF",
             "moduleName": "DIDSDK",
             "declAttributes": [
               "AccessControl",
@@ -11950,6 +13258,188 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "Display",
+        "printedName": "Display",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getName",
+            "printedName": "getName()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK7DisplayV7getNameSSSgyF",
+            "mangledName": "$s6DIDSDK7DisplayV7getNameSSSgyF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getLogo",
+            "printedName": "getLogo()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DIDSDK.Logo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Logo",
+                    "printedName": "DIDSDK.Logo",
+                    "usr": "s:6DIDSDK4LogoV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK7DisplayV7getLogoAA0D0VSgyF",
+            "mangledName": "$s6DIDSDK7DisplayV7getLogoAA0D0VSgyF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getLocale",
+            "printedName": "getLocale()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK7DisplayV9getLocaleSSSgyF",
+            "mangledName": "$s6DIDSDK7DisplayV9getLocaleSSSgyF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Display",
+                "printedName": "DIDSDK.Display",
+                "usr": "s:6DIDSDK7DisplayV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6DIDSDK7DisplayV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s6DIDSDK7DisplayV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "DIDSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK7DisplayV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s6DIDSDK7DisplayV6encode2toys7Encoder_p_tKF",
+            "moduleName": "DIDSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:6DIDSDK7DisplayV",
+        "mangledName": "$s6DIDSDK7DisplayV",
+        "moduleName": "DIDSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DIDSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "CommunicationManager",
         "printedName": "CommunicationManager",
@@ -12092,7 +13582,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -12120,7 +13610,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -12305,7 +13795,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -12333,7 +13823,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -12534,7 +14024,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -12562,7 +14052,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -12769,7 +14259,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -12797,7 +14287,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -12888,7 +14378,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -12916,7 +14406,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -13021,7 +14511,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -13049,7 +14539,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -13146,12 +14636,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(DIDSDK.MessageProcessingError.Type) -> (Swift.Error, Swift.String?) -> DIDSDK.MessageProcessingError",
+                "printedName": "(DIDSDK.MessageProcessingError.Type) -> (any Swift.Error, Swift.String?) -> DIDSDK.MessageProcessingError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error, Swift.String?) -> DIDSDK.MessageProcessingError",
+                    "printedName": "(any Swift.Error, Swift.String?) -> DIDSDK.MessageProcessingError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -13162,12 +14652,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(underlyingError: Swift.Error, description: Swift.String?)",
+                        "printedName": "(underlyingError: any Swift.Error, description: Swift.String?)",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           },
                           {
@@ -13217,12 +14707,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(DIDSDK.MessageProcessingError.Type) -> (Swift.Error?, Swift.String?) -> DIDSDK.MessageProcessingError",
+                "printedName": "(DIDSDK.MessageProcessingError.Type) -> ((any Swift.Error)?, Swift.String?) -> DIDSDK.MessageProcessingError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error?, Swift.String?) -> DIDSDK.MessageProcessingError",
+                    "printedName": "((any Swift.Error)?, Swift.String?) -> DIDSDK.MessageProcessingError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -13233,17 +14723,17 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(underlyingError: Swift.Error?, description: Swift.String?)",
+                        "printedName": "(underlyingError: (any Swift.Error)?, description: Swift.String?)",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Optional",
-                            "printedName": "Swift.Error?",
+                            "printedName": "(any Swift.Error)?",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "Error",
-                                "printedName": "Swift.Error",
+                                "printedName": "any Swift.Error",
                                 "usr": "s:s5ErrorP"
                               }
                             ],
@@ -13296,12 +14786,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(DIDSDK.MessageProcessingError.Type) -> (Swift.Error, Swift.String?) -> DIDSDK.MessageProcessingError",
+                "printedName": "(DIDSDK.MessageProcessingError.Type) -> (any Swift.Error, Swift.String?) -> DIDSDK.MessageProcessingError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error, Swift.String?) -> DIDSDK.MessageProcessingError",
+                    "printedName": "(any Swift.Error, Swift.String?) -> DIDSDK.MessageProcessingError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -13312,12 +14802,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(underlyingError: Swift.Error, description: Swift.String?)",
+                        "printedName": "(underlyingError: any Swift.Error, description: Swift.String?)",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           },
                           {
@@ -13853,6 +15343,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DIDSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "JoseTools",
         "printedName": "JoseTools",
         "declKind": "Import",
@@ -13886,6 +15386,206 @@
         "moduleName": "DIDSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DIDSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CredentialIssuerMetadata",
+        "printedName": "CredentialIssuerMetadata",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CredentialIssuerMetadata",
+                "printedName": "DIDSDK.CredentialIssuerMetadata",
+                "usr": "s:6DIDSDK24CredentialIssuerMetadataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6DIDSDK24CredentialIssuerMetadataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s6DIDSDK24CredentialIssuerMetadataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK24CredentialIssuerMetadataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s6DIDSDK24CredentialIssuerMetadataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCredentialIssuer",
+            "printedName": "getCredentialIssuer()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK24CredentialIssuerMetadataV03getbC0SSSgyF",
+            "mangledName": "$s6DIDSDK24CredentialIssuerMetadataV03getbC0SSSgyF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDisplay",
+            "printedName": "getDisplay()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[DIDSDK.Display]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[DIDSDK.Display]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Display",
+                        "printedName": "DIDSDK.Display",
+                        "usr": "s:6DIDSDK7DisplayV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK24CredentialIssuerMetadataV10getDisplaySayAA0F0VGSgyF",
+            "mangledName": "$s6DIDSDK24CredentialIssuerMetadataV10getDisplaySayAA0F0VGSgyF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDisplayByLocale",
+            "printedName": "getDisplayByLocale(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DIDSDK.Display?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Display",
+                    "printedName": "DIDSDK.Display",
+                    "usr": "s:6DIDSDK7DisplayV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK24CredentialIssuerMetadataV18getDisplayByLocaleyAA0F0VSgSSF",
+            "mangledName": "$s6DIDSDK24CredentialIssuerMetadataV18getDisplayByLocaleyAA0F0VSgSSF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:6DIDSDK24CredentialIssuerMetadataV",
+        "mangledName": "$s6DIDSDK24CredentialIssuerMetadataV",
+        "moduleName": "DIDSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -13940,7 +15640,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "DID",
-                "printedName": "DIDSDK.DID",
+                "printedName": "any DIDSDK.DID",
                 "usr": "s:6DIDSDK3DIDP"
               },
               {
@@ -14421,7 +16121,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -14449,7 +16149,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -14515,7 +16215,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -14543,7 +16243,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -14669,7 +16369,8 @@
             "mangledName": "$s6DIDSDK19ApplicationInstanceC5getIdSSyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -14695,7 +16396,8 @@
             "mangledName": "$s6DIDSDK19ApplicationInstanceC5setIdyySSF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -14716,7 +16418,8 @@
             "mangledName": "$s6DIDSDK19ApplicationInstanceC7getJwks9JoseTools13JsonWebKeySetVyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -14742,7 +16445,8 @@
             "mangledName": "$s6DIDSDK19ApplicationInstanceC7setJwksyy9JoseTools13JsonWebKeySetVF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -15015,7 +16719,8 @@
             "mangledName": "$s6DIDSDK19ApplicationInstanceC12getPushTokenSSSgyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -15041,7 +16746,8 @@
             "mangledName": "$s6DIDSDK19ApplicationInstanceC12setPushTokenyySSF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -15062,7 +16768,8 @@
             "mangledName": "$s6DIDSDK19ApplicationInstanceC9getOsTypeSSyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -15252,7 +16959,8 @@
         "mangledName": "$s6DIDSDK19ApplicationInstanceC",
         "moduleName": "DIDSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "superclassUsr": "s:20CommunicationManager22JsonSerializableObjectC",
         "hasMissingDesignatedInitializers": true,
@@ -15293,8 +17001,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "BASE_URL_DICT_KEY",
-            "printedName": "BASE_URL_DICT_KEY",
+            "name": "baseUrl",
+            "printedName": "baseUrl",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15304,8 +17012,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6DIDSDK14BaseServiceApiP17BASE_URL_DICT_KEYSSvp",
-            "mangledName": "$s6DIDSDK14BaseServiceApiP17BASE_URL_DICT_KEYSSvp",
+            "usr": "s:6DIDSDK14BaseServiceApiP7baseUrlSSvp",
+            "mangledName": "$s6DIDSDK14BaseServiceApiP7baseUrlSSvp",
             "moduleName": "DIDSDK",
             "protocolReq": true,
             "accessors": [
@@ -15322,50 +17030,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6DIDSDK14BaseServiceApiP17BASE_URL_DICT_KEYSSvg",
-                "mangledName": "$s6DIDSDK14BaseServiceApiP17BASE_URL_DICT_KEYSSvg",
-                "moduleName": "DIDSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : DIDSDK.BaseServiceApi>",
-                "sugared_genericSig": "<Self where Self : DIDSDK.BaseServiceApi>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "BASE_URL",
-            "printedName": "BASE_URL",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:6DIDSDK14BaseServiceApiP8BASE_URLSSvp",
-            "mangledName": "$s6DIDSDK14BaseServiceApiP8BASE_URLSSvp",
-            "moduleName": "DIDSDK",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6DIDSDK14BaseServiceApiP8BASE_URLSSvg",
-                "mangledName": "$s6DIDSDK14BaseServiceApiP8BASE_URLSSvg",
+                "usr": "s:6DIDSDK14BaseServiceApiP7baseUrlSSvg",
+                "mangledName": "$s6DIDSDK14BaseServiceApiP7baseUrlSSvg",
                 "moduleName": "DIDSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : DIDSDK.BaseServiceApi>",
                 "sugared_genericSig": "<Self where Self : DIDSDK.BaseServiceApi>",
@@ -15551,12 +17217,18 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(authTokenGenerator:networkReachability:)",
+            "printedName": "init(baseUrl:authTokenGenerator:networkReachability:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "GenericTypeParam",
                 "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -15588,8 +17260,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6DIDSDK14BaseServiceApiP18authTokenGenerator19networkReachabilityxAA04AuthfG0CSg_AA07NetworkI0CSgtcfc",
-            "mangledName": "$s6DIDSDK14BaseServiceApiP18authTokenGenerator19networkReachabilityxAA04AuthfG0CSg_AA07NetworkI0CSgtcfc",
+            "usr": "s:6DIDSDK14BaseServiceApiP7baseUrl18authTokenGenerator19networkReachabilityxSS_AA04AuthhI0CSgAA07NetworkK0CSgtcfc",
+            "mangledName": "$s6DIDSDK14BaseServiceApiP7baseUrl18authTokenGenerator19networkReachabilityxSS_AA04AuthhI0CSgAA07NetworkK0CSgtcfc",
             "moduleName": "DIDSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : DIDSDK.BaseServiceApi>",
             "sugared_genericSig": "<Self where Self : DIDSDK.BaseServiceApi>",
@@ -16184,12 +17856,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(DIDSDK.DidError.Type) -> ([Swift.String : Any], Swift.Error?) -> DIDSDK.DidError",
+                "printedName": "(DIDSDK.DidError.Type) -> ([Swift.String : Any], (any Swift.Error)?) -> DIDSDK.DidError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "([Swift.String : Any], Swift.Error?) -> DIDSDK.DidError",
+                    "printedName": "([Swift.String : Any], (any Swift.Error)?) -> DIDSDK.DidError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -16200,7 +17872,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(response: [Swift.String : Any], underlyingError: Swift.Error?)",
+                        "printedName": "(response: [Swift.String : Any], underlyingError: (any Swift.Error)?)",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -16224,12 +17896,12 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Optional",
-                            "printedName": "Swift.Error?",
+                            "printedName": "(any Swift.Error)?",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "Error",
-                                "printedName": "Swift.Error",
+                                "printedName": "any Swift.Error",
                                 "usr": "s:s5ErrorP"
                               }
                             ],
@@ -16534,6 +18206,120 @@
           },
           {
             "kind": "Var",
+            "name": "mailTooLarge",
+            "printedName": "mailTooLarge",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DIDSDK.DidError.Type) -> (Swift.String) -> DIDSDK.DidError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> DIDSDK.DidError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DidError",
+                        "printedName": "DIDSDK.DidError",
+                        "usr": "s:6DIDSDK8DidErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(description: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DIDSDK.DidError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DidError",
+                        "printedName": "DIDSDK.DidError",
+                        "usr": "s:6DIDSDK8DidErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6DIDSDK8DidErrorO12mailTooLargeyACSS_tcACmF",
+            "mangledName": "$s6DIDSDK8DidErrorO12mailTooLargeyACSS_tcACmF",
+            "moduleName": "DIDSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "missingRequiredValue",
+            "printedName": "missingRequiredValue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DIDSDK.DidError.Type) -> (Swift.String) -> DIDSDK.DidError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> DIDSDK.DidError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DidError",
+                        "printedName": "DIDSDK.DidError",
+                        "usr": "s:6DIDSDK8DidErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(description: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DIDSDK.DidError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DidError",
+                        "printedName": "DIDSDK.DidError",
+                        "usr": "s:6DIDSDK8DidErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6DIDSDK8DidErrorO20missingRequiredValueyACSS_tcACmF",
+            "mangledName": "$s6DIDSDK8DidErrorO20missingRequiredValueyACSS_tcACmF",
+            "moduleName": "DIDSDK"
+          },
+          {
+            "kind": "Var",
             "name": "errorDescription",
             "printedName": "errorDescription",
             "children": [
@@ -16720,7 +18506,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "DID",
-                "printedName": "DIDSDK.DID",
+                "printedName": "any DIDSDK.DID",
                 "usr": "s:6DIDSDK3DIDP"
               }
             ],
@@ -16748,7 +18534,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "DID",
-                "printedName": "DIDSDK.DID",
+                "printedName": "any DIDSDK.DID",
                 "usr": "s:6DIDSDK3DIDP"
               }
             ],
@@ -18146,6 +19932,109 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "CARD_IMAGE",
+            "printedName": "CARD_IMAGE",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6DIDSDK42OpenIDVerifiableCredentialsClientConstantsC10CARD_IMAGESSvpZ",
+            "mangledName": "$s6DIDSDK42OpenIDVerifiableCredentialsClientConstantsC10CARD_IMAGESSvpZ",
+            "moduleName": "DIDSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6DIDSDK42OpenIDVerifiableCredentialsClientConstantsC10CARD_IMAGESSvgZ",
+                "mangledName": "$s6DIDSDK42OpenIDVerifiableCredentialsClientConstantsC10CARD_IMAGESSvgZ",
+                "moduleName": "DIDSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "PING_DATA",
+            "printedName": "PING_DATA",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6DIDSDK42OpenIDVerifiableCredentialsClientConstantsC9PING_DATASSvpZ",
+            "mangledName": "$s6DIDSDK42OpenIDVerifiableCredentialsClientConstantsC9PING_DATASSvpZ",
+            "moduleName": "DIDSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6DIDSDK42OpenIDVerifiableCredentialsClientConstantsC9PING_DATASSvgZ",
+                "mangledName": "$s6DIDSDK42OpenIDVerifiableCredentialsClientConstantsC9PING_DATASSvgZ",
+                "moduleName": "DIDSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -18219,6 +20108,13 @@
         "moduleName": "DIDSDK"
       },
       {
+        "kind": "Import",
+        "name": "AnyCoder",
+        "printedName": "AnyCoder",
+        "declKind": "Import",
+        "moduleName": "DIDSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "VerifiableCredentialGenerator",
         "printedName": "VerifiableCredentialGenerator",
@@ -18237,7 +20133,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "DID",
-                "printedName": "DIDSDK.DID",
+                "printedName": "any DIDSDK.DID",
                 "usr": "s:6DIDSDK3DIDP"
               },
               {
@@ -18260,7 +20156,7 @@
           {
             "kind": "Function",
             "name": "createCredential",
-            "printedName": "createCredential(issuerId:holderId:type:context:data:)",
+            "printedName": "createCredential(issuerId:holderId:type:context:data:pingData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -18271,31 +20167,47 @@
               {
                 "kind": "TypeNominal",
                 "name": "DID",
-                "printedName": "DIDSDK.DID",
+                "printedName": "any DIDSDK.DID",
                 "usr": "s:6DIDSDK3DIDP"
               },
               {
                 "kind": "TypeNominal",
                 "name": "DID",
-                "printedName": "DIDSDK.DID",
+                "printedName": "any DIDSDK.DID",
                 "usr": "s:6DIDSDK3DIDP"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
+                "printedName": "[Swift.String : AnyCoder.AnyCodable]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -18305,17 +20217,31 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "AnyCodable",
+                    "printedName": "AnyCoder.AnyCodable",
+                    "usr": "s:8AnyCoder0A7CodableV"
                   }
                 ],
                 "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DIDSDK.PingData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PingData",
+                    "printedName": "DIDSDK.PingData",
+                    "usr": "s:6DIDSDK8PingDataV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6DIDSDK29VerifiableCredentialGeneratorC06createC08issuerId06holderG04type7context4dataAA0C0CAA3DID_p_AaL_pS2SSDyS2SGtF",
-            "mangledName": "$s6DIDSDK29VerifiableCredentialGeneratorC06createC08issuerId06holderG04type7context4dataAA0C0CAA3DID_p_AaL_pS2SSDyS2SGtF",
+            "usr": "s:6DIDSDK29VerifiableCredentialGeneratorC06createC08issuerId06holderG04type7context4data8pingDataAA0C0CAA3DID_p_AaM_pSaySSGANSDySS8AnyCoder0O7CodableVGAA04PingM0VSgtF",
+            "mangledName": "$s6DIDSDK29VerifiableCredentialGeneratorC06createC08issuerId06holderG04type7context4data8pingDataAA0C0CAA3DID_p_AaM_pSaySSGANSDySS8AnyCoder0O7CodableVGAA04PingM0VSgtF",
             "moduleName": "DIDSDK",
             "declAttributes": [
               "AccessControl"
@@ -19387,6 +21313,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "AnyCoder",
+        "printedName": "AnyCoder",
+        "declKind": "Import",
+        "moduleName": "DIDSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "Credential",
         "printedName": "Credential",
@@ -20430,6 +22363,116 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "pingData",
+            "printedName": "pingData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DIDSDK.PingData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PingData",
+                    "printedName": "DIDSDK.PingData",
+                    "usr": "s:6DIDSDK8PingDataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6DIDSDK10CredentialC8pingDataAA04PingD0VSgvp",
+            "mangledName": "$s6DIDSDK10CredentialC8pingDataAA04PingD0VSgvp",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "DIDSDK.PingData?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PingData",
+                        "printedName": "DIDSDK.PingData",
+                        "usr": "s:6DIDSDK8PingDataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6DIDSDK10CredentialC8pingDataAA04PingD0VSgvg",
+                "mangledName": "$s6DIDSDK10CredentialC8pingDataAA04PingD0VSgvg",
+                "moduleName": "DIDSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "DIDSDK.PingData?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PingData",
+                        "printedName": "DIDSDK.PingData",
+                        "usr": "s:6DIDSDK8PingDataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6DIDSDK10CredentialC8pingDataAA04PingD0VSgvs",
+                "mangledName": "$s6DIDSDK10CredentialC8pingDataAA04PingD0VSgvs",
+                "moduleName": "DIDSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6DIDSDK10CredentialC8pingDataAA04PingD0VSgvM",
+                "mangledName": "$s6DIDSDK10CredentialC8pingDataAA04PingD0VSgvM",
+                "moduleName": "DIDSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -20443,7 +22486,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -20632,13 +22675,39 @@
           },
           {
             "kind": "Function",
+            "name": "setPing",
+            "printedName": "setPing(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PingData",
+                "printedName": "DIDSDK.PingData",
+                "usr": "s:6DIDSDK8PingDataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6DIDSDK10CredentialC7setPingyyAA0D4DataVF",
+            "mangledName": "$s6DIDSDK10CredentialC7setPingyyAA0D4DataVF",
+            "moduleName": "DIDSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "toClaimMap",
             "printedName": "toClaimMap()",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
+                "printedName": "[Swift.String : AnyCoder.AnyCodable]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -20648,16 +22717,17 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
+                    "name": "AnyCodable",
+                    "printedName": "AnyCoder.AnyCodable",
+                    "usr": "s:8AnyCoder0A7CodableV"
                   }
                 ],
                 "usr": "s:SD"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6DIDSDK10CredentialC10toClaimMapSDySSypGyF",
-            "mangledName": "$s6DIDSDK10CredentialC10toClaimMapSDySSypGyF",
+            "usr": "s:6DIDSDK10CredentialC10toClaimMapSDySS8AnyCoder0F7CodableVGyF",
+            "mangledName": "$s6DIDSDK10CredentialC10toClaimMapSDySS8AnyCoder0F7CodableVGyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
               "AccessControl"
@@ -20677,7 +22747,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -20838,12 +22908,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Swift.String : AnyCoder.AnyCodable]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "printedName": "[Swift.String : AnyCoder.AnyCodable]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -20853,8 +22923,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "AnyCodable",
+                        "printedName": "AnyCoder.AnyCodable",
+                        "usr": "s:8AnyCoder0A7CodableV"
                       }
                     ],
                     "usr": "s:SD"
@@ -20864,8 +22935,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6DIDSDK17CredentialSubjectC4dataSDySSypGSgvp",
-            "mangledName": "$s6DIDSDK17CredentialSubjectC4dataSDySSypGSgvp",
+            "usr": "s:6DIDSDK17CredentialSubjectC4dataSDySS8AnyCoder0E7CodableVGSgvp",
+            "mangledName": "$s6DIDSDK17CredentialSubjectC4dataSDySS8AnyCoder0E7CodableVGSgvp",
             "moduleName": "DIDSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -20882,12 +22953,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Swift.String : AnyCoder.AnyCodable]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "printedName": "[Swift.String : AnyCoder.AnyCodable]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -20897,8 +22968,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "AnyCodable",
+                            "printedName": "AnyCoder.AnyCodable",
+                            "usr": "s:8AnyCoder0A7CodableV"
                           }
                         ],
                         "usr": "s:SD"
@@ -20908,8 +22980,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6DIDSDK17CredentialSubjectC4dataSDySSypGSgvg",
-                "mangledName": "$s6DIDSDK17CredentialSubjectC4dataSDySSypGSgvg",
+                "usr": "s:6DIDSDK17CredentialSubjectC4dataSDySS8AnyCoder0E7CodableVGSgvg",
+                "mangledName": "$s6DIDSDK17CredentialSubjectC4dataSDySS8AnyCoder0E7CodableVGSgvg",
                 "moduleName": "DIDSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -20927,12 +22999,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Swift.String : AnyCoder.AnyCodable]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "printedName": "[Swift.String : AnyCoder.AnyCodable]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -20942,8 +23014,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "AnyCodable",
+                            "printedName": "AnyCoder.AnyCodable",
+                            "usr": "s:8AnyCoder0A7CodableV"
                           }
                         ],
                         "usr": "s:SD"
@@ -20953,8 +23026,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6DIDSDK17CredentialSubjectC4dataSDySSypGSgvs",
-                "mangledName": "$s6DIDSDK17CredentialSubjectC4dataSDySSypGSgvs",
+                "usr": "s:6DIDSDK17CredentialSubjectC4dataSDySS8AnyCoder0E7CodableVGSgvs",
+                "mangledName": "$s6DIDSDK17CredentialSubjectC4dataSDySS8AnyCoder0E7CodableVGSgvs",
                 "moduleName": "DIDSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -20971,8 +23044,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6DIDSDK17CredentialSubjectC4dataSDySSypGSgvM",
-                "mangledName": "$s6DIDSDK17CredentialSubjectC4dataSDySSypGSgvM",
+                "usr": "s:6DIDSDK17CredentialSubjectC4dataSDySS8AnyCoder0E7CodableVGSgvM",
+                "mangledName": "$s6DIDSDK17CredentialSubjectC4dataSDySS8AnyCoder0E7CodableVGSgvM",
                 "moduleName": "DIDSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -20987,7 +23060,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
+                "printedName": "[Swift.String : AnyCoder.AnyCodable]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -20997,16 +23070,17 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
+                    "name": "AnyCodable",
+                    "printedName": "AnyCoder.AnyCodable",
+                    "usr": "s:8AnyCoder0A7CodableV"
                   }
                 ],
                 "usr": "s:SD"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6DIDSDK17CredentialSubjectC10toClaimMapSDySSypGyF",
-            "mangledName": "$s6DIDSDK17CredentialSubjectC10toClaimMapSDySSypGyF",
+            "usr": "s:6DIDSDK17CredentialSubjectC10toClaimMapSDySS8AnyCoder0G7CodableVGyF",
+            "mangledName": "$s6DIDSDK17CredentialSubjectC10toClaimMapSDySS8AnyCoder0G7CodableVGyF",
             "moduleName": "DIDSDK",
             "declAttributes": [
               "AccessControl"
@@ -21027,7 +23101,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -21055,7 +23129,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -21698,7 +23772,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -21726,7 +23800,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -22037,7 +24111,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -22065,7 +24139,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -23117,12 +25191,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(DIDSDK.ClaimError.Type) -> (Swift.Error) -> DIDSDK.ClaimError",
+                "printedName": "(DIDSDK.ClaimError.Type) -> (any Swift.Error) -> DIDSDK.ClaimError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> DIDSDK.ClaimError",
+                    "printedName": "(any Swift.Error) -> DIDSDK.ClaimError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -23133,7 +25207,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -23231,6 +25305,56 @@
             "declKind": "EnumElement",
             "usr": "s:6DIDSDK10ClaimErrorO019claimHolderMismatchC0yA2CmF",
             "mangledName": "$s6DIDSDK10ClaimErrorO019claimHolderMismatchC0yA2CmF",
+            "moduleName": "DIDSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "claimGenerationException",
+            "printedName": "claimGenerationException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DIDSDK.ClaimError.Type) -> (Swift.String) -> DIDSDK.ClaimError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> DIDSDK.ClaimError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClaimError",
+                        "printedName": "DIDSDK.ClaimError",
+                        "usr": "s:6DIDSDK10ClaimErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DIDSDK.ClaimError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClaimError",
+                        "printedName": "DIDSDK.ClaimError",
+                        "usr": "s:6DIDSDK10ClaimErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6DIDSDK10ClaimErrorO24claimGenerationExceptionyACSScACmF",
+            "mangledName": "$s6DIDSDK10ClaimErrorO24claimGenerationExceptionyACSScACmF",
             "moduleName": "DIDSDK"
           },
           {
@@ -23415,7 +25539,8 @@
         "mangledName": "$s6DIDSDK35VerifiablePresentationMatcherResultC",
         "moduleName": "DIDSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "hasMissingDesignatedInitializers": true
       },
@@ -23749,7 +25874,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -23777,7 +25902,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -24073,7 +26198,8 @@
         "mangledName": "$s6DIDSDK20VerifiableCredentialC",
         "moduleName": "DIDSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "hasMissingDesignatedInitializers": true
       },
@@ -24188,6 +26314,7 @@
         "mangledName": "$sSS",
         "moduleName": "Swift",
         "declAttributes": [
+          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,
@@ -24765,36 +26892,31 @@
         "usr": "s:10Foundation4DateV",
         "mangledName": "$s10Foundation4DateV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "ReferenceConvertible",
-            "printedName": "ReferenceConvertible",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ReferenceType",
-                "printedName": "ReferenceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSDate",
-                    "printedName": "Foundation.NSDate",
-                    "usr": "c:objc(cs)NSDate"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation20ReferenceConvertibleP",
-            "mangledName": "$s10Foundation20ReferenceConvertibleP"
-          },
           {
             "kind": "Conformance",
             "name": "Comparable",
             "printedName": "Comparable",
             "usr": "s:SL",
             "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -24809,35 +26931,6 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Strideable",
-            "printedName": "Strideable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Stride",
-                "printedName": "Stride",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:Sx",
-            "mangledName": "$sSx"
           },
           {
             "kind": "Conformance",
@@ -24859,6 +26952,42 @@
             "printedName": "CustomReflectable",
             "usr": "s:s17CustomReflectableP",
             "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDate",
+                    "printedName": "Foundation.NSDate",
+                    "usr": "c:objc(cs)NSDate"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -24891,17 +27020,25 @@
           },
           {
             "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
+            "name": "Strideable",
+            "printedName": "Strideable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Stride",
+                "printedName": "Stride",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sx",
+            "mangledName": "$sSx"
           }
         ]
       },
@@ -24943,6 +27080,16 @@
             "isFromExtension": true,
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Constant",
+            "printedName": "Constant",
+            "declKind": "Enum",
+            "usr": "s:9JoseTools13JsonWebKeySetV6DIDSDKE8ConstantO",
+            "mangledName": "$s9JoseTools13JsonWebKeySetV6DIDSDKE8ConstantO",
+            "moduleName": "DIDSDK",
+            "isFromExtension": true
           },
           {
             "kind": "Constructor",
@@ -25630,8 +27777,15 @@
   "ConstValues": [
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/clients\/IdRoutingClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 375,
+      "length": 8,
+      "value": "10485760"
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/clients\/IdRoutingClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 700,
+      "offset": 867,
       "length": 5,
       "value": "false"
     },
@@ -25645,7 +27799,7 @@
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/VerifiableCredentialID\/DidSupport.swift",
       "kind": "Dictionary",
-      "offset": 3355,
+      "offset": 3360,
       "length": 3,
       "value": "[]"
     },
@@ -25757,44 +27911,93 @@
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/clients\/DistributedIdClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 974,
+      "offset": 937,
       "length": 1,
       "value": "1"
     },
     {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/IssuerMetadata\/Logo.swift",
+      "kind": "StringLiteral",
+      "offset": 370,
+      "length": 10,
+      "value": "\"alt_text\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/IssuerMetadata\/Logo.swift",
+      "kind": "StringLiteral",
+      "offset": 370,
+      "length": 10,
+      "value": "\"alt_text\""
+    },
+    {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/ClaimConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 162,
+      "offset": 163,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/ClaimConstants.swift",
       "kind": "StringLiteral",
-      "offset": 196,
+      "offset": 197,
       "length": 8,
       "value": "\"issuer\""
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/ClaimConstants.swift",
       "kind": "StringLiteral",
-      "offset": 237,
+      "offset": 238,
       "length": 8,
       "value": "\"holder\""
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/ClaimConstants.swift",
       "kind": "StringLiteral",
-      "offset": 279,
+      "offset": 280,
       "length": 9,
       "value": "\"subject\""
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/ClaimConstants.swift",
       "kind": "StringLiteral",
-      "offset": 322,
+      "offset": 323,
       "length": 9,
       "value": "\"version\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/ClaimConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 398,
+      "length": 8,
+      "value": "\"jwt_vc\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/ClaimConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 517,
+      "length": 11,
+      "value": "\"CardImage\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/ClaimConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 637,
+      "length": 6,
+      "value": "\"ping\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/ClaimConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 748,
+      "length": 26,
+      "value": "\"credentialIssuerMetadata\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/extensions\/JsonWebKeySet+Storage.swift",
+      "kind": "StringLiteral",
+      "offset": 265,
+      "length": 8,
+      "value": "\"keyId:\""
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/serviceapi\/message\/Message.swift",
@@ -25825,16 +28028,30 @@
       "value": "\"jwt_vc\""
     },
     {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/claims\/ClaimBuilder.swift",
+      "kind": "Array",
+      "offset": 516,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/claims\/ClaimBuilder.swift",
+      "kind": "Array",
+      "offset": 567,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/Claim.swift",
       "kind": "Dictionary",
-      "offset": 298,
+      "offset": 485,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/Claim.swift",
       "kind": "StringLiteral",
-      "offset": 168,
+      "offset": 358,
       "length": 5,
       "value": "\"DIDSDK.Claim\""
     },
@@ -25883,21 +28100,21 @@
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/ClaimReference.swift",
       "kind": "IntegerLiteral",
-      "offset": 243,
+      "offset": 482,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/ClaimReference.swift",
       "kind": "IntegerLiteral",
-      "offset": 297,
+      "offset": 536,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/ClaimReference.swift",
       "kind": "StringLiteral",
-      "offset": 141,
+      "offset": 380,
       "length": 14,
       "value": "\"DIDSDK.ClaimReference\""
     },
@@ -26072,7 +28289,7 @@
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/Share.swift",
       "kind": "StringLiteral",
-      "offset": 133,
+      "offset": 319,
       "length": 5,
       "value": "\"DIDSDK.Share\""
     },
@@ -26135,7 +28352,7 @@
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/Challenge.swift",
       "kind": "StringLiteral",
-      "offset": 138,
+      "offset": 620,
       "length": 9,
       "value": "\"DIDSDK.Challenge\""
     },
@@ -26287,6 +28504,27 @@
       "value": "\"secure_message\""
     },
     {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/IssuerMetadata\/CredentialIssuerMetadata.swift",
+      "kind": "Dictionary",
+      "offset": 666,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/IssuerMetadata\/CredentialIssuerMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 748,
+      "length": 19,
+      "value": "\"credential_issuer\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/IssuerMetadata\/CredentialIssuerMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 748,
+      "length": 19,
+      "value": "\"credential_issuer\""
+    },
+    {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/serviceapi\/message\/ShareMessage.swift",
       "kind": "Array",
       "offset": 212,
@@ -26387,49 +28625,28 @@
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/ApplicationInstance.swift",
       "kind": "StringLiteral",
-      "offset": 521,
+      "offset": 1083,
       "length": 5,
       "value": "\"IOS\""
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/ApplicationInstance.swift",
       "kind": "StringLiteral",
-      "offset": 165,
+      "offset": 727,
       "length": 19,
       "value": "\"DIDSDK.ApplicationInstance\""
     },
     {
-      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/serviceapi\/BaseServiceApi.swift",
-      "kind": "StringLiteral",
-      "offset": 1060,
-      "length": 29,
-      "value": "\"https:\/\/api.pingone.com\/v1\/\""
-    },
-    {
-      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/serviceapi\/BaseServiceApi.swift",
-      "kind": "StringLiteral",
-      "offset": 1133,
-      "length": 21,
-      "value": "\"id_routing_base_url\""
-    },
-    {
-      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/serviceapi\/BaseServiceApi.swift",
-      "kind": "StringLiteral",
-      "offset": 1203,
-      "length": 26,
-      "value": "\"id_registration_base_url\""
-    },
-    {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/serviceapi\/IdRegistrationServiceApi.swift",
       "kind": "StringLiteral",
-      "offset": 586,
+      "offset": 363,
       "length": 23,
       "value": "\"\/distributedid\/claims\""
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/serviceapi\/IdRegistrationServiceApi.swift",
       "kind": "StringLiteral",
-      "offset": 651,
+      "offset": 428,
       "length": 30,
       "value": "\"\/distributedid\/claims\/%@::%@\""
     },
@@ -26651,6 +28868,20 @@
       "value": "\"fragment\""
     },
     {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/clients\/Utils\/OpenIDVerifiableCredentialsClientConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1417,
+      "length": 11,
+      "value": "\"CardImage\""
+    },
+    {
+      "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/clients\/Utils\/OpenIDVerifiableCredentialsClientConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1537,
+      "length": 6,
+      "value": "\"ping\""
+    },
+    {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/serviceapi\/message\/ClaimMessage.swift",
       "kind": "StringLiteral",
       "offset": 142,
@@ -26660,21 +28891,21 @@
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/VerifiableCredentialID\/VerifiableCredentialGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 229,
+      "offset": 245,
       "length": 40,
       "value": "\"https:\/\/www.w3.org\/2018\/credentials\/v1\""
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/VerifiableCredentialID\/VerifiableCredentialGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 300,
+      "offset": 316,
       "length": 22,
       "value": "\"VerifiableCredential\""
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/VerifiableCredentialID\/VerifiableCredentialGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 346,
+      "offset": 362,
       "length": 4,
       "value": "\"vc\""
     },
@@ -26709,14 +28940,14 @@
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/Credential.swift",
       "kind": "StringLiteral",
-      "offset": 2561,
+      "offset": 2780,
       "length": 10,
       "value": "\"@context\""
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/types\/Credential.swift",
       "kind": "StringLiteral",
-      "offset": 2561,
+      "offset": 2780,
       "length": 10,
       "value": "\"@context\""
     },
@@ -26793,56 +29024,56 @@
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/serviceapi\/IdRoutingServiceApi.swift",
       "kind": "StringLiteral",
-      "offset": 595,
+      "offset": 377,
       "length": 36,
       "value": "\"distributedid\/applicationInstances\""
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/serviceapi\/IdRoutingServiceApi.swift",
       "kind": "StringLiteral",
-      "offset": 688,
+      "offset": 470,
       "length": 39,
       "value": "\"distributedid\/applicationInstances\/%@\""
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/serviceapi\/IdRoutingServiceApi.swift",
       "kind": "StringLiteral",
-      "offset": 766,
+      "offset": 548,
       "length": 44,
       "value": "\"distributedid\/applicationInstances\/%@\/jwks\""
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/serviceapi\/IdRoutingServiceApi.swift",
       "kind": "StringLiteral",
-      "offset": 846,
+      "offset": 628,
       "length": 21,
       "value": "\"distributedid\/mails\""
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/serviceapi\/IdRoutingServiceApi.swift",
       "kind": "StringLiteral",
-      "offset": 908,
+      "offset": 690,
       "length": 24,
       "value": "\"distributedid\/mails\/%@\""
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/serviceapi\/IdRoutingServiceApi.swift",
       "kind": "StringLiteral",
-      "offset": 971,
+      "offset": 753,
       "length": 24,
       "value": "\"distributedid\/requests\""
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/serviceapi\/IdRoutingServiceApi.swift",
       "kind": "StringLiteral",
-      "offset": 1039,
+      "offset": 821,
       "length": 27,
       "value": "\"distributedid\/requests\/%@\""
     },
     {
       "filePath": "\/Users\/bhavyachauhan\/Documents\/Ping_iOS\/pingone-wallet-ios\/PingOneWallet\/DIDSDK\/serviceapi\/IdRoutingServiceApi.swift",
       "kind": "StringLiteral",
-      "offset": 2312,
+      "offset": 2142,
       "length": 4,
       "value": "\"%@\""
     }

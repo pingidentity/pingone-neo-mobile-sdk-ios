@@ -1,12 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CommunicationManager
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CommunicationManager
 @_exported import CommunicationManager
 import Foundation
 import Swift
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public protocol CoderProtocol {
   var contentType: Swift.String { get }
   func encodeRequestBody(requestBody: CommunicationManager.RequestBody) throws -> Foundation.Data
@@ -33,9 +33,9 @@ extension Swift.Mirror {
 }
 public enum RequestError : Swift.Error {
   case cannotCreateURL(_: Swift.String)
-  case failedToParseJson(_: Swift.Error? = nil, description: Swift.String)
-  case cannotSerializeRequestBody(_: Swift.Error? = nil, description: Swift.String)
-  case cannotParseResponse(_: Swift.Error? = nil, description: Swift.String)
+  case failedToParseJson(_: (any Swift.Error)? = nil, description: Swift.String)
+  case cannotSerializeRequestBody(_: (any Swift.Error)? = nil, description: Swift.String)
+  case cannotParseResponse(_: (any Swift.Error)? = nil, description: Swift.String)
   case requestFailedWithError(_: Swift.String, _: Swift.Int?)
   case requestTimedOut
 }
@@ -98,17 +98,17 @@ public class Request {
   @discardableResult
   public func setHeaderField(_ headerField: Swift.String, headerValue: Swift.String) -> CommunicationManager.Request
   @discardableResult
-  public func setBodyParam(_ bodyField: Swift.String, bodyValue: Swift.Codable) -> CommunicationManager.Request
+  public func setBodyParam(_ bodyField: Swift.String, bodyValue: any Swift.Decodable & Swift.Encodable) -> CommunicationManager.Request
   @discardableResult
-  public func get(coder: CommunicationManager.CoderProtocol, completionHandler: @escaping (_ response: Any?, _ error: CommunicationManager.RequestError?) -> Swift.Void) -> CommunicationManager.Request
+  public func get(coder: any CommunicationManager.CoderProtocol, completionHandler: @escaping (_ response: Any?, _ error: CommunicationManager.RequestError?) -> Swift.Void) -> CommunicationManager.Request
   @discardableResult
-  public func post(coder: CommunicationManager.CoderProtocol, completionHandler: @escaping (_ response: Any?, _ error: CommunicationManager.RequestError?) -> Swift.Void) -> CommunicationManager.Request
+  public func post(coder: any CommunicationManager.CoderProtocol, completionHandler: @escaping (_ response: Any?, _ error: CommunicationManager.RequestError?) -> Swift.Void) -> CommunicationManager.Request
   @discardableResult
-  public func put(coder: CommunicationManager.CoderProtocol, completionHandler: @escaping (_ response: Any?, _ error: CommunicationManager.RequestError?) -> Swift.Void) -> CommunicationManager.Request
+  public func put(coder: any CommunicationManager.CoderProtocol, completionHandler: @escaping (_ response: Any?, _ error: CommunicationManager.RequestError?) -> Swift.Void) -> CommunicationManager.Request
   @discardableResult
-  public func delete(coder: CommunicationManager.CoderProtocol, completionHandler: @escaping (_ response: Any?, _ error: CommunicationManager.RequestError?) -> Swift.Void) -> CommunicationManager.Request
+  public func delete(coder: any CommunicationManager.CoderProtocol, completionHandler: @escaping (_ response: Any?, _ error: CommunicationManager.RequestError?) -> Swift.Void) -> CommunicationManager.Request
   @discardableResult
-  public func response(coder: CommunicationManager.CoderProtocol, httpMethod: CommunicationManager.HttpMethod, completionHandler: @escaping (_ response: Any?, _ error: CommunicationManager.RequestError?) -> Swift.Void) -> CommunicationManager.Request
+  public func response(coder: any CommunicationManager.CoderProtocol, httpMethod: CommunicationManager.HttpMethod, completionHandler: @escaping (_ response: Any?, _ error: CommunicationManager.RequestError?) -> Swift.Void) -> CommunicationManager.Request
   @objc deinit
 }
 extension Foundation.Data {
@@ -151,7 +151,7 @@ public class RequestBody {
     set(newValue)
   }
   @discardableResult
-  public func setBodyParam(_ bodyField: Swift.String, bodyValue: Swift.Codable) -> CommunicationManager.RequestBody
+  public func setBodyParam(_ bodyField: Swift.String, bodyValue: any Swift.Decodable & Swift.Encodable) -> CommunicationManager.RequestBody
   public func getParams() -> [Swift.String : Any]
   public var isEmpty: Swift.Bool {
     get

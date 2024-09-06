@@ -1,7 +1,7 @@
 framework module PingOneWallet {
   umbrella header "PingOneWallet.h"
-
   export *
+
   module * { export * }
 }
 

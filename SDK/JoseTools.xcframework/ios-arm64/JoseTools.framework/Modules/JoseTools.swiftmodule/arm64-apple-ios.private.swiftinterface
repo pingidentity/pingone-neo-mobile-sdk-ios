@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name JoseTools
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name JoseTools
 import CommunicationManager
 import CryptoTools
 import Foundation
@@ -10,20 +9,21 @@ import JOSESwift
 import Swift
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public struct JsonWebKey {
-  public let jwk: JOSESwift.JWK?
-  public let key: CryptoTools.Key
+  public let jwk: (any JOSESwift.JWK)?
+  public let key: any CryptoTools.Key
   public let use: JoseTools.JWKUse
   public let keyId: Swift.String
-  public let pairingKey: CryptoTools.Key?
-  public init(key: CryptoTools.Key, jwkUse: JoseTools.JWKUse, keyId: Swift.String, pairingKey: CryptoTools.Key? = nil) throws
+  public let pairingKey: (any CryptoTools.Key)?
+  public init(key: any CryptoTools.Key, jwkUse: JoseTools.JWKUse, keyId: Swift.String, pairingKey: (any CryptoTools.Key)? = nil) throws
   public init(secKey: Security.SecKey, keyClass: CryptoTools.KeyClass, keyType: CryptoTools.KeyType, jwkUse: JoseTools.JWKUse, keyId: Swift.String) throws
   public init(jwkData: Foundation.Data, keyType: CryptoTools.KeyType) throws
-  public init(jwk: JOSESwift.JWK) throws
+  public init(jwk: any JOSESwift.JWK) throws
   public func encode() -> Foundation.Data?
   public func encode() throws -> [Swift.String : Swift.String]
   public func encode() -> Swift.String?
-  public static func getPubSecKey(from jwk: JOSESwift.JWK) throws -> Security.SecKey
+  public static func getPubSecKey(from jwk: any JOSESwift.JWK) throws -> Security.SecKey
   public func getKeyId() -> Swift.String
 }
 public struct JOSEHelper {
@@ -177,13 +177,13 @@ public enum JOSEError : Swift.Error {
   case algorithmNotSupported(_: Swift.String)
   case invalidKeyFormat(_: Swift.String)
   case missingKey(_: Swift.String)
-  case JWSSignerError(_: Swift.Error)
-  case JWSVerificationError(_: Swift.Error)
-  case JWEEncrypterError(_: Swift.Error)
-  case JWEDecrypterError(_: Swift.Error)
-  case cannotEncodeJWK(_: Swift.Error?, description: Swift.String? = nil)
-  case cannotDecodeJWK(_: Swift.Error?, description: Swift.String? = nil)
-  case cannotDecodeResponse(_: Swift.Error)
+  case JWSSignerError(_: any Swift.Error)
+  case JWSVerificationError(_: any Swift.Error)
+  case JWEEncrypterError(_: any Swift.Error)
+  case JWEDecrypterError(_: any Swift.Error)
+  case cannotEncodeJWK(_: (any Swift.Error)?, description: Swift.String? = nil)
+  case cannotDecodeJWK(_: (any Swift.Error)?, description: Swift.String? = nil)
+  case cannotDecodeResponse(_: any Swift.Error)
   case claimNotFoundInJWT(_: Swift.String)
   case malformedClaim(_: Swift.String)
   case invalidJOSEComponent(_: Swift.String)

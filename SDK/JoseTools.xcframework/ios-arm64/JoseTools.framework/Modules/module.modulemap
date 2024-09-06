@@ -1,7 +1,7 @@
 framework module JoseTools {
   umbrella header "JoseTools.h"
-
   export *
+
   module * { export * }
 }
 

@@ -13,7 +13,7 @@ import SVGKit
 extension UIImage {
     
     static func fromClaim(_ claim: Claim, size: CGSize?) -> UIImage? {
-        if let cardImageStr = claim.getData()[ClaimKeys.cardImage] {
+        if let cardImageStr = CredentialUtils.getCardImageFromClaim(claim) ?? claim.getData()[ClaimKeys.cardImage] {
            return fromSvg(cardImageStr, size: size)
         }
         logerror("Failed to parse svg image")

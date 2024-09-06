@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CryptoTools
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CryptoTools
 import CommonCrypto
 import CommunicationManager
 @_exported import CryptoTools
@@ -10,6 +9,7 @@ import LocalAuthentication
 import Swift
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 import libsecp256k1
 extension Security.SecKey {
   public class func initFromData(keyData: Foundation.Data, keyTag: Swift.String, keyClass: CryptoTools.KeyClass, keyType: CryptoTools.KeyType) throws -> Security.SecKey
@@ -138,7 +138,7 @@ extension CryptoTools.CryptoError : Swift.Equatable {
   public class Builder {
     public func setBackup(value: Swift.Bool) -> CryptoTools.EncryptedFile.Builder
     public func setContent(value: Swift.String) -> CryptoTools.EncryptedFile.Builder
-    public func setCrypter(value: CryptoTools.SymmetricCrypter) -> CryptoTools.EncryptedFile.Builder
+    public func setCrypter(value: any CryptoTools.SymmetricCrypter) -> CryptoTools.EncryptedFile.Builder
     public func setUrl(value: Foundation.URL) -> CryptoTools.EncryptedFile.Builder
     public func build() throws -> CryptoTools.EncryptedFile
     public init()
@@ -173,7 +173,7 @@ public class Secp256k1Utils {
   public static let SECP256K1CURVE: Swift.String
   public init()
   public static func generateSecp256K1KeyPair() throws -> (CryptoTools.PrivateKey, CryptoTools.PublicKey)
-  public static func isSecp256k1Key(key: CryptoTools.Key) -> Swift.Bool
+  public static func isSecp256k1Key(key: any CryptoTools.Key) -> Swift.Bool
   public static func getComponents(from publicKey: CryptoTools.PublicKey) -> (Foundation.Data, Foundation.Data)
   public static func encodeToJwk(publicKey: CryptoTools.PublicKey, privateKey: CryptoTools.PrivateKey?, keyId: Swift.String) -> Foundation.Data?
   @objc deinit
@@ -222,7 +222,7 @@ extension Security.SecKey {
 }
 @_hasMissingDesignatedInitializers public class EncryptedDefaults {
   public static var standard: CryptoTools.EncryptedDefaults!
-  public class func initialize(usingPassword appPassword: Foundation.Data? = nil, uniqueId: Swift.String? = nil, encryptedKey: Foundation.Data? = nil, onComplete: @escaping ((_ result: Swift.Result<CryptoTools.EncryptedKeyStruct, Swift.Error>) -> Swift.Void))
+  public class func initialize(usingPassword appPassword: Foundation.Data? = nil, uniqueId: Swift.String? = nil, encryptedKey: Foundation.Data? = nil, onComplete: @escaping ((_ result: Swift.Result<CryptoTools.EncryptedKeyStruct, any Swift.Error>) -> Swift.Void))
   @discardableResult
   public func set(_ object: Swift.AnyObject, forKey key: Swift.String) -> Swift.Bool
   @discardableResult
@@ -260,7 +260,7 @@ public class EncryptedDefaultsConfigurator {
   public func useSecureEnclave(_ bool: Swift.Bool) -> CryptoTools.EncryptedDefaultsConfigurator
   @discardableResult
   public func setAppPasscode(_ appPassword: Foundation.Data) -> CryptoTools.EncryptedDefaultsConfigurator
-  public func initialize(onComplete: @escaping (Swift.Result<CryptoTools.EncryptedKeyStruct, Swift.Error>) -> Swift.Void)
+  public func initialize(onComplete: @escaping (Swift.Result<CryptoTools.EncryptedKeyStruct, any Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 extension Security.SecKey {
