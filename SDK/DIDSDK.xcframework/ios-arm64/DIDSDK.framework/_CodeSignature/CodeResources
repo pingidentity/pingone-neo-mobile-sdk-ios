@@ -4,9 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/AnyCoder.framework/AnyCoder</key>
+		<data>
+		v97Dr70u4cBpkrWlcsSryKsKm+E=
+		</data>
+		<key>Frameworks/AnyCoder.framework/Info.plist</key>
+		<data>
+		FOqupdUlQl3AUQwZgtE/gecf/FE=
+		</data>
+		<key>Frameworks/AnyCoder.framework/_CodeSignature/CodeResources</key>
+		<data>
+		UqUy6jZskleo2fkNOKlIHy2PyEc=
+		</data>
 		<key>Headers/DIDSDK-Swift.h</key>
 		<data>
-		sYZzuKY7Boq/F4cUOhSZkn/xQuo=
+		Xyro82vNSNbSBfuhCs0x8jO1750=
 		</data>
 		<key>Headers/DIDSDK.h</key>
 		<data>
@@ -14,40 +26,61 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eVQCQtroHQohBzY6Eef1RDgOImg=
+		n7tTCjBJ/X5hqELCVufzELYM7Ow=
 		</data>
 		<key>Modules/DIDSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		cWuZl4XV6hGdz0I/T5WW5rb1OAc=
+		HQXUJk/AnXwd5hSKbH3YXRdr3Hs=
 		</data>
 		<key>Modules/DIDSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		mjecSKB4t8HLULpzCTMWNe3OT9E=
+		KfB2i6IK3k0twdCoRN+0QDM6PEM=
 		</data>
 		<key>Modules/DIDSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		pfLwxr6IzZDvPtDuTZmpuMnDWjA=
+		WqvuNYs3eAb7JDWZCDhE9fAs0DQ=
 		</data>
 		<key>Modules/DIDSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		mjecSKB4t8HLULpzCTMWNe3OT9E=
+		KfB2i6IK3k0twdCoRN+0QDM6PEM=
 		</data>
 		<key>Modules/DIDSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		eG0zOSA2iEr2AedAsXT//ecCCyA=
+		koxHZoQ7zgn0RXTPNeqgN67pJTw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		BxcmjkQBp6cBt0bLtAykpRccYL0=
+		a4IRCVuzUCWTFO9i1Dbeg0hCsXw=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/AnyCoder.framework/AnyCoder</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			r6hJLJLTMHrDrfjMDGMWSbx7nBtY6JkCwlJnbfMFsdo=
+			</data>
+		</dict>
+		<key>Frameworks/AnyCoder.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uvwEhkhL+B3imu7JflmbpK9JiYoNszHTXq7Klnj/vlQ=
+			</data>
+		</dict>
+		<key>Frameworks/AnyCoder.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l2HbH+0s1w8donrdHBFxf5VwOpKHtwbCOdd1KAAG8Wo=
+			</data>
+		</dict>
 		<key>Headers/DIDSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZJ6TukDQUdiBH+4d/5Q6DqBcCROi5NYTyazFwZOsN0Y=
+			7qxHPxmvgLg8ebRihJhYLiHfVS57WS8hK/Hhc4eRWqw=
 			</data>
 		</dict>
 		<key>Headers/DIDSDK.h</key>
@@ -61,42 +94,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5Xw11jkTK4BOdLeqCiJXDrzNlzh9Otw5oZZb0snYUso=
+			lw3dFuuHhrfwiWaMKzzSzqwAJ0IzCFIc2BKdFwdgzqY=
 			</data>
 		</dict>
 		<key>Modules/DIDSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g/TsZxursVPg+uDh0LSzbYKp7KBrEqqMcEUsmtJWOAM=
+			Me62G1n8rY5QA5K1zW0E3Ij0cmMhWr4wMYuMS+fD+no=
 			</data>
 		</dict>
 		<key>Modules/DIDSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			higk0n5hv3VgtXARKA1/DE5HmCWD3F54ZzbXPAMWxWo=
+			+X55IYs9Auwm4v8ImherO7xlX0FaLzbDUNtZyL3kBE0=
 			</data>
 		</dict>
 		<key>Modules/DIDSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g/TsZxursVPg+uDh0LSzbYKp7KBrEqqMcEUsmtJWOAM=
+			Me62G1n8rY5QA5K1zW0E3Ij0cmMhWr4wMYuMS+fD+no=
 			</data>
 		</dict>
 		<key>Modules/DIDSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tCLoIpov3lIwDxluSZrfvburNcCB49KIihQUEXlMVW0=
+			kzpOdOP4QXt+G267Hny+HGHBRqaW96Hefoh9pVyzTSY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I5rjHMtRQpSKIkhNlCH+tJ8SFpwgbAY8dOY9DZ2Tuns=
+			ySx90jGTJeBWg9COm8Ct2oW4k+6xTkhwdrD7L7MbRM4=
 			</data>
 		</dict>
 	</dict>

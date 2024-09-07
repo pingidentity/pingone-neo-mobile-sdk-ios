@@ -5,17 +5,10 @@
 //
 
 import Foundation
-import DIDSDK
 
 public protocol PickerListener {
     
-    func onPickerComplete()
+    func onItemPicked(index: Int)
     func onPickerCanceled()
-    
-}
-
-public protocol ClaimPickerListener: PickerListener {
-    
-    func onClaimPicked(_ claim: Claim, keys: [String])
     
 }

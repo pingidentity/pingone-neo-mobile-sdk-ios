@@ -1,7 +1,7 @@
 framework module CommunicationManager {
   umbrella header "CommunicationManager.h"
-
   export *
+
   module * { export * }
 }
 

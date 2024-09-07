@@ -1124,7 +1124,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CompactSerializer",
-                "printedName": "JOSESwift.CompactSerializer",
+                "printedName": "any JOSESwift.CompactSerializer",
                 "paramValueOwnership": "InOut",
                 "usr": "s:9JOSESwift17CompactSerializerP"
               }
@@ -1197,7 +1197,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CompactDeserializer",
-                "printedName": "JOSESwift.CompactDeserializer",
+                "printedName": "any JOSESwift.CompactDeserializer",
                 "usr": "s:9JOSESwift19CompactDeserializerP"
               }
             ],
@@ -1791,7 +1791,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CompactSerializer",
-                "printedName": "JOSESwift.CompactSerializer",
+                "printedName": "any JOSESwift.CompactSerializer",
                 "paramValueOwnership": "InOut",
                 "usr": "s:9JOSESwift17CompactSerializerP"
               }
@@ -1864,7 +1864,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CompactDeserializer",
-                "printedName": "JOSESwift.CompactDeserializer",
+                "printedName": "any JOSESwift.CompactDeserializer",
                 "usr": "s:9JOSESwift19CompactDeserializerP"
               }
             ],
@@ -1977,7 +1977,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CompactDeserializer",
-                "printedName": "JOSESwift.CompactDeserializer",
+                "printedName": "any JOSESwift.CompactDeserializer",
                 "usr": "s:9JOSESwift19CompactDeserializerP"
               }
             ],
@@ -4997,7 +4997,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ExpressibleAsECPublicKeyComponents",
-                "printedName": "JOSESwift.ExpressibleAsECPublicKeyComponents",
+                "printedName": "any JOSESwift.ExpressibleAsECPublicKeyComponents",
                 "usr": "s:9JOSESwift34ExpressibleAsECPublicKeyComponentsP"
               },
               {
@@ -5141,7 +5141,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -5170,7 +5170,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -5672,7 +5672,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ExpressibleAsECPrivateKeyComponents",
-                "printedName": "JOSESwift.ExpressibleAsECPrivateKeyComponents",
+                "printedName": "any JOSESwift.ExpressibleAsECPrivateKeyComponents",
                 "usr": "s:9JOSESwift35ExpressibleAsECPrivateKeyComponentsP"
               },
               {
@@ -5816,7 +5816,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -5845,7 +5845,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -6265,12 +6265,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "JOSESwift.JWK?",
+                "printedName": "(any JOSESwift.JWK)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "JWK",
-                    "printedName": "JOSESwift.JWK",
+                    "printedName": "any JOSESwift.JWK",
                     "usr": "s:9JOSESwift3JWKP"
                   }
                 ],
@@ -6295,12 +6295,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "JOSESwift.JWK?",
+                    "printedName": "(any JOSESwift.JWK)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "JWK",
-                        "printedName": "JOSESwift.JWK",
+                        "printedName": "any JOSESwift.JWK",
                         "usr": "s:9JOSESwift3JWKP"
                       }
                     ],
@@ -6327,12 +6327,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "JOSESwift.JWK?",
+                    "printedName": "(any JOSESwift.JWK)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "JWK",
-                        "printedName": "JOSESwift.JWK",
+                        "printedName": "any JOSESwift.JWK",
                         "usr": "s:9JOSESwift3JWKP"
                       }
                     ],
@@ -8191,17 +8191,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
             "name": "Encodable",
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
           }
         ]
       },
@@ -10544,7 +10544,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ExpressibleAsRSAPublicKeyComponents",
-                "printedName": "JOSESwift.ExpressibleAsRSAPublicKeyComponents",
+                "printedName": "any JOSESwift.ExpressibleAsRSAPublicKeyComponents",
                 "usr": "s:9JOSESwift35ExpressibleAsRSAPublicKeyComponentsP"
               },
               {
@@ -10689,7 +10689,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -10718,7 +10718,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -11168,7 +11168,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ExpressibleAsRSAPrivateKeyComponents",
-                "printedName": "JOSESwift.ExpressibleAsRSAPrivateKeyComponents",
+                "printedName": "any JOSESwift.ExpressibleAsRSAPrivateKeyComponents",
                 "usr": "s:9JOSESwift36ExpressibleAsRSAPrivateKeyComponentsP"
               },
               {
@@ -11313,7 +11313,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -11342,7 +11342,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -12130,12 +12130,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "JOSESwift.JWK?",
+                "printedName": "(any JOSESwift.JWK)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "JWK",
-                    "printedName": "JOSESwift.JWK",
+                    "printedName": "any JOSESwift.JWK",
                     "usr": "s:9JOSESwift3JWKP"
                   }
                 ],
@@ -12160,12 +12160,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "JOSESwift.JWK?",
+                    "printedName": "(any JOSESwift.JWK)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "JWK",
-                        "printedName": "JOSESwift.JWK",
+                        "printedName": "any JOSESwift.JWK",
                         "usr": "s:9JOSESwift3JWKP"
                       }
                     ],
@@ -12192,12 +12192,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "JOSESwift.JWK?",
+                    "printedName": "(any JOSESwift.JWK)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "JWK",
-                        "printedName": "JOSESwift.JWK",
+                        "printedName": "any JOSESwift.JWK",
                         "usr": "s:9JOSESwift3JWKP"
                       }
                     ],
@@ -15330,7 +15330,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CompactSerializer",
-                "printedName": "JOSESwift.CompactSerializer",
+                "printedName": "any JOSESwift.CompactSerializer",
                 "paramValueOwnership": "InOut",
                 "usr": "s:9JOSESwift17CompactSerializerP"
               }
@@ -15367,12 +15367,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[JOSESwift.DataConvertible]",
+                "printedName": "[any JOSESwift.DataConvertible]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "DataConvertible",
-                    "printedName": "JOSESwift.DataConvertible",
+                    "printedName": "any JOSESwift.DataConvertible",
                     "usr": "s:9JOSESwift15DataConvertibleP"
                   }
                 ],
@@ -15393,12 +15393,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[JOSESwift.DataConvertible]",
+                    "printedName": "[any JOSESwift.DataConvertible]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "DataConvertible",
-                        "printedName": "JOSESwift.DataConvertible",
+                        "printedName": "any JOSESwift.DataConvertible",
                         "usr": "s:9JOSESwift15DataConvertibleP"
                       }
                     ],
@@ -15880,7 +15880,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ExpressibleAsSymmetricKeyComponents",
-                "printedName": "JOSESwift.ExpressibleAsSymmetricKeyComponents",
+                "printedName": "any JOSESwift.ExpressibleAsSymmetricKeyComponents",
                 "usr": "s:9JOSESwift35ExpressibleAsSymmetricKeyComponentsP"
               },
               {
@@ -16025,7 +16025,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -16054,7 +16054,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -16588,12 +16588,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "JOSESwift.JWK?",
+                "printedName": "(any JOSESwift.JWK)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "JWK",
-                    "printedName": "JOSESwift.JWK",
+                    "printedName": "any JOSESwift.JWK",
                     "usr": "s:9JOSESwift3JWKP"
                   }
                 ],
@@ -16614,12 +16614,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "JOSESwift.JWK?",
+                    "printedName": "(any JOSESwift.JWK)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "JWK",
-                        "printedName": "JOSESwift.JWK",
+                        "printedName": "any JOSESwift.JWK",
                         "usr": "s:9JOSESwift3JWKP"
                       }
                     ],
@@ -16649,12 +16649,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "JOSESwift.JWK?",
+                    "printedName": "(any JOSESwift.JWK)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "JWK",
-                        "printedName": "JOSESwift.JWK",
+                        "printedName": "any JOSESwift.JWK",
                         "usr": "s:9JOSESwift3JWKP"
                       }
                     ],
@@ -18040,12 +18040,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[JOSESwift.JWK]",
+                "printedName": "[any JOSESwift.JWK]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "JWK",
-                    "printedName": "JOSESwift.JWK",
+                    "printedName": "any JOSESwift.JWK",
                     "usr": "s:9JOSESwift3JWKP"
                   }
                 ],
@@ -18072,12 +18072,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[JOSESwift.JWK]",
+                    "printedName": "[any JOSESwift.JWK]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "JWK",
-                        "printedName": "JOSESwift.JWK",
+                        "printedName": "any JOSESwift.JWK",
                         "usr": "s:9JOSESwift3JWKP"
                       }
                     ],
@@ -18107,12 +18107,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[JOSESwift.JWK]",
+                "printedName": "[any JOSESwift.JWK]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "JWK",
-                    "printedName": "JOSESwift.JWK",
+                    "printedName": "any JOSESwift.JWK",
                     "usr": "s:9JOSESwift3JWKP"
                   }
                 ],
@@ -18231,7 +18231,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -18260,7 +18260,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -18367,7 +18367,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "JWK",
-                "printedName": "JOSESwift.JWK",
+                "printedName": "any JOSESwift.JWK",
                 "usr": "s:9JOSESwift3JWKP"
               },
               {
@@ -18394,7 +18394,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "JWK",
-                    "printedName": "JOSESwift.JWK",
+                    "printedName": "any JOSESwift.JWK",
                     "usr": "s:9JOSESwift3JWKP"
                   },
                   {
@@ -18449,17 +18449,17 @@
               {
                 "kind": "TypeNominal",
                 "name": "IndexingIterator",
-                "printedName": "Swift.IndexingIterator<[JOSESwift.JWK]>",
+                "printedName": "Swift.IndexingIterator<[any JOSESwift.JWK]>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[JOSESwift.JWK]",
+                    "printedName": "[any JOSESwift.JWK]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "JWK",
-                        "printedName": "JOSESwift.JWK",
+                        "printedName": "any JOSESwift.JWK",
                         "usr": "s:9JOSESwift3JWKP"
                       }
                     ],
@@ -18493,12 +18493,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[JOSESwift.JWK]",
+                "printedName": "[any JOSESwift.JWK]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "JWK",
-                    "printedName": "JOSESwift.JWK",
+                    "printedName": "any JOSESwift.JWK",
                     "usr": "s:9JOSESwift3JWKP"
                   }
                 ],
@@ -18552,7 +18552,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "JWK",
-                    "printedName": "JOSESwift.JWK",
+                    "printedName": "any JOSESwift.JWK",
                     "usr": "s:9JOSESwift3JWKP"
                   }
                 ]
@@ -18578,17 +18578,17 @@
                   {
                     "kind": "TypeNominal",
                     "name": "IndexingIterator",
-                    "printedName": "Swift.IndexingIterator<[JOSESwift.JWK]>",
+                    "printedName": "Swift.IndexingIterator<[any JOSESwift.JWK]>",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Array",
-                        "printedName": "[JOSESwift.JWK]",
+                        "printedName": "[any JOSESwift.JWK]",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "JWK",
-                            "printedName": "JOSESwift.JWK",
+                            "printedName": "any JOSESwift.JWK",
                             "usr": "s:9JOSESwift3JWKP"
                           }
                         ],
@@ -18658,7 +18658,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "JWK",
-                    "printedName": "JOSESwift.JWK",
+                    "printedName": "any JOSESwift.JWK",
                     "usr": "s:9JOSESwift3JWKP"
                   }
                 ]
@@ -18671,17 +18671,17 @@
                   {
                     "kind": "TypeNominal",
                     "name": "IndexingIterator",
-                    "printedName": "Swift.IndexingIterator<[JOSESwift.JWK]>",
+                    "printedName": "Swift.IndexingIterator<[any JOSESwift.JWK]>",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Array",
-                        "printedName": "[JOSESwift.JWK]",
+                        "printedName": "[any JOSESwift.JWK]",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "JWK",
-                            "printedName": "JOSESwift.JWK",
+                            "printedName": "any JOSESwift.JWK",
                             "usr": "s:9JOSESwift3JWKP"
                           }
                         ],
@@ -18709,7 +18709,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "JWK",
-                    "printedName": "JOSESwift.JWK",
+                    "printedName": "any JOSESwift.JWK",
                     "usr": "s:9JOSESwift3JWKP"
                   }
                 ]
@@ -19559,33 +19559,19 @@
         "usr": "s:10Foundation4DataV",
         "mangledName": "$s10Foundation4DataV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
         "declAttributes": [
-          "Frozen"
+          "Frozen",
+          "Available",
+          "Available",
+          "Available",
+          "Available"
         ],
         "isExternal": true,
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "ReferenceConvertible",
-            "printedName": "ReferenceConvertible",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ReferenceType",
-                "printedName": "ReferenceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSData",
-                    "printedName": "Foundation.NSData",
-                    "usr": "c:objc(cs)NSData"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation20ReferenceConvertibleP",
-            "mangledName": "$s10Foundation20ReferenceConvertibleP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -20013,24 +19999,25 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomReflectable",
-            "printedName": "CustomReflectable",
-            "usr": "s:s17CustomReflectableP",
-            "mangledName": "$ss17CustomReflectableP"
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSData",
+                    "printedName": "Foundation.NSData",
+                    "usr": "c:objc(cs)NSData"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -20053,6 +20040,27 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
           },
           {
             "kind": "Conformance",

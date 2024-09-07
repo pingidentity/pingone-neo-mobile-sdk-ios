@@ -11,15 +11,16 @@ import PingOneWallet
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
+    public static let STORYBOARD_NAME = "Main"
+    
     var window: UIWindow?
     
     var pnToken: Data? {
         didSet {
-            guard let token = pnToken?.hexDescription,
-                  let _ = DataRepository.shared else{
+            guard let token = pnToken else {
                 return
             }
-            PingOneWalletHelper.shared.updatePushToken(token)
+            EventObserverUtils.broadcastPushTokenRegistrationNotification(token)
         }
     }
     
@@ -31,41 +32,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var appOpenUrl: String? {
         didSet {
-            guard (DataRepository.shared != nil) else {
-                logattention("App not initialized")
-                return
-            }
-            
-            guard let _ = DataRepository.shared.getProfile() else {
-                NotificationUtils.showToast(message: "Must create profile before pairing")
-                return
-            }
-            
             guard let appOpenUrl = self.appOpenUrl else {
                 logerror("Empty AppOepn URL, nothing to handle")
                 return
             }
             
-            PingOneWalletHelper.shared.processQrContent(appOpenUrl)
+            EventObserverUtils.broadcastAppOpenUrlNotification(appOpenUrl)
         }
     }
+    
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        AppDelegate.checkNetworkStatus()
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(NetworkReachability.NETWORK_REACHABILITY_UPDATED), object: nil, queue: nil) { (notification) in
-            guard let networkStatus = notification.userInfo?[NetworkReachability.NETWORK_REACHABILITY_STATUS] as? NetworkReachability.NetworkReachabilityStatus else {
-                return
-            }
-            
-            if (networkStatus == .unavailable || networkStatus == .unknown) {
-                NotificationUtils.showToast(message: "Network not available.", isPermanent: true)
-            } else {
-                NotificationUtils.hideToast()
-            }
-        }
+        self.window = self.window ?? UIWindow()
         
+        let waitOverlay = WaitOverlayView.instantiate()
+        waitOverlay.setMessage("Initializing application...")
+        let navigationController = UINavigationController(rootViewController: waitOverlay)
+        navigationController.navigationBar.isHidden = true
+        self.window!.rootViewController = navigationController
+        self.window!.makeKeyAndVisible()
+
+        PingOneWalletHelper.initializeWallet()
+            .onError { error in
+                logerror("Error initializing SDK: \(error.localizedDescription)")
+                ApplicationUiHandler().showErrorAlert(title: "Error", message: "Error initializing Wallet, app may behave unexpectedly.", actionTitle: "Okay", actionHandler: nil)
+            }
+            .onResult { pingOneWalletHelper in
+                let coordinator = WalletCoordinator(navigationController: navigationController, pingOneWalletHelper: pingOneWalletHelper)
+                pingOneWalletHelper.setApplicationUiCallbackHandler(coordinator)
+                pingOneWalletHelper.setCredentialPicker(DefaultCredentialPicker(applicationUiCallbackHandler: coordinator))
+                coordinator.showHomeView()
+                pingOneWalletHelper.processLaunchOptions(launchOptions)
+            }
         
         
         return true
@@ -78,7 +78,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         logerror("Error: App was unable to register for remote notifications: \(error.localizedDescription)")
-        NotificationUtils.showToast(message: "Failed to register for notifications")
     }
 
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
@@ -130,7 +129,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    public class func registerForAPNS() {
+    public func registerForAPNS() {
         DispatchQueue.main.async {
             let center = UNUserNotificationCenter.current()
             center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
@@ -139,28 +138,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     return
                 }
                 
-                if (!granted) {
-                    DispatchQueue.main.async {
-                        UIApplication.shared.registerForRemoteNotifications()
-                    }
+                DispatchQueue.main.async {
+                    UIApplication.shared.registerForRemoteNotifications()
                 }
             }
             
-        }
-    }
-    
-    class func checkNetworkStatus() {
-        if let networkReachability = NetworkReachability() {
-            logattention("Starting network status notifier: \(networkReachability.startNotifier())")
-            switch networkReachability.currentNetworkStatus {
-            case .available(_):
-                logattention("Network status check successful - Available.")
-            case .unavailable,
-                 .unknown:
-                NotificationUtils.showToast(message: "Network not available.", isPermanent: true)
-            }
-        } else {
-            logerror("Failed to initialize NetworkReachability.")
         }
     }
     

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DIDSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DIDSDK
+import AnyCoder
 import CommonCrypto
 import CommunicationManager
 import CryptoTools
@@ -14,19 +14,20 @@ import Swift
 import SystemConfiguration
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public class CompletionHandler<T> {
   public init()
   public func setResult(_ value: T)
-  public func setError(_ error: Swift.Error)
+  public func setError(_ error: any Swift.Error)
   @discardableResult
   public func onResult(_ resultHandler: @escaping (T) -> Swift.Void) -> DIDSDK.CompletionHandler<T>
   @discardableResult
-  public func onError(_ errorHandler: @escaping (Swift.Error) -> Swift.Void) -> DIDSDK.CompletionHandler<T>
+  public func onError(_ errorHandler: @escaping (any Swift.Error) -> Swift.Void) -> DIDSDK.CompletionHandler<T>
   @objc deinit
 }
 extension DIDSDK.DistributedIdClient {
   public func processMessages() throws
-  public func processMessages(messageHandler: DIDSDK.MessageHandler)
+  public func processMessages(messageHandler: any DIDSDK.MessageHandler)
 }
 public enum InitializationError : Swift.Error {
   case invalidArgLength(_: Swift.String?)
@@ -53,7 +54,7 @@ extension Foundation.Date {
 public protocol LinkHandler {
   func handleOpenID4VerifiablePresentationRequest(request: DIDSDK.VerifiablePresentationRequest, openIDVerifiableCredentialsClient: DIDSDK.OpenIDVerifiableCredentialsClient)
   func handleRequest(request: DIDSDK.Request)
-  func handleError(error: Swift.Error)
+  func handleError(error: any Swift.Error)
 }
 @_hasMissingDesignatedInitializers public class IonPublicKey : CommunicationManager.JsonSerializable, Swift.Codable {
   public func getId() -> Swift.String
@@ -65,8 +66,8 @@ public protocol LinkHandler {
   public func getType() -> Swift.String
   public func setType(type: Swift.String)
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public class IonDid : DIDSDK.DID {
   public init(suffix: Swift.String, longFormDocument: DIDSDK.LongFormDocument?, encodedLongFormDocument: Swift.String?, publicKeys: JoseTools.JsonWebKeySet?, signingKey: JoseTools.JsonWebKey?)
@@ -81,16 +82,17 @@ public class IonDid : DIDSDK.DID {
   @objc deinit
 }
 public class DidSupport {
-  public init(methodToParsersMap: [Swift.String : DIDSDK.DidParser], defaultDidCreator: DIDSDK.DidCreator)
-  public func parseDid(didString: Swift.String) throws -> DIDSDK.DID
-  public func createDID(applicationInstanceId: Swift.String, jwks: JoseTools.JsonWebKeySet) throws -> DIDSDK.DID
+  public init(methodToParsersMap: [Swift.String : any DIDSDK.DidParser], defaultDidCreator: any DIDSDK.DidCreator)
+  public func parseDid(didString: Swift.String) throws -> any DIDSDK.DID
+  public func createDID(applicationInstanceId: Swift.String, jwks: JoseTools.JsonWebKeySet) throws -> any DIDSDK.DID
   public func findSigningKey(jws: JOSESwift.JWS) throws -> JoseTools.JsonWebKey
   @objc deinit
 }
 extension DIDSDK.DidSupport {
-  @_hasMissingDesignatedInitializers public class Builder {
-    public func withDefaultDidCreator(defaultDidCreator: DIDSDK.DidCreator) -> DIDSDK.DidSupport.Builder
-    public func addParser(parser: DIDSDK.DidParser)
+  public class Builder {
+    public init()
+    public func withDefaultDidCreator(defaultDidCreator: any DIDSDK.DidCreator) -> DIDSDK.DidSupport.Builder
+    public func addParser(parser: any DIDSDK.DidParser)
     public func build() -> DIDSDK.DidSupport
     @objc deinit
   }
@@ -116,13 +118,13 @@ extension Swift.Double {
 }
 @_hasMissingDesignatedInitializers public class IonDidCreator : DIDSDK.DidCreator {
   public func getMethod() -> Swift.String
-  public func createDID(applicationInstanceId: Swift.String, jwks: JoseTools.JsonWebKeySet) throws -> DIDSDK.DID
+  public func createDID(applicationInstanceId: Swift.String, jwks: JoseTools.JsonWebKeySet) throws -> any DIDSDK.DID
   public func createDID(applicationInstanceId: Swift.String, signingKey: JoseTools.JsonWebKey, extraKeys: [JoseTools.JsonWebKey], jwks: JoseTools.JsonWebKeySet) throws -> DIDSDK.IonDid
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class IonDidParser : DIDSDK.DidParser {
   public func getMethod() -> Swift.String
-  public func parse(didString: Swift.String) throws -> DIDSDK.DID
+  public func parse(didString: Swift.String) throws -> any DIDSDK.DID
   @objc deinit
 }
 public class ExpirationSignature : CommunicationManager.JsonSerializable {
@@ -131,22 +133,25 @@ public class ExpirationSignature : CommunicationManager.JsonSerializable {
   public func getApplicationInstanceId() -> Swift.String?
   public func getHash() -> Swift.String
   public func getExpiryTimestamp() -> Swift.String
+  public func getExpiryTimeInterval() -> Foundation.TimeInterval?
   public func getExpirySignature() -> Swift.String
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class DistributedIdClient {
-  public func setMessageHandler(messageHandler: DIDSDK.MessageHandler)
-  public func getMessageHandler() -> DIDSDK.MessageHandler?
-  public func setLinkHandler(linkHandler: DIDSDK.LinkHandler)
-  public func getLinkHandler() -> DIDSDK.LinkHandler?
+  public func setMessageHandler(messageHandler: any DIDSDK.MessageHandler)
+  public func getApplicationInstance() -> DIDSDK.ApplicationInstance
+  public func getMessageHandler() -> (any DIDSDK.MessageHandler)?
+  public func setLinkHandler(linkHandler: any DIDSDK.LinkHandler)
+  public func getLinkHandler() -> (any DIDSDK.LinkHandler)?
   public func updateApplicationInstance(appInstance: DIDSDK.ApplicationInstance, pushSandbox: Swift.Bool) -> DIDSDK.CompletionHandler<Swift.Bool>
   public func updatePushToken(pushToken: Foundation.Data)
   public func shareData(with recipientId: Swift.String, message: Swift.String?, challenge: DIDSDK.Challenge?, shares: [DIDSDK.Share]) -> DIDSDK.CompletionHandler<Swift.Bool>
   public func requestShare(from recipientId: Swift.String, message: Swift.String?, challenge: DIDSDK.Challenge?, requestedKeys: [Swift.String]) -> DIDSDK.CompletionHandler<Swift.Bool>
   public func createClaim(for subjectId: Swift.String, message: Swift.String?, challenge: DIDSDK.Challenge?, claimData: [Swift.String : Swift.String], referenceClaim: DIDSDK.Claim? = nil) -> DIDSDK.CompletionHandler<DIDSDK.Claim>
   public func createClaimForSelf(with claimData: [Swift.String : Swift.String]) -> DIDSDK.CompletionHandler<DIDSDK.Claim>
-  public func expireClaim(_ claimReference: DIDSDK.ClaimReference, message: Swift.String?, challenge: DIDSDK.Challenge) -> DIDSDK.CompletionHandler<DIDSDK.ClaimReference>
+  public func expireClaim(_ claimReference: DIDSDK.ClaimReference, message: Swift.String?, challenge: DIDSDK.Challenge, expiresAt: Foundation.TimeInterval?) -> DIDSDK.CompletionHandler<DIDSDK.ClaimReference>
   public func sendSecureMessage(to recipientId: Swift.String, message: Swift.String?, challenge: DIDSDK.Challenge?) -> DIDSDK.CompletionHandler<Swift.Bool>
+  public func createClaimBuilder(forFormats claimFormats: DIDSDK.ClaimFormat...) throws -> DIDSDK.ClaimBuilder
   public func getKeys(for applicationInstanceId: Swift.String) -> DIDSDK.CompletionHandler<JoseTools.JsonWebKeySet>
   public func verifyData(_ shares: [DIDSDK.Share]) -> DIDSDK.CompletionHandler<Swift.Bool>
   public func createRequest(with details: [Swift.String : Any], expiresAt: Foundation.TimeInterval?, registeredApp: Swift.String?) -> DIDSDK.CompletionHandler<DIDSDK.Request>
@@ -154,21 +159,38 @@ public class ExpirationSignature : CommunicationManager.JsonSerializable {
   public func deleteRequest(forId requestId: Swift.String) -> DIDSDK.CompletionHandler<Swift.Bool>
   @discardableResult
   public func processUrl(url: Swift.String) -> DIDSDK.CompletionHandler<Swift.Bool>
-  public func createVerifiableCredentialClaim(subjectId: Swift.String, message: Swift.String?, challenge: DIDSDK.Challenge?, credentialType: Swift.String, credentialData: [Swift.String : Swift.String]) -> DIDSDK.CompletionHandler<DIDSDK.Claim>
+  public func createVerifiableCredentialClaim(subjectId: Swift.String, message: Swift.String?, challenge: DIDSDK.Challenge?, credentialType: Swift.String, credentialData: [Swift.String : AnyCoder.AnyCodable]) -> DIDSDK.CompletionHandler<DIDSDK.Claim>
   @objc deinit
+}
+public struct Logo : Swift.Codable {
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func getUri() -> Swift.String?
+  public func getAltText() -> Swift.String?
 }
 public class OpenIDVerifiableCredentialsClient {
-  convenience public init(applicationInstance: DIDSDK.ApplicationInstance)
-  public init(applicationInstance: DIDSDK.ApplicationInstance, didSupport: DIDSDK.DidSupport)
-  public func isValidOpenIDVcUrl(url: Swift.String) -> Swift.Bool
+  public init(didSupport: DIDSDK.DidSupport, linkHandler: (any DIDSDK.LinkHandler)?)
+  public func getDid(for applicationInstance: DIDSDK.ApplicationInstance) throws -> any DIDSDK.DID
+  @discardableResult
+  public func processUrl(url: Swift.String) -> DIDSDK.CompletionHandler<Swift.Bool>
   public func readOpenIdVcUrl(url: Swift.String) -> DIDSDK.CompletionHandler<DIDSDK.VerifiablePresentationRequest>
   public func filterVerifiableCredentialsMatchingRequest(verifiableCredentials: [DIDSDK.VerifiableCredential], request: DIDSDK.VerifiablePresentationRequest) -> DIDSDK.VerifiablePresentationMatcherResult
-  public func sendVerifiablePresentation(request: DIDSDK.VerifiablePresentationRequest, verifiableCredentialMap: [DIDSDK.InputDescriptor : DIDSDK.VerifiableCredential]) -> DIDSDK.CompletionHandler<DIDSDK.VerifiablePresentationResult>
+  public func sendVerifiablePresentation(did: any DIDSDK.DID, request: DIDSDK.VerifiablePresentationRequest, verifiableCredentialMap: [DIDSDK.InputDescriptor : DIDSDK.VerifiableCredential]) -> DIDSDK.CompletionHandler<DIDSDK.VerifiablePresentationResult>
   @objc deinit
 }
+extension DIDSDK.OpenIDVerifiableCredentialsClient {
+  public static func isValidOpenIDVcUrl(url: Swift.String) -> Swift.Bool
+}
 extension JoseTools.JsonWebKeySet {
+  public enum Constant {
+  }
   public init(jsonString: Swift.String, forId id: Swift.String) throws
   public func toString(forId id: Swift.String) throws -> Swift.String
+}
+public class CredentialIssuerMetadataClient {
+  public init()
+  public func getCredentialIssuerMetadata(from claim: DIDSDK.Claim) -> DIDSDK.CompletionHandler<DIDSDK.CredentialIssuerMetadata>
+  @objc deinit
 }
 public struct DidJwsConsumer {
   public func readJwsString(compactSerialization: Swift.String) throws -> JoseTools.JWTClaims
@@ -193,6 +215,18 @@ extension DIDSDK.Salt : Swift.CustomStringConvertible, Swift.CustomDebugStringCo
     get
   }
 }
+@_hasMissingDesignatedInitializers public class ClaimBuilder {
+  public func createVerifiableCredential(subjectJwks: JoseTools.JsonWebKeySet) throws -> DIDSDK.VerifiableCredential
+  @objc deinit
+}
+public enum ClaimFormat {
+  case NATIVE, W3C_VC
+  public static func == (a: DIDSDK.ClaimFormat, b: DIDSDK.ClaimFormat) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers public class Claim : DIDSDK.ClaimReference {
   required public init(dict: [Swift.String : Any]) throws
   override public func toDictionary() throws -> [Swift.String : Any]
@@ -200,10 +234,18 @@ extension DIDSDK.Salt : Swift.CustomStringConvertible, Swift.CustomDebugStringCo
   public func getData() -> [Swift.String : Swift.String]
   public func getClaimReferenceForExpiry() -> DIDSDK.ClaimReference
   public func copyWithClaimData(_ claimData: [DIDSDK.SaltedData : DIDSDK.SaltedData]) -> DIDSDK.Claim
+  public func copyWithReferenceId(_ referenceClaimId: DIDSDK.SaltedData) -> DIDSDK.Claim
   @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  public func setOtherFormats(otherFormats: [Swift.String : Swift.String])
-  public func getOtherFormats() -> [Swift.String : Swift.String]
+  public func setOtherFormats(otherFormats: [Swift.String : Any])
+  public func getOtherFormats() -> [Swift.String : Any]
   @objc deinit
+}
+public struct PingData : Swift.Codable {
+  public var type: Swift.String
+  public var version: Swift.String
+  public static func initFrom(dict: [Swift.String : Swift.String]) -> DIDSDK.PingData?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public protocol MessageHandler {
   func handleShare(senderId: Swift.String, message: Swift.String?, challenge: DIDSDK.Challenge?, shares: [DIDSDK.Share], errors: [DIDSDK.ClaimError])
@@ -215,14 +257,14 @@ public protocol MessageHandler {
 }
 public class Endpoint {
   public func create<T, R>() -> (_ requestBody: T) -> DIDSDK.CompletionHandler<R> where T : CommunicationManager.JsonSerializableObject, T : CommunicationManager.JsonSerializableProtocol, R : CommunicationManager.JsonSerializableObject, R : CommunicationManager.JsonSerializableProtocol
-  public func create<T, R>() -> (_ requestBody: T, _ coder: CommunicationManager.CoderProtocol) -> DIDSDK.CompletionHandler<R> where T : CommunicationManager.JsonSerializableObject, T : CommunicationManager.JsonSerializableProtocol, R : CommunicationManager.JsonSerializableObject, R : CommunicationManager.JsonSerializableProtocol
+  public func create<T, R>() -> (_ requestBody: T, _ coder: any CommunicationManager.CoderProtocol) -> DIDSDK.CompletionHandler<R> where T : CommunicationManager.JsonSerializableObject, T : CommunicationManager.JsonSerializableProtocol, R : CommunicationManager.JsonSerializableObject, R : CommunicationManager.JsonSerializableProtocol
   public func createWithEmptyBody<R>() -> (() -> DIDSDK.CompletionHandler<R>) where R : CommunicationManager.JsonSerializableObject, R : CommunicationManager.JsonSerializableProtocol
-  public func createWithEmptyBody<R>() -> (_ coder: CommunicationManager.CoderProtocol) -> DIDSDK.CompletionHandler<R> where R : CommunicationManager.JsonSerializableObject, R : CommunicationManager.JsonSerializableProtocol
+  public func createWithEmptyBody<R>() -> (_ coder: any CommunicationManager.CoderProtocol) -> DIDSDK.CompletionHandler<R> where R : CommunicationManager.JsonSerializableObject, R : CommunicationManager.JsonSerializableProtocol
   public func createWithEmptyBodyAndPathVariables<R>() -> (_ pathVariables: Swift.String...) -> DIDSDK.CompletionHandler<R> where R : CommunicationManager.JsonSerializableObject, R : CommunicationManager.JsonSerializableProtocol
-  public func createWithEmptyBodyAndPathVariables<R>() -> (_ coder: CommunicationManager.CoderProtocol, _ pathVariables: Swift.String...) -> DIDSDK.CompletionHandler<R> where R : CommunicationManager.JsonSerializableObject, R : CommunicationManager.JsonSerializableProtocol
+  public func createWithEmptyBodyAndPathVariables<R>() -> (_ coder: any CommunicationManager.CoderProtocol, _ pathVariables: Swift.String...) -> DIDSDK.CompletionHandler<R> where R : CommunicationManager.JsonSerializableObject, R : CommunicationManager.JsonSerializableProtocol
   public func createWithPathVariables<T, R>() -> (_ requestBody: T, _ pathVariables: Swift.String...) -> DIDSDK.CompletionHandler<R> where T : CommunicationManager.JsonSerializableObject, T : CommunicationManager.JsonSerializableProtocol, R : CommunicationManager.JsonSerializableObject, R : CommunicationManager.JsonSerializableProtocol
-  public func createWithPathVariables<T, R>() -> (_ requestBody: T, _ coder: CommunicationManager.CoderProtocol, _ pathVariables: Swift.String...) -> DIDSDK.CompletionHandler<R> where T : CommunicationManager.JsonSerializableObject, T : CommunicationManager.JsonSerializableProtocol, R : CommunicationManager.JsonSerializableObject, R : CommunicationManager.JsonSerializableProtocol
-  public init(endpoint: Swift.String, httpMethod: CommunicationManager.HttpMethod, coder: CommunicationManager.CoderProtocol = JsonCoder(), authTokenGenerator: DIDSDK.AuthTokenGenerator?, networkReachability: DIDSDK.NetworkReachability?)
+  public func createWithPathVariables<T, R>() -> (_ requestBody: T, _ coder: any CommunicationManager.CoderProtocol, _ pathVariables: Swift.String...) -> DIDSDK.CompletionHandler<R> where T : CommunicationManager.JsonSerializableObject, T : CommunicationManager.JsonSerializableProtocol, R : CommunicationManager.JsonSerializableObject, R : CommunicationManager.JsonSerializableProtocol
+  public init(endpoint: Swift.String, httpMethod: CommunicationManager.HttpMethod, coder: any CommunicationManager.CoderProtocol = JsonCoder(), authTokenGenerator: DIDSDK.AuthTokenGenerator?, networkReachability: DIDSDK.NetworkReachability?)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class EmptyResponse : CommunicationManager.JsonSerializable {
@@ -230,34 +272,34 @@ public class Endpoint {
 }
 public protocol DidParser {
   func getMethod() -> Swift.String
-  func parse(didString: Swift.String) throws -> DIDSDK.DID
+  func parse(didString: Swift.String) throws -> any DIDSDK.DID
 }
 @_hasMissingDesignatedInitializers public class VerifiablePresentationResult : Swift.Codable {
   public var shareUri: Swift.String!
   public var vpToken: Swift.String!
   public var idToken: Swift.String!
-  @available(*, deprecated, message: "Use presentationStatus instead")
+  @available(*, deprecated, renamed: "presentationStatus", message: "This property is deprecated and will be removed in upcoming updates. Use presentationStatus instead")
   public var shareSuccessful: Swift.Bool!
   public var responseBody: Swift.String?
   public var presentationStatus: DIDSDK.PresentationStatus!
   public func toDictionary() -> [Swift.String : Swift.String]
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public enum PresentationStatus : Swift.Codable, Swift.Equatable {
   case success
   case failure
   case requiresAction(action: DIDSDK.PresentationAction)
   public static func == (lhs: DIDSDK.PresentationStatus, rhs: DIDSDK.PresentationStatus) -> Swift.Bool
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum PresentationAction : Swift.Codable, Swift.Equatable {
   case openUri(_: Swift.String)
   public static func == (lhs: DIDSDK.PresentationAction, rhs: DIDSDK.PresentationAction) -> Swift.Bool
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class ClaimReference : CommunicationManager.JsonSerializable, Foundation.NSCopying {
   required public init(dict: [Swift.String : Any]) throws
@@ -272,6 +314,9 @@ public enum PresentationAction : Swift.Codable, Swift.Equatable {
   public func getDataSignature() -> Swift.String
   public func getDataHash() -> Swift.String
   public func getPartitionId() -> Swift.String?
+  public func setIdExpiries(idExpiries: [DIDSDK.ExpirationSignature])
+  public func getIdExpiries() -> [DIDSDK.ExpirationSignature]?
+  public func getEarliestExpiration() -> DIDSDK.ExpirationSignature?
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   override public func toDictionary() throws -> [Swift.String : Any]
   @objc deinit
@@ -284,21 +329,21 @@ public enum PresentationAction : Swift.Codable, Swift.Equatable {
 public class Claims : Swift.Codable {
   public var vpToken: DIDSDK.VpTokenClaim
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public class VpTokenClaim : Swift.Codable {
   public var presentationDefinition: DIDSDK.PresentationDefinition
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public class PresentationDefinition : Swift.Codable {
   public var id: Swift.String
   public var inputDescriptors: [DIDSDK.InputDescriptor]
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public class InputDescriptor : Swift.Codable, Swift.Hashable, Swift.Equatable {
   public var id: Swift.String
@@ -308,18 +353,18 @@ public class InputDescriptor : Swift.Codable, Swift.Hashable, Swift.Equatable {
   public static func == (lhs: DIDSDK.InputDescriptor, rhs: DIDSDK.InputDescriptor) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  required public init(from decoder: Swift.Decoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public class SchemaFilter : Swift.Codable, Swift.Equatable {
   public var uri: Swift.String
   public static func == (lhs: DIDSDK.SchemaFilter, rhs: DIDSDK.SchemaFilter) -> Swift.Bool
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class IDToken {
   public func toClaimMap() -> [Swift.String : Any]
@@ -358,9 +403,12 @@ public class Share : CommunicationManager.JsonSerializable {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Request : CommunicationManager.JsonSerializable {
+  convenience required public init(dict: [Swift.String : Any]) throws
   override public func toDictionary() throws -> [Swift.String : Any]
   public func getId() -> Swift.String?
   public func setId(_ id: Swift.String)
+  public func getRedirectUrl() -> Swift.String?
+  public func setRedirectUrl(_ redirectUrl: Swift.String?)
   public func getApplicationInstance() -> DIDSDK.Relationship<Swift.String>?
   public func setApplicationInstance(_ applicationInstance: DIDSDK.Relationship<Swift.String>)
   public func getCreatedAt() -> Swift.String?
@@ -372,7 +420,7 @@ public class Share : CommunicationManager.JsonSerializable {
   public func getDetails() -> [Swift.String : Any]
   public func setDetails(_ details: [Swift.String : Any])
   public func getUrlFor(key: Swift.String) -> Swift.String?
-  public func getRequestUrl() -> Swift.String?
+  public func getRequestUrl(baseUrl: Swift.String) -> Swift.String?
   @objc deinit
 }
 public class Relationship<T> : CommunicationManager.JsonSerializable where T : Swift.Equatable {
@@ -397,15 +445,17 @@ public class Challenge : CommunicationManager.JsonSerializable {
 }
 @_hasMissingDesignatedInitializers public class JwkDidParser : DIDSDK.DidParser {
   public func getMethod() -> Swift.String
-  public func parse(didString: Swift.String) throws -> DIDSDK.DID
+  public func parse(didString: Swift.String) throws -> any DIDSDK.DID
   @objc deinit
 }
 public class ApplicationInstanceCreator {
-  public init()
+  public init(withBaseUrl baseUrl: Swift.String)
   @discardableResult
   public func setId(id: Swift.String) -> DIDSDK.ApplicationInstanceCreator
   @discardableResult
   public func setJwks(jwks: JoseTools.JsonWebKeySet) -> DIDSDK.ApplicationInstanceCreator
+  @discardableResult
+  public func setPushToken(pushToken: Swift.String) -> DIDSDK.ApplicationInstanceCreator
   @discardableResult
   public func setPushToken(pushToken: Foundation.Data) -> DIDSDK.ApplicationInstanceCreator
   @discardableResult
@@ -423,11 +473,18 @@ public class AuthTokenGenerator {
 }
 extension DIDSDK.DistributedIdClient {
   public class Builder {
-    public init(with applicationInstance: DIDSDK.ApplicationInstance, messageHandler: DIDSDK.MessageHandler?)
-    public func withLinkHandler(linkHandler: DIDSDK.LinkHandler) -> DIDSDK.DistributedIdClient.Builder
+    public init(with baseUrl: Swift.String, for applicationInstance: DIDSDK.ApplicationInstance, messageHandler: (any DIDSDK.MessageHandler)?)
+    public func withLinkHandler(linkHandler: any DIDSDK.LinkHandler) -> DIDSDK.DistributedIdClient.Builder
     public func build() -> DIDSDK.DistributedIdClient
     @objc deinit
   }
+}
+public struct Display : Swift.Codable {
+  public func getName() -> Swift.String?
+  public func getLogo() -> DIDSDK.Logo?
+  public func getLocale() -> Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class LongFormDocument : CommunicationManager.JsonSerializable, Swift.Codable {
   public func getDelta() -> DIDSDK.Delta
@@ -435,8 +492,8 @@ extension DIDSDK.DistributedIdClient {
   public func getSuffixData() -> DIDSDK.SuffixData
   public func setSuffixData(suffixData: DIDSDK.SuffixData)
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class SuffixData : CommunicationManager.JsonSerializable, Swift.Codable {
   public func getDeltaHash() -> Swift.String
@@ -444,8 +501,8 @@ extension DIDSDK.DistributedIdClient {
   public func getRecoveryCommitment() -> Swift.String
   public func setRecoveryCommitment(recoveryCommitment: Swift.String)
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class Delta : CommunicationManager.JsonSerializable, Swift.Codable {
   public func getPatches() -> [DIDSDK.Patch]
@@ -453,8 +510,8 @@ extension DIDSDK.DistributedIdClient {
   public func getUpdateCommitment() -> Swift.String
   public func setUpdateCommitment(updateCommitment: Swift.String)
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class Patch : CommunicationManager.JsonSerializable, Swift.Codable {
   public func getAction() -> Swift.String
@@ -462,24 +519,24 @@ extension DIDSDK.DistributedIdClient {
   public func getPublicKeys() -> [DIDSDK.IonPublicKey]?
   public func getServices() -> [DIDSDK.Service]?
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class Document : CommunicationManager.JsonSerializable, Swift.Codable {
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class Service : CommunicationManager.JsonSerializable, Swift.Codable {
   override public func toDictionary() throws -> [Swift.String : Any]
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public enum MessageProcessingError : Swift.Error {
-  case cannotRetriveMessages(underlyingError: Swift.Error, description: Swift.String?)
-  case failedToProcessMessage(underlyingError: Swift.Error?, description: Swift.String?)
-  case failedToRetrieveSenderKey(underlyingError: Swift.Error, description: Swift.String?)
+  case cannotRetriveMessages(underlyingError: any Swift.Error, description: Swift.String?)
+  case failedToProcessMessage(underlyingError: (any Swift.Error)?, description: Swift.String?)
+  case failedToRetrieveSenderKey(underlyingError: any Swift.Error, description: Swift.String?)
   case missingInformationInMessage(missingKey: Swift.String)
   case mustConfigureMessageHandler
   case networkNotAvailable(description: Swift.String)
@@ -502,9 +559,16 @@ extension DIDSDK.MessageProcessingError : Swift.Equatable {
 @_hasMissingDesignatedInitializers public class OpenIDVerifiableCredentialsClientUtils {
   @objc deinit
 }
+public struct CredentialIssuerMetadata : Swift.Codable {
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func getCredentialIssuer() -> Swift.String?
+  public func getDisplay() -> [DIDSDK.Display]?
+  public func getDisplayByLocale(_ locale: Swift.String) -> DIDSDK.Display?
+}
 public protocol DidCreator {
   func getMethod() -> Swift.String
-  func createDID(applicationInstanceId: Swift.String, jwks: JoseTools.JsonWebKeySet) throws -> DIDSDK.DID
+  func createDID(applicationInstanceId: Swift.String, jwks: JoseTools.JsonWebKeySet) throws -> any DIDSDK.DID
 }
 public class Registration : Swift.Codable {
   public var clientName: Swift.String
@@ -512,13 +576,13 @@ public class Registration : Swift.Codable {
   public var clientPurpose: Swift.String?
   public var vpFormats: DIDSDK.VPFormats
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public class VPFormats : Swift.Codable {
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class ApplicationInstance : CommunicationManager.JsonSerializable {
   required public init(dict: [Swift.String : Any]) throws
@@ -546,11 +610,10 @@ public class VPFormats : Swift.Codable {
   @objc deinit
 }
 public protocol BaseServiceApi {
-  var BASE_URL_DICT_KEY: Swift.String { get }
-  var BASE_URL: Swift.String { get }
+  var baseUrl: Swift.String { get }
   var authTokenGenerator: DIDSDK.AuthTokenGenerator? { get set }
   var networkReachability: DIDSDK.NetworkReachability? { get }
-  init(authTokenGenerator: DIDSDK.AuthTokenGenerator?, networkReachability: DIDSDK.NetworkReachability?)
+  init(baseUrl: Swift.String, authTokenGenerator: DIDSDK.AuthTokenGenerator?, networkReachability: DIDSDK.NetworkReachability?)
 }
 extension DIDSDK.BaseServiceApi {
   public func getEndpointFor(_ urlPath: Swift.String, httpMethod: CommunicationManager.HttpMethod) -> DIDSDK.Endpoint
@@ -577,12 +640,14 @@ extension Foundation.Formatter {
 }
 public enum DidError : Swift.Error {
   case senderIdNotFoundInJwtHeader
-  case failedToParseResponse(response: [Swift.String : Any], underlyingError: Swift.Error?)
+  case failedToParseResponse(response: [Swift.String : Any], underlyingError: (any Swift.Error)?)
   case networkConnectionNotFound(currentStatus: DIDSDK.NetworkReachability.NetworkReachabilityStatus)
   case invalidRequestPayloadError(description: Swift.String, reservedKey: Swift.String)
   case missingSigningPrivateKey
   case invalidRedirectUri(_: Swift.String?)
   case error(description: Swift.String)
+  case mailTooLarge(description: Swift.String)
+  case missingRequiredValue(description: Swift.String)
 }
 extension DIDSDK.DidError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
@@ -593,8 +658,8 @@ extension DIDSDK.DidError : Swift.Equatable {
   public static func == (lhs: DIDSDK.DidError, rhs: DIDSDK.DidError) -> Swift.Bool
 }
 @_hasMissingDesignatedInitializers public class DidJwsGenerator {
-  public func createJws(payload: Swift.String, did: DIDSDK.DID) throws -> JOSESwift.JWS
-  public func getSigningKey(did: DIDSDK.DID) throws -> JoseTools.JsonWebKey
+  public func createJws(payload: Swift.String, did: any DIDSDK.DID) throws -> JOSESwift.JWS
+  public func getSigningKey(did: any DIDSDK.DID) throws -> JoseTools.JsonWebKey
   @objc deinit
 }
 public class NestedJwtConsumer {
@@ -631,6 +696,8 @@ public class JwkDid : DIDSDK.DID {
   public static let REQUEST_URI_SCHEME: Swift.String
   public static let RESPONSE_MODE_POST: Swift.String
   public static let RESPONSE_MODE_FRAGMENT: Swift.String
+  public static let CARD_IMAGE: Swift.String
+  public static let PING_DATA: Swift.String
   @objc deinit
 }
 extension Swift.String {
@@ -639,8 +706,8 @@ extension Swift.String {
   }
 }
 @_hasMissingDesignatedInitializers public class VerifiableCredentialGenerator {
-  public func createVerifiableCredential(issuerDid: DIDSDK.DID, credential: DIDSDK.Credential) throws -> DIDSDK.VerifiableCredential
-  public func createCredential(issuerId: DIDSDK.DID, holderId: DIDSDK.DID, type: Swift.String, context: Swift.String, data: [Swift.String : Swift.String]) -> DIDSDK.Credential
+  public func createVerifiableCredential(issuerDid: any DIDSDK.DID, credential: DIDSDK.Credential) throws -> DIDSDK.VerifiableCredential
+  public func createCredential(issuerId: any DIDSDK.DID, holderId: any DIDSDK.DID, type: [Swift.String], context: [Swift.String], data: [Swift.String : AnyCoder.AnyCodable], pingData: DIDSDK.PingData?) -> DIDSDK.Credential
   public static func fromString(string: Swift.String) -> [DIDSDK.VerifiableCredential]?
   @objc deinit
 }
@@ -693,23 +760,25 @@ public class NetworkReachability {
   public var credentialSubject: DIDSDK.CredentialSubject!
   public var credentialProof: DIDSDK.CredentialProof?
   public var credentialStatus: DIDSDK.CredentialStatus?
-  required public init(from decoder: Swift.Decoder) throws
+  public var pingData: DIDSDK.PingData?
+  required public init(from decoder: any Swift.Decoder) throws
   public func setContext(context: [Swift.String])
   public func setId(id: Swift.String)
   public func setType(type: [Swift.String])
   public func setIssuer(issuer: Swift.String)
   public func setIssuanceDate(issuanceDate: Foundation.TimeInterval)
   public func setCredentialSubject(credentialSubject: DIDSDK.CredentialSubject)
-  public func toClaimMap() -> [Swift.String : Any]
+  public func setPing(_ pingData: DIDSDK.PingData)
+  public func toClaimMap() -> [Swift.String : AnyCoder.AnyCodable]
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 @_hasMissingDesignatedInitializers public class CredentialSubject : Swift.Codable {
   public var id: Swift.String!
-  public var data: [Swift.String : Any]!
-  public func toClaimMap() -> [Swift.String : Any]
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public var data: [Swift.String : AnyCoder.AnyCodable]!
+  public func toClaimMap() -> [Swift.String : AnyCoder.AnyCodable]
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class CredentialProof : Swift.Codable {
@@ -720,16 +789,16 @@ public class NetworkReachability {
   public var proofValue: Swift.String!
   public func toClaimMap() -> [Swift.String : Any]
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class CredentialStatus : Swift.Codable {
   public var id: Swift.String!
   public var type: Swift.String!
   public func toClaimMap() -> [Swift.String : Any]
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class ClaimRegistration : CommunicationManager.JsonSerializable {
   required public init(dict: [Swift.String : Any]) throws
@@ -765,9 +834,10 @@ public enum ClaimError : Swift.Error {
   case cannotExpireClaim
   case claimExpired(_: Swift.String)
   case verificationError(_: Swift.String)
-  case verificationFailed(_: Swift.Error)
+  case verificationFailed(_: any Swift.Error)
   case claimIssuerMismatchError
   case claimHolderMismatchError
+  case claimGenerationException(_: Swift.String)
 }
 extension DIDSDK.ClaimError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
@@ -795,12 +865,14 @@ extension DIDSDK.ClaimError : Swift.Equatable {
   public func getClaim() -> DIDSDK.Claims
   public func getExpiration() -> Foundation.TimeInterval?
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class VerifiableCredential {
   public var credential: DIDSDK.Credential!
   public var jwt: Swift.String!
   @objc deinit
 }
+extension DIDSDK.ClaimFormat : Swift.Equatable {}
+extension DIDSDK.ClaimFormat : Swift.Hashable {}
 extension DIDSDK.NetworkReachability.ConnectionType : Swift.Hashable {}

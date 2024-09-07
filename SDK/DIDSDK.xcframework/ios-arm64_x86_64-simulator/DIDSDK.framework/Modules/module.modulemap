@@ -1,7 +1,7 @@
 framework module DIDSDK {
   umbrella header "DIDSDK.h"
-
   export *
+
   module * { export * }
 }
 

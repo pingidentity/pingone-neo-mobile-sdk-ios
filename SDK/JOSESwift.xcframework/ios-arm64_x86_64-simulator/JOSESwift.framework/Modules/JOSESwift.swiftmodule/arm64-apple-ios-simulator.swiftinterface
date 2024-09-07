@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name JOSESwift
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name JOSESwift
 import CommonCrypto
 import Compression
 import Foundation
@@ -11,6 +10,7 @@ import Security
 import Swift
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 import libsecp256k1
 public enum ECCurveType : Swift.String, Swift.Codable {
   case P256
@@ -54,13 +54,13 @@ public struct JWE {
   public func decrypt(using decrypter: JOSESwift.Decrypter) throws -> JOSESwift.Payload
 }
 extension JOSESwift.JWE : JOSESwift.CompactSerializable {
-  public func serialize(to serializer: inout JOSESwift.CompactSerializer)
+  public func serialize(to serializer: inout any JOSESwift.CompactSerializer)
 }
 extension JOSESwift.JWE : JOSESwift.CompactDeserializable {
   public static var componentCount: Swift.Int {
     get
   }
-  public init(from deserializer: JOSESwift.CompactDeserializer) throws
+  public init(from deserializer: any JOSESwift.CompactDeserializer) throws
 }
 extension Security.SecKey : JOSESwift.ExpressibleAsECPrivateKeyComponents {
   public static func representing(ecPrivateKeyComponents components: JOSESwift.ECPrivateKeyComponents) throws -> Self
@@ -92,17 +92,17 @@ public struct JWS {
   public func isValid(for verifier: JOSESwift.Verifier) -> Swift.Bool
 }
 extension JOSESwift.JWS : JOSESwift.CompactSerializable {
-  public func serialize(to serializer: inout JOSESwift.CompactSerializer)
+  public func serialize(to serializer: inout any JOSESwift.CompactSerializer)
 }
 extension JOSESwift.JWS : JOSESwift.CompactDeserializable {
   public static var componentCount: Swift.Int {
     get
   }
-  public init(from deserializer: JOSESwift.CompactDeserializer) throws
+  public init(from deserializer: any JOSESwift.CompactDeserializer) throws
 }
 public protocol CompactDeserializable {
   static var componentCount: Swift.Int { get }
-  init(from deserializer: JOSESwift.CompactDeserializer) throws
+  init(from deserializer: any JOSESwift.CompactDeserializer) throws
 }
 public protocol CompactDeserializer {
   func deserialize<T>(_ type: T.Type, at index: Swift.Int) throws -> T where T : JOSESwift.DataConvertible
@@ -210,10 +210,10 @@ public enum ECParameter : Swift.String, Swift.CodingKey {
   }
 }
 extension JOSESwift.SymmetricKey : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension JOSESwift.SymmetricKey : Swift.Decodable {
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension JOSESwift.JWK {
   public subscript(parameter: Swift.String) -> Swift.String? {
@@ -244,7 +244,7 @@ public struct ECPublicKey : JOSESwift.JWK {
   public let x: Swift.String
   public let y: Swift.String
   public init(crv: JOSESwift.ECCurveType, x: Swift.String, y: Swift.String, additionalParameters parameters: [Swift.String : Swift.String] = [:])
-  public init(publicKey: JOSESwift.ExpressibleAsECPublicKeyComponents, additionalParameters parameters: [Swift.String : Swift.String] = [:]) throws
+  public init(publicKey: any JOSESwift.ExpressibleAsECPublicKeyComponents, additionalParameters parameters: [Swift.String : Swift.String] = [:]) throws
   public init(data: Foundation.Data) throws
   public func converted<T>(to type: T.Type) throws -> T where T : JOSESwift.ExpressibleAsECPublicKeyComponents
   @available(iOS 11.0, *)
@@ -261,7 +261,7 @@ public struct ECPrivateKey : JOSESwift.JWK {
   public let y: Swift.String
   public let privateKey: Swift.String
   public init(crv: Swift.String, x: Swift.String, y: Swift.String, privateKey: Swift.String, additionalParameters parameters: [Swift.String : Swift.String] = [:]) throws
-  public init(privateKey: JOSESwift.ExpressibleAsECPrivateKeyComponents, additionalParameters parameters: [Swift.String : Swift.String] = [:]) throws
+  public init(privateKey: any JOSESwift.ExpressibleAsECPrivateKeyComponents, additionalParameters parameters: [Swift.String : Swift.String] = [:]) throws
   public init(data: Foundation.Data) throws
   public func converted<T>(to type: T.Type) throws -> T where T : JOSESwift.ExpressibleAsECPrivateKeyComponents
   @available(iOS 11.0, *)
@@ -286,7 +286,7 @@ extension JOSESwift.JWSHeader : JOSESwift.CommonHeaderParameterSpace {
     get
     set
   }
-  public var jwkTyped: JOSESwift.JWK? {
+  public var jwkTyped: (any JOSESwift.JWK)? {
     get
     set
   }
@@ -432,7 +432,7 @@ public struct RSAPublicKey : JOSESwift.JWK {
   public let modulus: Swift.String
   public let exponent: Swift.String
   public init(modulus: Swift.String, exponent: Swift.String, additionalParameters parameters: [Swift.String : Swift.String] = [:])
-  public init(publicKey: JOSESwift.ExpressibleAsRSAPublicKeyComponents, additionalParameters parameters: [Swift.String : Swift.String] = [:]) throws
+  public init(publicKey: any JOSESwift.ExpressibleAsRSAPublicKeyComponents, additionalParameters parameters: [Swift.String : Swift.String] = [:]) throws
   public init(data: Foundation.Data) throws
   public func converted<T>(to type: T.Type) throws -> T where T : JOSESwift.ExpressibleAsRSAPublicKeyComponents
   @available(iOS 11.0, *)
@@ -448,7 +448,7 @@ public struct RSAPrivateKey : JOSESwift.JWK {
   public let exponent: Swift.String
   public let privateExponent: Swift.String
   public init(modulus: Swift.String, exponent: Swift.String, privateExponent: Swift.String, additionalParameters parameters: [Swift.String : Swift.String] = [:])
-  public init(privateKey: JOSESwift.ExpressibleAsRSAPrivateKeyComponents, additionalParameters parameters: [Swift.String : Swift.String] = [:]) throws
+  public init(privateKey: any JOSESwift.ExpressibleAsRSAPrivateKeyComponents, additionalParameters parameters: [Swift.String : Swift.String] = [:]) throws
   public init(data: Foundation.Data) throws
   public func converted<T>(to type: T.Type) throws -> T where T : JOSESwift.ExpressibleAsRSAPrivateKeyComponents
   @available(iOS 11.0, *)
@@ -497,7 +497,7 @@ extension JOSESwift.JWEHeader : JOSESwift.CommonHeaderParameterSpace {
     get
     set
   }
-  public var jwkTyped: JOSESwift.JWK? {
+  public var jwkTyped: (any JOSESwift.JWK)? {
     get
     set
   }
@@ -628,10 +628,10 @@ public typealias AsymmetricKeyAlgorithm = JOSESwift.KeyManagementAlgorithm
 @available(*, deprecated, message: "Use `ContentEncryptionAlgorithm` instead")
 public typealias SymmetricKeyAlgorithm = JOSESwift.ContentEncryptionAlgorithm
 public protocol CompactSerializable {
-  func serialize(to serializer: inout JOSESwift.CompactSerializer)
+  func serialize(to serializer: inout any JOSESwift.CompactSerializer)
 }
 public protocol CompactSerializer {
-  var components: [JOSESwift.DataConvertible] { get }
+  var components: [any JOSESwift.DataConvertible] { get }
   mutating func serialize<T>(_ object: T) where T : JOSESwift.DataConvertible
 }
 public struct JOSESerializer {
@@ -650,7 +650,7 @@ public struct SymmetricKey : JOSESwift.JWK {
   }
   public let key: Swift.String
   public init(key: Foundation.Data, additionalParameters parameters: [Swift.String : Swift.String] = [:])
-  public init(key: JOSESwift.ExpressibleAsSymmetricKeyComponents, additionalParameters parameters: [Swift.String : Swift.String] = [:]) throws
+  public init(key: any JOSESwift.ExpressibleAsSymmetricKeyComponents, additionalParameters parameters: [Swift.String : Swift.String] = [:]) throws
   public init(data: Foundation.Data) throws
   public func converted<T>(to type: T.Type) throws -> T where T : JOSESwift.ExpressibleAsSymmetricKeyComponents
   @available(iOS 11.0, *)
@@ -670,7 +670,7 @@ extension JOSESwift.Verifier {
 public protocol CommonHeaderParameterSpace {
   var jku: Foundation.URL? { get set }
   var jwk: Swift.String? { get set }
-  var jwkTyped: JOSESwift.JWK? { get set }
+  var jwkTyped: (any JOSESwift.JWK)? { get set }
   var kid: Swift.String? { get set }
   var x5u: Foundation.URL? { get set }
   var x5c: [Swift.String]? { get set }
@@ -681,34 +681,34 @@ public protocol CommonHeaderParameterSpace {
   var crit: [Swift.String]? { get set }
 }
 extension JOSESwift.ECPublicKey : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension JOSESwift.ECPublicKey : Swift.Decodable {
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension JOSESwift.ECPrivateKey : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension JOSESwift.ECPrivateKey : Swift.Decodable {
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension JOSESwift.RSAPublicKey : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension JOSESwift.RSAPublicKey : Swift.Decodable {
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension JOSESwift.RSAPrivateKey : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension JOSESwift.RSAPrivateKey : Swift.Decodable {
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension JOSESwift.JWKSet : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension JOSESwift.JWKSet : Swift.Decodable {
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public protocol DataConvertible {
   init?(_ data: Foundation.Data)
@@ -730,14 +730,14 @@ public struct DecryptionContext {
 public struct SymmetricDecryptionContext {
 }
 public struct JWKSet {
-  public let keys: [JOSESwift.JWK]
-  public init(keys: [JOSESwift.JWK])
+  public let keys: [any JOSESwift.JWK]
+  public init(keys: [any JOSESwift.JWK])
   public init(data: Foundation.Data) throws
   public func jsonString() -> Swift.String?
   public func jsonData() -> Foundation.Data?
 }
 extension JOSESwift.JWKSet : Swift.Collection {
-  public typealias ArrayType = [JOSESwift.JWK]
+  public typealias ArrayType = [any JOSESwift.JWK]
   public typealias Element = JOSESwift.JWKSet.ArrayType.Element
   public typealias Index = JOSESwift.JWKSet.ArrayType.Index
   public typealias Iterator = JOSESwift.JWKSet.ArrayType.Iterator

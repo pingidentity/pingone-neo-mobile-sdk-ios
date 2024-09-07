@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/JoseTools-Swift.h</key>
 		<data>
-		J5a4JMCNW/5FzqCS6HEXH1bDl98=
+		2iQTndnEvFzZMrmgYF4q3aUeK50=
 		</data>
 		<key>Headers/JoseTools.h</key>
 		<data>
@@ -14,51 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fZPlMWr5u5sD98a6tWTh99i2/hg=
+		guDrEUcFO6Ykqds9rfcCzBelqR4=
 		</data>
 		<key>Modules/JoseTools.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		SPP/GQk8001SvYIJWU6E/dfB1jE=
+		xtPPiaxSYa/Oq/YUFpaUB4kUPXM=
 		</data>
 		<key>Modules/JoseTools.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8kgn4GP0VlT6IF37xacedtrzwWE=
+		UHe3nyhawJNqVeTCuoFrbWORKiM=
 		</data>
 		<key>Modules/JoseTools.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		L1DUNQ4EhAkJeKz90sJHA+KjUyA=
+		dnt92Ch+k18PIpPX/m6+BmNw8Ag=
 		</data>
 		<key>Modules/JoseTools.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8kgn4GP0VlT6IF37xacedtrzwWE=
+		UHe3nyhawJNqVeTCuoFrbWORKiM=
 		</data>
 		<key>Modules/JoseTools.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZuSiAD4dEsz9oBb2T1lECND3EnM=
+		MPBaI5xUi3AysxLD34JoYT7LsVI=
 		</data>
 		<key>Modules/JoseTools.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		SPP/GQk8001SvYIJWU6E/dfB1jE=
+		xtPPiaxSYa/Oq/YUFpaUB4kUPXM=
 		</data>
 		<key>Modules/JoseTools.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		aWhNR6cU6xL94dmaiLbaZrWGnDM=
+		ijf7rnkCz2Gv8aAjeJqEsVO4l0o=
 		</data>
 		<key>Modules/JoseTools.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		q0KvT9DmXwdFL8QDR3rzLhuWxfg=
+		TJ7zMLKX7sZt3WJVVIJDslK7pAA=
 		</data>
 		<key>Modules/JoseTools.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		aWhNR6cU6xL94dmaiLbaZrWGnDM=
+		ijf7rnkCz2Gv8aAjeJqEsVO4l0o=
 		</data>
 		<key>Modules/JoseTools.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5Yup4n5zIxH5Wdd4hpLh2IwP7Zw=
+		LBe2Vj7q0QYGcCLPb7eVh/aAVAo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		Z+tZu0xwjs7Z9Ac7kByJzTFKO4E=
+		MR2eCNwAAQpQ1xKRb8AtKjo6FKo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5d/pI0jf3N7ogmPy3XSTmKZgCB1oN+e2DjApexVPVpU=
+			e6N2HhmgP99j4BzqiJrAT53dZvu7KAfZGGxcjeE88Is=
 			</data>
 		</dict>
 		<key>Headers/JoseTools.h</key>
@@ -81,77 +81,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JoZLX/BoGqResz1UE3jcfpPAO1JQT42K+TxlxXTVyE8=
+			V8GKHAAoNTVwQUamjLWW01ZFP0NIJCEJb+0Pyi3BA3E=
 			</data>
 		</dict>
 		<key>Modules/JoseTools.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zmHLSraLzE9x3Iiog7J9ARcXAg57StN7gjweyVToW+U=
+			PUV18Gd2Z0ttIY9OVkhpOTGwfb5q5Yv4+Ko1LW9pq38=
 			</data>
 		</dict>
 		<key>Modules/JoseTools.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Oeu2A1ijBn92X5avxuu8PwXuNZKwwXh8YMBLd3UcPeo=
+			1CghTUvJnHftTem8oLwkAWq4RXL8C72XZWngY+7Dv9Y=
 			</data>
 		</dict>
 		<key>Modules/JoseTools.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zmHLSraLzE9x3Iiog7J9ARcXAg57StN7gjweyVToW+U=
+			PUV18Gd2Z0ttIY9OVkhpOTGwfb5q5Yv4+Ko1LW9pq38=
 			</data>
 		</dict>
 		<key>Modules/JoseTools.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oVYQcK7iwiNswRyR+nqY8YVle0bUh29pSXCZ+Uy+i1M=
+			QcrAHNe93NL3lZkm47yf1BD6F0rFq1d42x50JQRCwXY=
 			</data>
 		</dict>
 		<key>Modules/JoseTools.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JoZLX/BoGqResz1UE3jcfpPAO1JQT42K+TxlxXTVyE8=
+			V8GKHAAoNTVwQUamjLWW01ZFP0NIJCEJb+0Pyi3BA3E=
 			</data>
 		</dict>
 		<key>Modules/JoseTools.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g47AiAl992ECt0kNIOTL/kgLGAdeDSrNl6Ztcjjnd/c=
+			tuI2fBEn3TwtHyqEAllmxL535a0OKDEOJdaI7KSDysk=
 			</data>
 		</dict>
 		<key>Modules/JoseTools.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VGO49s6YEs2AgLmkvJKZmEhTblLzvNn9vpDu0v9GfPw=
+			X1OIpcajn2ZbWmiZJl5cmYT6fV7+2Amh4d0wq704qTM=
 			</data>
 		</dict>
 		<key>Modules/JoseTools.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g47AiAl992ECt0kNIOTL/kgLGAdeDSrNl6Ztcjjnd/c=
+			tuI2fBEn3TwtHyqEAllmxL535a0OKDEOJdaI7KSDysk=
 			</data>
 		</dict>
 		<key>Modules/JoseTools.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5r8tG7oGen6eQ/2SiNxS/9+cHGzkT7WuU3RMZEDdbTM=
+			Th2t96+dW8igdffgzipOTMWISJFM6ojN6vOEOFXM3Fo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9E1yWPpSEMYF+lnsZ0E/+LU+hQt1Nm29MGzIlv9rMSY=
+			YmScL4FLoKZGiqKPKENha5JVRxlG2ih9WIjHgTVfzvg=
 			</data>
 		</dict>
 	</dict>

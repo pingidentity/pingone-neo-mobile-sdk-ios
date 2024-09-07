@@ -41,12 +41,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "JOSESwift.JWK?",
+                "printedName": "(any JOSESwift.JWK)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "JWK",
-                    "printedName": "JOSESwift.JWK",
+                    "printedName": "any JOSESwift.JWK",
                     "usr": "s:9JOSESwift3JWKP"
                   }
                 ],
@@ -72,12 +72,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "JOSESwift.JWK?",
+                    "printedName": "(any JOSESwift.JWK)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "JWK",
-                        "printedName": "JOSESwift.JWK",
+                        "printedName": "any JOSESwift.JWK",
                         "usr": "s:9JOSESwift3JWKP"
                       }
                     ],
@@ -101,7 +101,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Key",
-                "printedName": "CryptoTools.Key",
+                "printedName": "any CryptoTools.Key",
                 "usr": "s:11CryptoTools3KeyP"
               }
             ],
@@ -124,7 +124,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Key",
-                    "printedName": "CryptoTools.Key",
+                    "printedName": "any CryptoTools.Key",
                     "usr": "s:11CryptoTools3KeyP"
                   }
                 ],
@@ -233,12 +233,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "CryptoTools.Key?",
+                "printedName": "(any CryptoTools.Key)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Key",
-                    "printedName": "CryptoTools.Key",
+                    "printedName": "any CryptoTools.Key",
                     "usr": "s:11CryptoTools3KeyP"
                   }
                 ],
@@ -264,12 +264,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "CryptoTools.Key?",
+                    "printedName": "(any CryptoTools.Key)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Key",
-                        "printedName": "CryptoTools.Key",
+                        "printedName": "any CryptoTools.Key",
                         "usr": "s:11CryptoTools3KeyP"
                       }
                     ],
@@ -299,7 +299,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Key",
-                "printedName": "CryptoTools.Key",
+                "printedName": "any CryptoTools.Key",
                 "usr": "s:11CryptoTools3KeyP"
               },
               {
@@ -317,12 +317,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "CryptoTools.Key?",
+                "printedName": "(any CryptoTools.Key)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Key",
-                    "printedName": "CryptoTools.Key",
+                    "printedName": "any CryptoTools.Key",
                     "usr": "s:11CryptoTools3KeyP"
                   }
                 ],
@@ -440,7 +440,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "JWK",
-                "printedName": "JOSESwift.JWK",
+                "printedName": "any JOSESwift.JWK",
                 "usr": "s:9JOSESwift3JWKP"
               }
             ],
@@ -562,7 +562,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "JWK",
-                "printedName": "JOSESwift.JWK",
+                "printedName": "any JOSESwift.JWK",
                 "usr": "s:9JOSESwift3JWKP"
               }
             ],
@@ -4862,12 +4862,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(JoseTools.JOSEError.Type) -> (Swift.Error) -> JoseTools.JOSEError",
+                "printedName": "(JoseTools.JOSEError.Type) -> (any Swift.Error) -> JoseTools.JOSEError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> JoseTools.JOSEError",
+                    "printedName": "(any Swift.Error) -> JoseTools.JOSEError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -4878,7 +4878,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -4912,12 +4912,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(JoseTools.JOSEError.Type) -> (Swift.Error) -> JoseTools.JOSEError",
+                "printedName": "(JoseTools.JOSEError.Type) -> (any Swift.Error) -> JoseTools.JOSEError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> JoseTools.JOSEError",
+                    "printedName": "(any Swift.Error) -> JoseTools.JOSEError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -4928,7 +4928,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -4962,12 +4962,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(JoseTools.JOSEError.Type) -> (Swift.Error) -> JoseTools.JOSEError",
+                "printedName": "(JoseTools.JOSEError.Type) -> (any Swift.Error) -> JoseTools.JOSEError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> JoseTools.JOSEError",
+                    "printedName": "(any Swift.Error) -> JoseTools.JOSEError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -4978,7 +4978,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -5012,12 +5012,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(JoseTools.JOSEError.Type) -> (Swift.Error) -> JoseTools.JOSEError",
+                "printedName": "(JoseTools.JOSEError.Type) -> (any Swift.Error) -> JoseTools.JOSEError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> JoseTools.JOSEError",
+                    "printedName": "(any Swift.Error) -> JoseTools.JOSEError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -5028,7 +5028,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -5062,12 +5062,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(JoseTools.JOSEError.Type) -> (Swift.Error?, Swift.String?) -> JoseTools.JOSEError",
+                "printedName": "(JoseTools.JOSEError.Type) -> ((any Swift.Error)?, Swift.String?) -> JoseTools.JOSEError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error?, Swift.String?) -> JoseTools.JOSEError",
+                    "printedName": "((any Swift.Error)?, Swift.String?) -> JoseTools.JOSEError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -5078,17 +5078,17 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(Swift.Error?, description: Swift.String?)",
+                        "printedName": "((any Swift.Error)?, description: Swift.String?)",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Optional",
-                            "printedName": "Swift.Error?",
+                            "printedName": "(any Swift.Error)?",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "Error",
-                                "printedName": "Swift.Error",
+                                "printedName": "any Swift.Error",
                                 "usr": "s:s5ErrorP"
                               }
                             ],
@@ -5141,12 +5141,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(JoseTools.JOSEError.Type) -> (Swift.Error?, Swift.String?) -> JoseTools.JOSEError",
+                "printedName": "(JoseTools.JOSEError.Type) -> ((any Swift.Error)?, Swift.String?) -> JoseTools.JOSEError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error?, Swift.String?) -> JoseTools.JOSEError",
+                    "printedName": "((any Swift.Error)?, Swift.String?) -> JoseTools.JOSEError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -5157,17 +5157,17 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(Swift.Error?, description: Swift.String?)",
+                        "printedName": "((any Swift.Error)?, description: Swift.String?)",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Optional",
-                            "printedName": "Swift.Error?",
+                            "printedName": "(any Swift.Error)?",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "Error",
-                                "printedName": "Swift.Error",
+                                "printedName": "any Swift.Error",
                                 "usr": "s:s5ErrorP"
                               }
                             ],
@@ -5220,12 +5220,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(JoseTools.JOSEError.Type) -> (Swift.Error) -> JoseTools.JOSEError",
+                "printedName": "(JoseTools.JOSEError.Type) -> (any Swift.Error) -> JoseTools.JOSEError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> JoseTools.JOSEError",
+                    "printedName": "(any Swift.Error) -> JoseTools.JOSEError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -5236,7 +5236,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
